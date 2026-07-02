@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Case Dashboard</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="topbar">
+        <div class="brand">
+          <div class="brand-title">
+            <span class="page-icon" aria-hidden="true">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M3 10.5L12 3l9 7.5v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1v-9Z"
+                />
+              </svg>
+            </span>
+            <h1>Test Case Dashboard</h1>
+          </div>
+          <span id="syncStatus" class="sync-pill local">Local only</span>
+        </div>
+
+        <div class="menu">
+          <button class="menu-item active" data-section="dashboardSection">
+            Dashboard
+          </button>
+          <button class="menu-item" data-section="casesSection">
+            Test cases
+          </button>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div class="hero-text">
+          <h2>One place for test execution and status tracking.</h2>
+          <p>
+            Search, filter, and update test cases with GitHub sync support. Tags
+            make cases easier to categorize and find.
+          </p>
+        </div>
+        <div class="hero-actions">
+          <button id="toggleFormBtn">+ Add test case</button>
+          <button id="settingsBtn" class="ghost">⚙ Sync settings</button>
+        </div>
+      </section>
+
+      <section class="panel" id="syncPanel" hidden>
+        <h3 style="margin-top: 0">GitHub sync</h3>
+        <div class="warn">
+          ⚠ The token is stored in
+          <strong>this browser's localStorage</strong> (not committed to code,
+          not embedded in the public page). Create a
+          <strong>Fine-grained Personal Access Token</strong> for this repo
+          only, with <strong>Contents: Read and write</strong> permission, and
+          set a short expiration. Anyone with access to this browser can read
+          the token, so do not use a broad-scoped token.
+        </div>
+        <form id="settingsForm">
+          <label>
+            GitHub token (Personal Access Token)
+            <input
+              id="tokenInput"
+              type="password"
+              autocomplete="off"
+              placeholder="github_pat_..."
+            />
+          </label>
+          <div class="settings-grid">
+            <label>Owner<input id="ownerInput" /></label>
+            <label>Repo<input id="repoInput" /></label>
+            <label>Branch<input id="branchInput" /></label>
+            <label>Path (in repo)<input id="pathInput" /></label>
+          </div>
+          <fieldset class="sync-mode-group">
+            <legend>Commit mode</legend>
+            <label
+              ><input type="radio" name="syncMode" value="auto" /> Work mode —
+              commit on every change</label
+            >
+            <label
+              ><input type="radio" name="syncMode" value="manual" /> Batch mode
+              — save locally until Sync now</label
+            >
+          </fieldset>
+          <div class="actions">
+            <button type="button" class="secondary" id="clearTokenBtn">
+              Clear token
+            </button>
+            <button type="submit">Save & connect</button>
+          </div>
+        </form>
+        <div class="actions sync-now-row">
+          <button type="button" id="syncNowBtn">Sync now</button>
+          <button type="button" class="secondary" id="redeployBtn">
+            Redeploy site
+          </button>
+        </div>
+        <p class="muted" id="settingsHint"></p>
+      </section>
+
+      <section id="dashboardSection" class="section active">
+        <div class="stats" id="stats"></div>
+      </section>
+
+      <section id="casesSection" class="section">
+        <div class="panel">
+          <div class="toolbar">
+            <input
+              id="searchInput"
+              type="text"
+              placeholder="Search by name, module, feature, or tags"
+            />
+            <input id="tagsFilter" type="text" placeholder="Filter by tag" />
+            <select id="moduleFilter">
+              <option value="all">All modules</option>
+            </select>
+            <select id="featureFilter">
+              <option value="all">All features</option>
+            </select>
+            <select id="statusFilter">
+              <option value="all">All statuses</option>
+              <option value="Todo">Todo</option>
+              <option value="In Process">In Process</option>
+              <option value="In Review">In Review</option>
+              <option value="Done">Done</option>
+            </select>
+            <select id="sortFilter">
+              <option value="updated-desc">Newest first</option>
+              <option value="updated-asc">Oldest first</option>
+              <option value="name-asc">Name A-Z</option>
+              <option value="name-desc">Name Z-A</option>
+            </select>
+            <button class="secondary" id="clearFiltersBtn">
+              Clear filters
+            </button>
+            <button class="secondary" id="resetBtn">Reload from repo</button>
+          </div>
+
+          <div class="grid">
+            <div>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Test case</th>
+                    <th>Feature</th>
+                    <th>Status</th>
+                    <th>Tags</th>
+                    <th>Updated</th>
+                    <th>Result</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="rows"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="caseModal" class="modal" hidden>
+        <div
+          class="card modal-card"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="formTitle"
+        >
+          <h3 id="formTitle">Create test case</h3>
+          <form id="caseForm">
+            <input id="caseId" type="hidden" />
+            <input id="name" placeholder="Test case name" required />
+            <input id="feature" placeholder="Feature" />
+            <div class="form-row">
+              <input id="module" placeholder="Module" required />
+              <select id="status">
+                <option value="Todo">Todo</option>
+                <option value="In Process">In Process</option>
+                <option value="In Review">In Review</option>
+                <option value="Done">Done</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <input id="tags" placeholder="Tags (comma-separated)" />
+              <input id="updated" type="date" required />
+            </div>
+            <textarea
+              id="result"
+              rows="4"
+              placeholder="Result summary"
+            ></textarea>
+            <div class="actions">
+              <button type="button" class="secondary" id="cancelBtn">
+                Cancel
+              </button>
+              <button type="submit">Save</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/app.js"></script>
+  </body>
+</html>

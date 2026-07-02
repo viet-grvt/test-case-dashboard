@@ -1,0 +1,2852 @@
+[
+  {
+    "id": "TC-105",
+    "name": "[WEB] Split smoke & regression test (new)",
+    "feature": "E2E",
+    "module": "WEB",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-02",
+    "result": ""
+  },
+  {
+    "id": "TC-107",
+    "name": "Verify if GRVT account can be registered with Metamask wallet -> Funding Account created -> Trading Account can be created",
+    "feature": "E2E",
+    "module": "WEB",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-02",
+    "result": ""
+  },
+  {
+    "id": "TC-108",
+    "name": "Verify if Trade-Indicators data for all instruments are rendered as expected",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-109",
+    "name": "Verify if Trading chart => candle-sticks are rendered as expected",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-110",
+    "name": "Verify if Order-Book is not-crossed (BEST_BID lesser than BEST_ASK)",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression", "smoke"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-111",
+    "name": "Verify if Order-Book data is displayed as expected",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-112",
+    "name": "Verify if all records under Recent Trades tab are populated as expected",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-113",
+    "name": "Verify if Funding Account balance is updated after free USDT minting",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-114",
+    "name": "Verify if a new Sub-Account can be created",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-115",
+    "name": "Verify if MARKET BUY/SELL order can be placed successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression", "smoke"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-116",
+    "name": "Verify if order placement is successfull when Quantity expressed in USDT Notional",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-117",
+    "name": "Verify if REDUCE_ONLY type orders can be placed successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression", "smoke"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-118",
+    "name": "Verify if IOC type orders can be placed successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression", "smoke"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-119",
+    "name": "Verify if FOK type orders can be placed successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression", "smoke"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-120",
+    "name": "Verify if POST_ONLY type orders can be placed successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression", "smoke"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-121",
+    "name": "Verify if active Trading-Login session is expired after user logged-out",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-122",
+    "name": "Verify if all active-positions can be closed by Close all positions button",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression", "smoke"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-123",
+    "name": "Verify if INTERNAL fund transfer from FUNDING_ACCOUNT -> TRADING_ACCOUNT is successful",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-124",
+    "name": "Verify if EXTERNAL fund transfer from FUNDING_ACCOUNT -> FUNDING_ACCOUNT is successful",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-125",
+    "name": "Verify if INTERNAL USDC fund transfer from FUNDING_ACCOUNT -> TRADING_ACCOUNT is successful",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-126",
+    "name": "Verify if EXTERNAL USDC fund transfer from FUNDING_ACCOUNT -> FUNDING_ACCOUNT is successful",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-127",
+    "name": "Verify if INTERNAL ETH fund transfer from FUNDING_ACCOUNT -> TRADING_ACCOUNT is successful",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-128",
+    "name": "Verify if EXTERNAL ETH fund transfer from FUNDING_ACCOUNT -> FUNDING_ACCOUNT is successful",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-129",
+    "name": "Verify if INTERNAL GRVT fund transfer from FUNDING_ACCOUNT -> TRADING_ACCOUNT is successful",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-130",
+    "name": "Verify if EXTERNAL GRVT fund transfer from FUNDING_ACCOUNT -> FUNDING_ACCOUNT is successful",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-131",
+    "name": "Verify if INTERNAL transfer is rejected when amount exceeds available balance",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-132",
+    "name": "Verify if INTERNAL transfer is rejected for zero / empty / non-numeric amounts",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-133",
+    "name": "Verify if INTERNAL transfer is blocked when source and destination are the same",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-134",
+    "name": "Verify if EXTERNAL transfer is rejected when amount exceeds available balance",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-135",
+    "name": "Business account completes internal transfer without KYC verification prompt",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "businessNoKyc"
+  },
+  {
+    "id": "TC-136",
+    "name": "Business account completes withdrawal without KYC verification prompt",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "businessNoKyc"
+  },
+  {
+    "id": "TC-137",
+    "name": "Business account places a trade without KYC verification prompt",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "businessNoKyc"
+  },
+  {
+    "id": "TC-138",
+    "name": "Verify each download card points to the correct external URL",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "downloadApp"
+  },
+  {
+    "id": "TC-139",
+    "name": "Sector & Tab Navigation",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-140",
+    "name": "Sub-sector Behavior & Filtering",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-141",
+    "name": "Rightmost Sub-tags & New Listing",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-142",
+    "name": "Search Core",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-143",
+    "name": "Search Filter & Empty",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-144",
+    "name": "Search Security Inputs",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-145",
+    "name": "Favorites Core",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-146",
+    "name": "Favorites Advanced",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-147",
+    "name": "Sorting",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-148",
+    "name": "Data Display & Formatting",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-149",
+    "name": "Data Update",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "E2E"
+  },
+  {
+    "id": "TC-150",
+    "name": "Stress & Performance",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-151",
+    "name": "Accessibility & Scroll",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-152",
+    "name": "Sub-sector Stability & Rapid Switching",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-153",
+    "name": "State Preserved After Navigation",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "instrumentSectors"
+  },
+  {
+    "id": "TC-154",
+    "name": "Verification can change languages",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "language"
+  },
+  {
+    "id": "TC-155",
+    "name": "Verify language will display correctly on all pages when changing language",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "language"
+  },
+  {
+    "id": "TC-156",
+    "name": "Switch app language to each supported locale",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "languageUiLayout"
+  },
+  {
+    "id": "TC-157",
+    "name": "Language preference persists after refresh and navigation",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "languageUiLayout"
+  },
+  {
+    "id": "TC-158",
+    "name": "Button layout: overflow, overlap, truncation and height stability across all locales",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "languageUiLayout"
+  },
+  {
+    "id": "TC-159",
+    "name": "Navigation layout: overflow, overlap and height stability across all locales",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "languageUiLayout"
+  },
+  {
+    "id": "TC-160",
+    "name": "Form and dropdown layout: labels, validation, alignment and options across all locales",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "languageUiLayout"
+  },
+  {
+    "id": "TC-161",
+    "name": "Modal layout: content, action buttons and close button across all locales",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "languageUiLayout"
+  },
+  {
+    "id": "TC-162",
+    "name": "Toast layout: message overflow and dismiss button across all locales",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "languageUiLayout"
+  },
+  {
+    "id": "TC-163",
+    "name": "Table column headers stay on a single line across all locales",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "languageUiLayout"
+  },
+  {
+    "id": "TC-164",
+    "name": "No text overflow across target viewports in Russian",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "languageUiLayout"
+  },
+  {
+    "id": "TC-165",
+    "name": "Encoding, translations, number format and horizontal scroll across all locales",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "languageUiLayout"
+  },
+  {
+    "id": "TC-166",
+    "name": "Overflow detection utility correctly identifies violations",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "languageUiLayout"
+  },
+  {
+    "id": "TC-167",
+    "name": "Russian layout regression: button overflow and navigation label overflow",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "languageUiLayout"
+  },
+  {
+    "id": "TC-168",
+    "name": "Login page labels and buttons do not overflow across all locales",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "languageUiLayout"
+  },
+  {
+    "id": "TC-169",
+    "name": "Toggle UI Theme dark↔light without page reload",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "themeUiLayout"
+  },
+  {
+    "id": "TC-170",
+    "name": "Icons visible + no horizontal scroll on all pages in both theme",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "themeUiLayout"
+  },
+  {
+    "id": "TC-171",
+    "name": "Icons remain visible inside instrument selector dropdown",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "themeUiLayout"
+  },
+  {
+    "id": "TC-172",
+    "name": "All UI checks on representative pages in both theme",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "themeUiLayout"
+  },
+  {
+    "id": "TC-173",
+    "name": "Theme toggle + icons + visual rendering across all public pages in both theme",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "themeUiLayout"
+  },
+  {
+    "id": "TC-174",
+    "name": "Verify that users can create trading login sessions and terminate all trading login tokens",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tradingLoginSession"
+  },
+  {
+    "id": "TC-175",
+    "name": "Wallet names are displayed correctly on the login and sign up page",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "occupiedWalletSignupAndSecondaryKey"
+  },
+  {
+    "id": "TC-176",
+    "name": "User cannot sign up with a wallet currently used as secondary SecureKey on another account",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "occupiedWalletSignupAndSecondaryKey"
+  },
+  {
+    "id": "TC-177",
+    "name": "User cannot sign up with a wallet previously removed as secondary on another account",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "occupiedWalletSignupAndSecondaryKey"
+  },
+  {
+    "id": "TC-178",
+    "name": "User cannot add a secondary SecureKey using the primary wallet of the current account",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "occupiedWalletSignupAndSecondaryKey"
+  },
+  {
+    "id": "TC-179",
+    "name": "User cannot add a wallet that is already a secondary SecureKey on the same account",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "occupiedWalletSignupAndSecondaryKey"
+  },
+  {
+    "id": "TC-180",
+    "name": "User cannot add a wallet that is already a secondary SecureKey on another account",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "occupiedWalletSignupAndSecondaryKey"
+  },
+  {
+    "id": "TC-181",
+    "name": "User cannot add a wallet that was previously added and then removed as a secondary SecureKey",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "occupiedWalletSignupAndSecondaryKey"
+  },
+  {
+    "id": "TC-182",
+    "name": "MetaMask login from the Trade page is redirected to the Trading page",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "TC-183",
+    "name": "MetaMask login from a non-trade page is redirected to the Web Overview page",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "TC-184",
+    "name": "Privy login from the Trade page is redirected to the Trading page",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "TC-185",
+    "name": "Privy login from a non-trade page is redirected to the Web Overview page",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "TC-186",
+    "name": "Privy sign-up from the Trade page is redirected to the Trading page",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "TC-187",
+    "name": "Privy sign-up from a non-trade page is redirected to the Web Overview page",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "TC-188",
+    "name": "Deposit successful with supported wallets",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "deposit"
+  },
+  {
+    "id": "TC-189",
+    "name": "Deposit progress is rejected when user cancels wallet connection",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "deposit"
+  },
+  {
+    "id": "TC-190",
+    "name": "Verify wallet connection and validate warning messages",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "deposit"
+  },
+  {
+    "id": "TC-191",
+    "name": "Transfer maximum balance",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "transfer"
+  },
+  {
+    "id": "TC-192",
+    "name": "Wallet shows correct balance USDT after successful withdrawal",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "withdrawal"
+  },
+  {
+    "id": "TC-193",
+    "name": "Deposit history — headers, data, and most-recent-first sort order display correctly",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "historyDisplay"
+  },
+  {
+    "id": "TC-194",
+    "name": "Withdrawal history — headers, data, and most-recent-first sort order display correctly",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "historyDisplay"
+  },
+  {
+    "id": "TC-195",
+    "name": "Transfer history — headers, data, and most-recent-first sort order display correctly",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "historyDisplay"
+  },
+  {
+    "id": "TC-196",
+    "name": "Verify if USDT can be minted successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "mint"
+  },
+  {
+    "id": "TC-197",
+    "name": "Verify if USDC can be minted successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "mint"
+  },
+  {
+    "id": "TC-198",
+    "name": "Verify if ETH can be minted successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "mint"
+  },
+  {
+    "id": "TC-199",
+    "name": "Verify if GRVT can be minted successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "mint"
+  },
+  {
+    "id": "TC-200",
+    "name": "Verify if all tokens can be minted multiple times successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "mint"
+  },
+  {
+    "id": "TC-201",
+    "name": "Verify if minting fails after cookies are deleted",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "mint"
+  },
+  {
+    "id": "TC-202",
+    "name": "Verify if when do invalid mint amount a message will show",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "mint"
+  },
+  {
+    "id": "TC-203",
+    "name": "User should be able to place a SCALE order and verify open orders",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "testUIForScaleOrders"
+  },
+  {
+    "id": "TC-204",
+    "name": "Deposit - Export transaction history as CSV",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "exportHistory"
+  },
+  {
+    "id": "TC-205",
+    "name": "Deposit - Export transaction history as PDF",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "exportHistory"
+  },
+  {
+    "id": "TC-206",
+    "name": "Withdrawal - Export transaction history in CSV format",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "exportHistory"
+  },
+  {
+    "id": "TC-207",
+    "name": "Withdrawal - Export transaction history as PDF",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "exportHistory"
+  },
+  {
+    "id": "TC-208",
+    "name": "Transfer - Export transaction history as CSV",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "exportHistory"
+  },
+  {
+    "id": "TC-209",
+    "name": "Transfer - Export transaction history as PDF",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "exportHistory"
+  },
+  {
+    "id": "TC-210",
+    "name": "Order - Export transaction history as CSV",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "exportHistory"
+  },
+  {
+    "id": "TC-211",
+    "name": "Order - Export transaction history as PDF",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "exportHistory"
+  },
+  {
+    "id": "TC-212",
+    "name": "Trade - Export transaction history as CSV",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "exportHistory"
+  },
+  {
+    "id": "TC-213",
+    "name": "Trade - Export transaction history as PDF",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "exportHistory"
+  },
+  {
+    "id": "TC-214",
+    "name": "Export File - header column, data, and sort time display correctly",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "exportHistory"
+  },
+  {
+    "id": "TC-215",
+    "name": "Cannot export history on the 11th attempt",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "exportHistory"
+  },
+  {
+    "id": "TC-216",
+    "name": "The Points multiplier should be displayed correctly for each Ambassador Level",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "referral"
+  },
+  {
+    "id": "TC-217",
+    "name": "A Regular user should receive the corresponding point multiplier if they are referred by an Ambassador",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "referral"
+  },
+  {
+    "id": "TC-218",
+    "name": "TP/SL Price accurate & ROI should reflect Leverage and ROI input (Market order)",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "roi"
+  },
+  {
+    "id": "TC-219",
+    "name": "TP/SL Price accurate & ROI should reflect Leverage and ROI input (Limit order)",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "roi"
+  },
+  {
+    "id": "TC-220",
+    "name": "ROI 0% input should set TP/SL prices equal to Entry price and ROI = 0.00%",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "roi"
+  },
+  {
+    "id": "TC-221",
+    "name": "TP/SL Price accurate & ROI should reflect Leverage and PnL Input (Market Order)",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "roi"
+  },
+  {
+    "id": "TC-222",
+    "name": "TP/SL Price accurate & ROI should reflect Leverage and PnL Input (Limit Order)",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "roi"
+  },
+  {
+    "id": "TC-223",
+    "name": "Changing Leverage should only recalculate ROI — TP/SL prices and PnL should unchanged",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "roi"
+  },
+  {
+    "id": "TC-224",
+    "name": "TP/SL Price accurate & ROI should reflect Leverage and ROI input in Postition",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "roi"
+  },
+  {
+    "id": "TC-225",
+    "name": "Unlock 3.50% interest after placing 5 trades",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tdy"
+  },
+  {
+    "id": "TC-226",
+    "name": "Verify the new user should earning 4.5% after deposit 1,000 USDT and make 5 trades",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tdy"
+  },
+  {
+    "id": "TC-227",
+    "name": "Unlock 1.00% interest after inviting 1 new friend who deposits 1000 USDT and makes 5 trades",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tdy"
+  },
+  {
+    "id": "TC-228",
+    "name": "Verify the Tier unlock correctly with the trading volume",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tdy"
+  },
+  {
+    "id": "TC-229",
+    "name": "Verify Max APY displayed is 11% (3.5% base + 6.5% volume + 1% referral)",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tdy"
+  },
+  {
+    "id": "TC-230",
+    "name": "User should be able to place a LIMIT order with TP/SL enabled, and a randomly selected trigger type",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "placeOrdersLimitUsingTPSL"
+  },
+  {
+    "id": "TC-231",
+    "name": "User should be able to place a LIMIT order with TP enabled, and a randomly selected trigger type",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "placeOrdersLimitUsingTPSL"
+  },
+  {
+    "id": "TC-232",
+    "name": "User should be able to place a LIMIT order with SL enabled, and a randomly selected trigger type",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "placeOrdersLimitUsingTPSL"
+  },
+  {
+    "id": "TC-233",
+    "name": "User should be able to place a MARKET order with TP/SL enabled, and a randomly selected trigger type",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "placeOrdersMarketUsingTPSL"
+  },
+  {
+    "id": "TC-234",
+    "name": "User should be able to place a MARKET order with TP enabled, and a randomly selected trigger type",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "placeOrdersMarketUsingTPSL"
+  },
+  {
+    "id": "TC-235",
+    "name": "User should be able to place a MARKET order with SL enabled, and a randomly selected trigger type",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "placeOrdersMarketUsingTPSL"
+  },
+  {
+    "id": "TC-236",
+    "name": "User should be able to place TP/SL order with random trigger type",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "placeOrdersWithTPSL"
+  },
+  {
+    "id": "TC-237",
+    "name": "User should be able to place TP order with random trigger type",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "placeOrdersWithTPSL"
+  },
+  {
+    "id": "TC-238",
+    "name": "User should be able to place SL order with random trigger type",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "placeOrdersWithTPSL"
+  },
+  {
+    "id": "TC-239",
+    "name": "Validate Order History for 7D/30D/60D",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "validateOrderHistoryAndTradeHistory"
+  },
+  {
+    "id": "TC-240",
+    "name": "Validate Trade history for 7D/30D/60D",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "validateOrderHistoryAndTradeHistory"
+  },
+  {
+    "id": "TC-241",
+    "name": "Verify user can qty adjustment via slider",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "closePositionAndCancelOpenOrders"
+  },
+  {
+    "id": "TC-242",
+    "name": "Verify user can open position, close position and reverse position",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "closePositionAndCancelOpenOrders"
+  },
+  {
+    "id": "TC-243",
+    "name": "Verify user can edit order and cancel open orders",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "isolatedMarginMode"
+  },
+  {
+    "id": "TC-244",
+    "name": "Place a market order using isolated margin mode",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "isolatedMarginMode"
+  },
+  {
+    "id": "TC-245",
+    "name": "Place a limit order using isolated margin mode",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "isolatedMarginMode"
+  },
+  {
+    "id": "TC-246",
+    "name": "Add margin to a position",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "isolatedMarginMode"
+  },
+  {
+    "id": "TC-247",
+    "name": "Remove margin to a position",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "isolatedMarginMode"
+  },
+  {
+    "id": "TC-248",
+    "name": "Switch margin mode with an active position record",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "isolatedMarginMode"
+  },
+  {
+    "id": "TC-249",
+    "name": "Switch margin mode with an active position record (different instrument)",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "isolatedMarginMode"
+  },
+  {
+    "id": "TC-250",
+    "name": "Close partial or full position on isolated margin",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "isolatedMarginMode"
+  },
+  {
+    "id": "TC-251",
+    "name": "Users can increase leverage when holding an active position in Isolated Margin mode.",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "isolatedMarginMode"
+  },
+  {
+    "id": "TC-252",
+    "name": "Verify that leverage reduction is blocked when an active position exists in isolated margin mode",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "isolatedMarginMode"
+  },
+  {
+    "id": "TC-253",
+    "name": "Allow user multi-select asset filter and it will applies to all tabs",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "multiSelectAssetFilter"
+  },
+  {
+    "id": "TC-254",
+    "name": "Amend Price and Size of a Limit Post-Only Order",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "orderAmendments"
+  },
+  {
+    "id": "TC-255",
+    "name": "Amend Price of a Position-Linked TP/SL Order",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "orderAmendments"
+  },
+  {
+    "id": "TC-256",
+    "name": "Amend Price of a Standalone TP/SL Order",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "orderAmendments"
+  },
+  {
+    "id": "TC-257",
+    "name": "Amend Price of an OCO Order",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "orderAmendments"
+  },
+  {
+    "id": "TC-258",
+    "name": "Verify Open Split TPSL modal from Positions tab",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "splitTPSL"
+  },
+  {
+    "id": "TC-259",
+    "name": "Verify Add first TP target row filled and percent auto calculated",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "splitTPSL"
+  },
+  {
+    "id": "TC-260",
+    "name": "Verify qty field clamps to current max and TP stays within 100",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "splitTPSL"
+  },
+  {
+    "id": "TC-261",
+    "name": "Verify Add up to 6 TP targets and Confirm succeeds",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "splitTPSL"
+  },
+  {
+    "id": "TC-262",
+    "name": "Verify Positions tab shows TPSL badge N",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "splitTPSL"
+  },
+  {
+    "id": "TC-263",
+    "name": "Verify Edit an existing TP target change trigger and Confirm persists",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "splitTPSL"
+  },
+  {
+    "id": "TC-264",
+    "name": "Verify Cancel All TPSL and badge disappears from Positions",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "splitTPSL"
+  },
+  {
+    "id": "TC-265",
+    "name": "Verify Add a TP target by ROI value is displayed correctly",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "splitTPSL"
+  },
+  {
+    "id": "TC-266",
+    "name": "Verify Add first SL target row added and percent auto calculated",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "splitTPSL"
+  },
+  {
+    "id": "TC-267",
+    "name": "Verify Add first TP or SL target with Limit price",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "splitTPSL"
+  },
+  {
+    "id": "TC-268",
+    "name": "Verify Add TP and SL together Positions badge shows 2",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "splitTPSL"
+  },
+  {
+    "id": "TC-269",
+    "name": "Verify Reset data on delete row or switch tab",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "splitTPSL"
+  },
+  {
+    "id": "TC-270",
+    "name": "Verify setting PTPSL when the trading login is available",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tpslSendReasonableSize"
+  },
+  {
+    "id": "TC-271",
+    "name": "Long position: TP trigger price must be greater than mark price",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tpslTriggerPriceRangeValidation"
+  },
+  {
+    "id": "TC-272",
+    "name": "Long position: in-profit SL trigger price must be between entry and mark prices",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tpslTriggerPriceRangeValidation"
+  },
+  {
+    "id": "TC-273",
+    "name": "Short position: TP trigger price must be less than mark price",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tpslTriggerPriceRangeValidation"
+  },
+  {
+    "id": "TC-274",
+    "name": "Short position: in-profit SL trigger price must be between mark and entry prices",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tpslTriggerPriceRangeValidation"
+  },
+  {
+    "id": "TC-275",
+    "name": "Split TP for Long position: trigger price must be greater than mark price",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tpslTriggerPriceRangeValidation"
+  },
+  {
+    "id": "TC-276",
+    "name": "Split SL for Long position: in-profit trigger price must be between entry and mark prices",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tpslTriggerPriceRangeValidation"
+  },
+  {
+    "id": "TC-277",
+    "name": "Split TP for Short position: trigger price must be less than mark price",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tpslTriggerPriceRangeValidation"
+  },
+  {
+    "id": "TC-278",
+    "name": "Split SL for Short position: in-profit trigger price must be between mark and entry prices",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tpslTriggerPriceRangeValidation"
+  },
+  {
+    "id": "TC-279",
+    "name": "Verify the values of Max position, Min Notional Value, Tick size, Min size and margin rates are displayed correctly",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "tpslTriggerPriceRangeValidation"
+  },
+  {
+    "id": "TC-280",
+    "name": "Verify if Price Alerts dialog opens via chart toolbar",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "priceAlert"
+  },
+  {
+    "id": "TC-281",
+    "name": "Verify if Price Alert creation form opens via Add Alert button",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "priceAlert"
+  },
+  {
+    "id": "TC-282",
+    "name": "Verify if Price Reaches alert can be created with Once Only frequency",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "priceAlert"
+  },
+  {
+    "id": "TC-283",
+    "name": "Verify if Price Moves Above alert can be created with Once Only frequency",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "priceAlert"
+  },
+  {
+    "id": "TC-284",
+    "name": "Verify if Price Moves Below alert can be created with Once Only frequency",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "priceAlert"
+  },
+  {
+    "id": "TC-285",
+    "name": "Verify if negative Trigger Price is rejected",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "priceAlert"
+  },
+  {
+    "id": "TC-286",
+    "name": "Verify if form does not submit when required Trigger Price is empty",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "priceAlert"
+  },
+  {
+    "id": "TC-287",
+    "name": "Verify if a single alert can be deleted from the list",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "priceAlert"
+  },
+  {
+    "id": "TC-288",
+    "name": "Verify if alert can be edited by changing Trigger Price",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "priceAlert"
+  },
+  {
+    "id": "TC-289",
+    "name": "Verify if max 5 alerts per pair is enforced and 6th on same pair is blocked",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "priceAlert"
+  },
+  {
+    "id": "TC-290",
+    "name": "Verify if market buy order can be placed successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "spotTrading"
+  },
+  {
+    "id": "TC-291",
+    "name": "Verify if market sell order can be placed successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "spotTrading"
+  },
+  {
+    "id": "TC-292",
+    "name": "Verify if limit buy order can be placed successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "spotTrading"
+  },
+  {
+    "id": "TC-293",
+    "name": "Verify if limit sell order can be placed successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "spotTrading"
+  },
+  {
+    "id": "TC-294",
+    "name": "Verify if open limit order can be cancelled successfully",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "spotTrading"
+  },
+  {
+    "id": "TC-295",
+    "name": "Verify user withdraw following with Withdrawal Allowancea",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "cev"
+  },
+  {
+    "id": "TC-296",
+    "name": "Verify user can invest in a CEV with an amount that is less than or equal to the 'You can invest' limit",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "cev"
+  },
+  {
+    "id": "TC-297",
+    "name": "Verify error messages when user tries to invest beyond allocation",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "cev"
+  },
+  {
+    "id": "TC-298",
+    "name": "Verify investment is placed in a pending queue when the vault is locked",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "cev"
+  },
+  {
+    "id": "TC-299",
+    "name": "Verify user should be able to redemp vault",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "cev"
+  },
+  {
+    "id": "TC-300",
+    "name": "Verify transferring funds from the Funding Account to a CEV must be allowed",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "cev"
+  },
+  {
+    "id": "TC-301",
+    "name": "Verify the investment will be moved from the pending queue to completed after the vault is unlocked",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "cev"
+  },
+  {
+    "id": "TC-302",
+    "name": "Verify user can redeem my vault not more than available limit",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "vaultStrategy"
+  },
+  {
+    "id": "TC-303",
+    "name": "Verify user can invest my vault and invest another vault",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "vaultStrategy"
+  },
+  {
+    "id": "TC-304",
+    "name": "Verify user as vault investor can invest in multiple vaults",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "vaultStrategy"
+  },
+  {
+    "id": "TC-305",
+    "name": "Verify user as vault investor can redeem a vault",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "vaultStrategy"
+  },
+  {
+    "id": "TC-306",
+    "name": "Verify user can auto redeem a vault when the auto redeemable balance is sufficient",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "vaultStrategy"
+  },
+  {
+    "id": "TC-307",
+    "name": "Verify user cannot auto redeem a vault when the auto redeemable balance is insufficient",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "vaultStrategy"
+  },
+  {
+    "id": "TC-308",
+    "name": "Verify user can burn vault not more than available shares",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "vaultStrategy"
+  },
+  {
+    "id": "TC-309",
+    "name": "Verify user can invest the full funding balance in an Ungated CEV with no 10% cap restriction",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "cevUngated"
+  },
+  {
+    "id": "TC-310",
+    "name": "Verify user can fully redeem all shares from an Ungated CEV without min-balance restriction",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "cevUngated"
+  },
+  {
+    "id": "TC-311",
+    "name": "Verify user should be able to cancel a pending full-redemption on an Ungated CEV with no 10% cap error",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "cevUngated"
+  },
+  {
+    "id": "TC-312",
+    "name": "Verify gated GLP vault should still apply the 10% cap restriction after the Ungated fix",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "cevUngated"
+  },
+  {
+    "id": "TC-313",
+    "name": "Verify user can initiate an external transfer from an Ungated CEV",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "cevUngated"
+  },
+  {
+    "id": "TC-314",
+    "name": "Verify user can initiate a withdrawal from an Ungated CEV",
+    "module": "WEB",
+    "status": "Done",
+    "updated": "2026-07-02",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "cevUngated"
+  },
+  {
+    "id": "TC-315",
+    "name": "User can invest 25% of funding balance into and fully redeem from an Ungated CEV with no cap restriction",
+    "feature": "cev-ungated",
+    "module": "MOBILE",
+    "status": "Todo",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-316",
+    "name": "User can cancel a pending redemption on an Ungated CEV with no 10% cap error",
+    "feature": "cev-ungated",
+    "module": "MOBILE",
+    "status": "Todo",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-317",
+    "name": "GLP gated vault should still apply its cap restriction after the Ungated fix",
+    "feature": "cev-ungated",
+    "module": "MOBILE",
+    "status": "Todo",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-318",
+    "name": "User can initiate an external transfer after investing in an Ungated CEV",
+    "feature": "cev-ungated",
+    "module": "MOBILE",
+    "status": "Todo",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-319",
+    "name": "User can initiate a withdrawal after investing in an Ungated CEV",
+    "feature": "cev-ungated",
+    "module": "MOBILE",
+    "status": "Todo",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-320",
+    "name": "Verify if user can Deposit successfully",
+    "feature": "deposit",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-321",
+    "name": "Navigate all menus then log out",
+    "feature": "e2e-menus",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-322",
+    "name": "INTERNAL fund transfer from Funding Account to Trading Account is successful",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-323",
+    "name": "EXTERNAL fund transfer from Funding Account to Funding Account is successful",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-324",
+    "name": "Verify if user can Withdraw successfully",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-325",
+    "name": "Verify if Funding Account balance is updated after free USDT minting",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-326",
+    "name": "Verify if Trading chart candle-sticks are rendered as expected",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-327",
+    "name": "Verify if Order-Book data is displayed and sorted correctly",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-328",
+    "name": "Verify if Order-Book is not-crossed (BEST_BID lesser than BEST_ASK)",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-329",
+    "name": "Verify if Trade-Indicators data for perpetual instruments are rendered as expected",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-330",
+    "name": "Verify if all records under Last trades tab are populated as expected",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-331",
+    "name": "Verify if MARKET BUY/SELL order can be placed successfully",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-332",
+    "name": "Verify if all active-positions can be closed by Close all positions button",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-333",
+    "name": "Verify if order placement is successful when Quantity expressed in USDT Notional",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-334",
+    "name": "Verify if POST_ONLY type orders can be placed successfully",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-335",
+    "name": "Verify if FOK type orders can be placed successfully",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-336",
+    "name": "Verify if IOC type orders can be placed successfully",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-337",
+    "name": "Verify if REDUCE_ONLY type orders can be placed successfully",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-338",
+    "name": "Full market order lifecycle - place, close position, verify history",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-339",
+    "name": "Verify if user can place a limit order using isolated margin mode",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-340",
+    "name": "Verify if user can place a market order using isolated margin mode",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-341",
+    "name": "Verify if user can add margin to a position",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-342",
+    "name": "Verify if user can remove margin from a position",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-343",
+    "name": "User should be able to invest my vault and invest another vault",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-344",
+    "name": "User should be able to redeem my vault (not more than Available to trade limit)",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-345",
+    "name": "A new MetaMask user can create a Funding Account and a Trading Account",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-346",
+    "name": "Create a new Sub-Account",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-347",
+    "name": "Verify active trading-login session expires after logout",
+    "feature": "e2e-tests",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-348",
+    "name": "Deposit - Export transaction history as CSV",
+    "feature": "export-history",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-349",
+    "name": "Deposit - Export transaction history as PDF",
+    "feature": "export-history",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-350",
+    "name": "Withdrawal - Export transaction history as CSV",
+    "feature": "export-history",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-351",
+    "name": "Withdrawal - Export transaction history as PDF",
+    "feature": "export-history",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-352",
+    "name": "Transfer - Export transaction history as CSV",
+    "feature": "export-history",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-353",
+    "name": "Transfer - Export transaction history as PDF",
+    "feature": "export-history",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-354",
+    "name": "Order - Export order history as CSV",
+    "feature": "export-history",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-355",
+    "name": "Order - Export order history as PDF",
+    "feature": "export-history",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-356",
+    "name": "Trade - Export trade history as CSV",
+    "feature": "export-history",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-357",
+    "name": "Trade - Export trade history as PDF",
+    "feature": "export-history",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-358",
+    "name": "Export File - header, data, and time display correctly",
+    "feature": "export-history",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-359",
+    "name": "Cannot export history beyond the daily quota",
+    "feature": "export-history",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-360",
+    "name": "User can switch the app language and the Deposit label is translated",
+    "feature": "language",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-361",
+    "name": "App screens display \"<lang>\" with no untranslated text",
+    "feature": "language",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression", "smoke"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-362",
+    "name": "User can log in with MetaMask",
+    "feature": "login-metamask",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-363",
+    "name": "User can log in with Privy",
+    "feature": "login-privy",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-364",
+    "name": "User can log out after login",
+    "feature": "login-privy",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-365",
+    "name": "Trade view stays stable and performant over a 30-minute session",
+    "feature": "long-running-trade-view",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-366",
+    "name": "Trade view stays stable and performant over a 1-hour session",
+    "feature": "long-running-trade-view",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-367",
+    "name": "Open Split TP/SL modal from Positions tab",
+    "feature": "split-tpsl",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-368",
+    "name": "Add first TP target row added",
+    "feature": "split-tpsl",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-369",
+    "name": "Validation - quantity over the max order size is blocked",
+    "feature": "split-tpsl",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-370",
+    "name": "Add up to 6 TP targets and confirm",
+    "feature": "split-tpsl",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-371",
+    "name": "Positions tab shows the TP/SL badge count",
+    "feature": "split-tpsl",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-372",
+    "name": "Edit an existing TP target trigger price and persist it",
+    "feature": "split-tpsl",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-373",
+    "name": "Cancel all TP/SL for the symbol removes the badge",
+    "feature": "split-tpsl",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-374",
+    "name": "Add a TP target by ROI percent and display it correctly",
+    "feature": "split-tpsl",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-375",
+    "name": "Add first SL target row added",
+    "feature": "split-tpsl",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-376",
+    "name": "Add first SL target with a Limit execution price",
+    "feature": "split-tpsl",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-377",
+    "name": "Add a TP and an SL target together shows badge 2",
+    "feature": "split-tpsl",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-378",
+    "name": "Reset data when deleting a row or switching tab",
+    "feature": "split-tpsl",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-379",
+    "name": "Whole - Long: TP trigger price must be greater than mark price",
+    "feature": "tpsl-trigger-validation",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-380",
+    "name": "Whole - Long: in-profit SL trigger must be between entry and mark prices",
+    "feature": "tpsl-trigger-validation",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-381",
+    "name": "Whole - Short: TP trigger price must be less than mark price",
+    "feature": "tpsl-trigger-validation",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-382",
+    "name": "Whole - Short: in-profit SL trigger must be between mark and entry prices",
+    "feature": "tpsl-trigger-validation",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-383",
+    "name": "Split - Long: TP trigger price must be greater than mark price",
+    "feature": "tpsl-trigger-validation",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-384",
+    "name": "Split - Long: in-profit SL trigger must be between entry and mark prices",
+    "feature": "tpsl-trigger-validation",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-385",
+    "name": "Split - Short: TP trigger price must be less than mark price",
+    "feature": "tpsl-trigger-validation",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-386",
+    "name": "Split - Short: in-profit SL trigger must be between mark and entry prices",
+    "feature": "tpsl-trigger-validation",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-387",
+    "name": "Deposit token support matrix per network (via Exchange)",
+    "feature": "token-support-matrix",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-388",
+    "name": "Deposit token support matrix per network (via Wallet)",
+    "feature": "token-support-matrix",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-389",
+    "name": "Withdrawal token support matrix per network (via Send)",
+    "feature": "token-support-matrix",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  },
+  {
+    "id": "TC-390",
+    "name": "Send as USDC keeps USDT source and converts the received currency",
+    "feature": "token-support-matrix",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "updated": "2026-07-03",
+    "result": ""
+  }
+]
