@@ -15,7 +15,7 @@
     "feature": "E2E",
     "module": "WEB",
     "status": "Done",
-    "tags": ["regression"],
+    "tags": ["regression", "smoke"],
     "updated": "2026-07-02",
     "result": ""
   },
@@ -26,7 +26,7 @@
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
-    "tags": ["regression"],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
