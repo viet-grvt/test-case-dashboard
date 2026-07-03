@@ -6,7 +6,6 @@
     "module": "WEB",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-02",
     "result": ""
   },
   {
@@ -16,7 +15,6 @@
     "module": "WEB",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-02",
     "result": ""
   },
   {
@@ -24,7 +22,6 @@
     "name": "Verify if Trade-Indicators data for all instruments are rendered as expected",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression", "smoke"],
     "feature": "E2E"
@@ -34,7 +31,6 @@
     "name": "Verify if Trading chart => candle-sticks are rendered as expected",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -44,7 +40,6 @@
     "name": "Verify if Order-Book is not-crossed (BEST_BID lesser than BEST_ASK)",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression", "smoke"],
     "feature": "E2E"
@@ -54,7 +49,6 @@
     "name": "Verify if Order-Book data is displayed as expected",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -64,7 +58,6 @@
     "name": "Verify if all records under Recent Trades tab are populated as expected",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -74,7 +67,6 @@
     "name": "Verify if Funding Account balance is updated after free USDT minting",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -84,7 +76,6 @@
     "name": "Verify if a new Sub-Account can be created",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -94,7 +85,6 @@
     "name": "Verify if MARKET BUY/SELL order can be placed successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression", "smoke"],
     "feature": "E2E"
@@ -104,7 +94,6 @@
     "name": "Verify if order placement is successfull when Quantity expressed in USDT Notional",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -114,7 +103,6 @@
     "name": "Verify if REDUCE_ONLY type orders can be placed successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression", "smoke"],
     "feature": "E2E"
@@ -124,7 +112,6 @@
     "name": "Verify if IOC type orders can be placed successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression", "smoke"],
     "feature": "E2E"
@@ -134,7 +121,6 @@
     "name": "Verify if FOK type orders can be placed successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression", "smoke"],
     "feature": "E2E"
@@ -144,7 +130,6 @@
     "name": "Verify if POST_ONLY type orders can be placed successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression", "smoke"],
     "feature": "E2E"
@@ -154,7 +139,6 @@
     "name": "Verify if active Trading-Login session is expired after user logged-out",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -164,7 +148,6 @@
     "name": "Verify if all active-positions can be closed by Close all positions button",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression", "smoke"],
     "feature": "E2E"
@@ -174,7 +157,6 @@
     "name": "Verify if INTERNAL fund transfer from FUNDING_ACCOUNT -> TRADING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -184,7 +166,6 @@
     "name": "Verify if EXTERNAL fund transfer from FUNDING_ACCOUNT -> FUNDING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -194,7 +175,6 @@
     "name": "Verify if INTERNAL USDC fund transfer from FUNDING_ACCOUNT -> TRADING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -204,7 +184,6 @@
     "name": "Verify if EXTERNAL USDC fund transfer from FUNDING_ACCOUNT -> FUNDING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -214,7 +193,6 @@
     "name": "Verify if INTERNAL ETH fund transfer from FUNDING_ACCOUNT -> TRADING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -224,7 +202,6 @@
     "name": "Verify if EXTERNAL ETH fund transfer from FUNDING_ACCOUNT -> FUNDING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -234,7 +211,6 @@
     "name": "Verify if INTERNAL GRVT fund transfer from FUNDING_ACCOUNT -> TRADING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -244,7 +220,6 @@
     "name": "Verify if EXTERNAL GRVT fund transfer from FUNDING_ACCOUNT -> FUNDING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -254,7 +229,6 @@
     "name": "Verify if INTERNAL transfer is rejected when amount exceeds available balance",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -264,7 +238,6 @@
     "name": "Verify if INTERNAL transfer is rejected for zero / empty / non-numeric amounts",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -274,7 +247,6 @@
     "name": "Verify if INTERNAL transfer is blocked when source and destination are the same",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -284,7 +256,6 @@
     "name": "Verify if EXTERNAL transfer is rejected when amount exceeds available balance",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -294,7 +265,6 @@
     "name": "Business account completes internal transfer without KYC verification prompt",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "businessNoKyc"
@@ -304,7 +274,6 @@
     "name": "Business account completes withdrawal without KYC verification prompt",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "businessNoKyc"
@@ -314,7 +283,6 @@
     "name": "Business account places a trade without KYC verification prompt",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "businessNoKyc"
@@ -324,7 +292,6 @@
     "name": "Verify each download card points to the correct external URL",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "downloadApp"
@@ -334,7 +301,6 @@
     "name": "Sector & Tab Navigation",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -344,7 +310,6 @@
     "name": "Sub-sector Behavior & Filtering",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -354,7 +319,6 @@
     "name": "Rightmost Sub-tags & New Listing",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -364,7 +328,6 @@
     "name": "Search Core",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -374,7 +337,6 @@
     "name": "Search Filter & Empty",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -384,7 +346,6 @@
     "name": "Search Security Inputs",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -394,7 +355,6 @@
     "name": "Favorites Core",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -404,7 +364,6 @@
     "name": "Favorites Advanced",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -414,7 +373,6 @@
     "name": "Sorting",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -424,7 +382,6 @@
     "name": "Data Display & Formatting",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -434,7 +391,6 @@
     "name": "Data Update",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "E2E"
@@ -444,7 +400,6 @@
     "name": "Stress & Performance",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -454,7 +409,6 @@
     "name": "Accessibility & Scroll",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -464,7 +418,6 @@
     "name": "Sub-sector Stability & Rapid Switching",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -474,7 +427,6 @@
     "name": "State Preserved After Navigation",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "instrumentSectors"
@@ -484,7 +436,6 @@
     "name": "Verification can change languages",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "language"
@@ -494,7 +445,6 @@
     "name": "Verify language will display correctly on all pages when changing language",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "language"
@@ -504,7 +454,6 @@
     "name": "Switch app language to each supported locale",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "languageUiLayout"
@@ -514,7 +463,6 @@
     "name": "Language preference persists after refresh and navigation",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "languageUiLayout"
@@ -524,7 +472,6 @@
     "name": "Button layout: overflow, overlap, truncation and height stability across all locales",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "languageUiLayout"
@@ -534,7 +481,6 @@
     "name": "Navigation layout: overflow, overlap and height stability across all locales",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "languageUiLayout"
@@ -544,7 +490,6 @@
     "name": "Form and dropdown layout: labels, validation, alignment and options across all locales",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "languageUiLayout"
@@ -554,7 +499,6 @@
     "name": "Modal layout: content, action buttons and close button across all locales",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "languageUiLayout"
@@ -564,7 +508,6 @@
     "name": "Toast layout: message overflow and dismiss button across all locales",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "languageUiLayout"
@@ -574,7 +517,6 @@
     "name": "Table column headers stay on a single line across all locales",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "languageUiLayout"
@@ -584,7 +526,6 @@
     "name": "No text overflow across target viewports in Russian",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "languageUiLayout"
@@ -594,7 +535,6 @@
     "name": "Encoding, translations, number format and horizontal scroll across all locales",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "languageUiLayout"
@@ -604,7 +544,6 @@
     "name": "Overflow detection utility correctly identifies violations",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "languageUiLayout"
@@ -614,7 +553,6 @@
     "name": "Russian layout regression: button overflow and navigation label overflow",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "languageUiLayout"
@@ -624,7 +562,6 @@
     "name": "Login page labels and buttons do not overflow across all locales",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "languageUiLayout"
@@ -634,7 +571,6 @@
     "name": "Toggle UI Theme dark↔light without page reload",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "themeUiLayout"
@@ -644,7 +580,6 @@
     "name": "Icons visible + no horizontal scroll on all pages in both theme",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "themeUiLayout"
@@ -654,7 +589,6 @@
     "name": "Icons remain visible inside instrument selector dropdown",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "themeUiLayout"
@@ -664,7 +598,6 @@
     "name": "All UI checks on representative pages in both theme",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "themeUiLayout"
@@ -674,7 +607,6 @@
     "name": "Theme toggle + icons + visual rendering across all public pages in both theme",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "themeUiLayout"
@@ -684,7 +616,6 @@
     "name": "Verify that users can create trading login sessions and terminate all trading login tokens",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tradingLoginSession"
@@ -694,7 +625,6 @@
     "name": "Wallet names are displayed correctly on the login and sign up page",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
@@ -704,7 +634,6 @@
     "name": "User cannot sign up with a wallet currently used as secondary SecureKey on another account",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
@@ -714,7 +643,6 @@
     "name": "User cannot sign up with a wallet previously removed as secondary on another account",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
@@ -724,7 +652,6 @@
     "name": "User cannot add a secondary SecureKey using the primary wallet of the current account",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
@@ -734,7 +661,6 @@
     "name": "User cannot add a wallet that is already a secondary SecureKey on the same account",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
@@ -744,7 +670,6 @@
     "name": "User cannot add a wallet that is already a secondary SecureKey on another account",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
@@ -754,7 +679,6 @@
     "name": "User cannot add a wallet that was previously added and then removed as a secondary SecureKey",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
@@ -764,7 +688,6 @@
     "name": "MetaMask login from the Trade page is redirected to the Trading page",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "redirectionAfterAuth"
@@ -774,7 +697,6 @@
     "name": "MetaMask login from a non-trade page is redirected to the Web Overview page",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "redirectionAfterAuth"
@@ -784,7 +706,6 @@
     "name": "Privy login from the Trade page is redirected to the Trading page",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "redirectionAfterAuth"
@@ -794,7 +715,6 @@
     "name": "Privy login from a non-trade page is redirected to the Web Overview page",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "redirectionAfterAuth"
@@ -804,7 +724,6 @@
     "name": "Privy sign-up from the Trade page is redirected to the Trading page",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "redirectionAfterAuth"
@@ -814,7 +733,6 @@
     "name": "Privy sign-up from a non-trade page is redirected to the Web Overview page",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "redirectionAfterAuth"
@@ -824,7 +742,6 @@
     "name": "Deposit successful with supported wallets",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "deposit"
@@ -834,7 +751,6 @@
     "name": "Deposit progress is rejected when user cancels wallet connection",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "deposit"
@@ -844,7 +760,6 @@
     "name": "Verify wallet connection and validate warning messages",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "deposit"
@@ -854,7 +769,6 @@
     "name": "Transfer maximum balance",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "transfer"
@@ -864,7 +778,6 @@
     "name": "Wallet shows correct balance USDT after successful withdrawal",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "withdrawal"
@@ -874,7 +787,6 @@
     "name": "Deposit history — headers, data, and most-recent-first sort order display correctly",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "historyDisplay"
@@ -884,7 +796,6 @@
     "name": "Withdrawal history — headers, data, and most-recent-first sort order display correctly",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "historyDisplay"
@@ -894,7 +805,6 @@
     "name": "Transfer history — headers, data, and most-recent-first sort order display correctly",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "historyDisplay"
@@ -904,7 +814,6 @@
     "name": "Verify if USDT can be minted successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "mint"
@@ -914,7 +823,6 @@
     "name": "Verify if USDC can be minted successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "mint"
@@ -924,7 +832,6 @@
     "name": "Verify if ETH can be minted successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "mint"
@@ -934,7 +841,6 @@
     "name": "Verify if GRVT can be minted successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "mint"
@@ -944,7 +850,6 @@
     "name": "Verify if all tokens can be minted multiple times successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "mint"
@@ -954,7 +859,6 @@
     "name": "Verify if minting fails after cookies are deleted",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "mint"
@@ -964,7 +868,6 @@
     "name": "Verify if when do invalid mint amount a message will show",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "mint"
@@ -974,7 +877,6 @@
     "name": "User should be able to place a SCALE order and verify open orders",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "testUIForScaleOrders"
@@ -984,7 +886,6 @@
     "name": "Deposit - Export transaction history as CSV",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "exportHistory"
@@ -994,7 +895,6 @@
     "name": "Deposit - Export transaction history as PDF",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "exportHistory"
@@ -1004,7 +904,6 @@
     "name": "Withdrawal - Export transaction history in CSV format",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "exportHistory"
@@ -1014,7 +913,6 @@
     "name": "Withdrawal - Export transaction history as PDF",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "exportHistory"
@@ -1024,7 +922,6 @@
     "name": "Transfer - Export transaction history as CSV",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "exportHistory"
@@ -1034,7 +931,6 @@
     "name": "Transfer - Export transaction history as PDF",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "exportHistory"
@@ -1044,7 +940,6 @@
     "name": "Order - Export transaction history as CSV",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "exportHistory"
@@ -1054,7 +949,6 @@
     "name": "Order - Export transaction history as PDF",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "exportHistory"
@@ -1064,7 +958,6 @@
     "name": "Trade - Export transaction history as CSV",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "exportHistory"
@@ -1074,7 +967,6 @@
     "name": "Trade - Export transaction history as PDF",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "exportHistory"
@@ -1084,7 +976,6 @@
     "name": "Export File - header column, data, and sort time display correctly",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "exportHistory"
@@ -1094,7 +985,6 @@
     "name": "Cannot export history on the 11th attempt",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "exportHistory"
@@ -1104,7 +994,6 @@
     "name": "The Points multiplier should be displayed correctly for each Ambassador Level",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "referral"
@@ -1114,7 +1003,6 @@
     "name": "A Regular user should receive the corresponding point multiplier if they are referred by an Ambassador",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "referral"
@@ -1124,7 +1012,6 @@
     "name": "TP/SL Price accurate & ROI should reflect Leverage and ROI input (Market order)",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "roi"
@@ -1134,7 +1021,6 @@
     "name": "TP/SL Price accurate & ROI should reflect Leverage and ROI input (Limit order)",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "roi"
@@ -1144,7 +1030,6 @@
     "name": "ROI 0% input should set TP/SL prices equal to Entry price and ROI = 0.00%",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "roi"
@@ -1154,7 +1039,6 @@
     "name": "TP/SL Price accurate & ROI should reflect Leverage and PnL Input (Market Order)",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "roi"
@@ -1164,7 +1048,6 @@
     "name": "TP/SL Price accurate & ROI should reflect Leverage and PnL Input (Limit Order)",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "roi"
@@ -1174,7 +1057,6 @@
     "name": "Changing Leverage should only recalculate ROI — TP/SL prices and PnL should unchanged",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "roi"
@@ -1184,7 +1066,6 @@
     "name": "TP/SL Price accurate & ROI should reflect Leverage and ROI input in Postition",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "roi"
@@ -1194,7 +1075,6 @@
     "name": "Unlock 3.50% interest after placing 5 trades",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tdy"
@@ -1204,7 +1084,6 @@
     "name": "Verify the new user should earning 4.5% after deposit 1,000 USDT and make 5 trades",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tdy"
@@ -1214,7 +1093,6 @@
     "name": "Unlock 1.00% interest after inviting 1 new friend who deposits 1000 USDT and makes 5 trades",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tdy"
@@ -1224,7 +1102,6 @@
     "name": "Verify the Tier unlock correctly with the trading volume",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tdy"
@@ -1234,7 +1111,6 @@
     "name": "Verify Max APY displayed is 11% (3.5% base + 6.5% volume + 1% referral)",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tdy"
@@ -1244,7 +1120,6 @@
     "name": "User should be able to place a LIMIT order with TP/SL enabled, and a randomly selected trigger type",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "placeOrdersLimitUsingTPSL"
@@ -1254,7 +1129,6 @@
     "name": "User should be able to place a LIMIT order with TP enabled, and a randomly selected trigger type",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "placeOrdersLimitUsingTPSL"
@@ -1264,7 +1138,6 @@
     "name": "User should be able to place a LIMIT order with SL enabled, and a randomly selected trigger type",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "placeOrdersLimitUsingTPSL"
@@ -1274,7 +1147,6 @@
     "name": "User should be able to place a MARKET order with TP/SL enabled, and a randomly selected trigger type",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "placeOrdersMarketUsingTPSL"
@@ -1284,7 +1156,6 @@
     "name": "User should be able to place a MARKET order with TP enabled, and a randomly selected trigger type",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "placeOrdersMarketUsingTPSL"
@@ -1294,7 +1165,6 @@
     "name": "User should be able to place a MARKET order with SL enabled, and a randomly selected trigger type",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "placeOrdersMarketUsingTPSL"
@@ -1304,7 +1174,6 @@
     "name": "User should be able to place TP/SL order with random trigger type",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "placeOrdersWithTPSL"
@@ -1314,7 +1183,6 @@
     "name": "User should be able to place TP order with random trigger type",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "placeOrdersWithTPSL"
@@ -1324,7 +1192,6 @@
     "name": "User should be able to place SL order with random trigger type",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "placeOrdersWithTPSL"
@@ -1334,7 +1201,6 @@
     "name": "Validate Order History for 7D/30D/60D",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "validateOrderHistoryAndTradeHistory"
@@ -1344,7 +1210,6 @@
     "name": "Validate Trade history for 7D/30D/60D",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "validateOrderHistoryAndTradeHistory"
@@ -1354,7 +1219,6 @@
     "name": "Verify user can qty adjustment via slider",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "closePositionAndCancelOpenOrders"
@@ -1364,7 +1228,6 @@
     "name": "Verify user can open position, close position and reverse position",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "closePositionAndCancelOpenOrders"
@@ -1374,7 +1237,6 @@
     "name": "Verify user can edit order and cancel open orders",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "isolatedMarginMode"
@@ -1384,7 +1246,6 @@
     "name": "Place a market order using isolated margin mode",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "isolatedMarginMode"
@@ -1394,7 +1255,6 @@
     "name": "Place a limit order using isolated margin mode",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "isolatedMarginMode"
@@ -1404,7 +1264,6 @@
     "name": "Add margin to a position",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "isolatedMarginMode"
@@ -1414,7 +1273,6 @@
     "name": "Remove margin to a position",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "isolatedMarginMode"
@@ -1424,7 +1282,6 @@
     "name": "Switch margin mode with an active position record",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "isolatedMarginMode"
@@ -1434,7 +1291,6 @@
     "name": "Switch margin mode with an active position record (different instrument)",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "isolatedMarginMode"
@@ -1444,7 +1300,6 @@
     "name": "Close partial or full position on isolated margin",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "isolatedMarginMode"
@@ -1454,7 +1309,6 @@
     "name": "Users can increase leverage when holding an active position in Isolated Margin mode.",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "isolatedMarginMode"
@@ -1464,7 +1318,6 @@
     "name": "Verify that leverage reduction is blocked when an active position exists in isolated margin mode",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "isolatedMarginMode"
@@ -1474,7 +1327,6 @@
     "name": "Allow user multi-select asset filter and it will applies to all tabs",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "multiSelectAssetFilter"
@@ -1484,7 +1336,6 @@
     "name": "Amend Price and Size of a Limit Post-Only Order",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "orderAmendments"
@@ -1494,7 +1345,6 @@
     "name": "Amend Price of a Position-Linked TP/SL Order",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "orderAmendments"
@@ -1504,7 +1354,6 @@
     "name": "Amend Price of a Standalone TP/SL Order",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "orderAmendments"
@@ -1514,7 +1363,6 @@
     "name": "Amend Price of an OCO Order",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "orderAmendments"
@@ -1524,7 +1372,6 @@
     "name": "Verify Open Split TPSL modal from Positions tab",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "splitTPSL"
@@ -1534,7 +1381,6 @@
     "name": "Verify Add first TP target row filled and percent auto calculated",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "splitTPSL"
@@ -1544,7 +1390,6 @@
     "name": "Verify qty field clamps to current max and TP stays within 100",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "splitTPSL"
@@ -1554,7 +1399,6 @@
     "name": "Verify Add up to 6 TP targets and Confirm succeeds",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "splitTPSL"
@@ -1564,7 +1408,6 @@
     "name": "Verify Positions tab shows TPSL badge N",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "splitTPSL"
@@ -1574,7 +1417,6 @@
     "name": "Verify Edit an existing TP target change trigger and Confirm persists",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "splitTPSL"
@@ -1584,7 +1426,6 @@
     "name": "Verify Cancel All TPSL and badge disappears from Positions",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "splitTPSL"
@@ -1594,7 +1435,6 @@
     "name": "Verify Add a TP target by ROI value is displayed correctly",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "splitTPSL"
@@ -1604,7 +1444,6 @@
     "name": "Verify Add first SL target row added and percent auto calculated",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "splitTPSL"
@@ -1614,7 +1453,6 @@
     "name": "Verify Add first TP or SL target with Limit price",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "splitTPSL"
@@ -1624,7 +1462,6 @@
     "name": "Verify Add TP and SL together Positions badge shows 2",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "splitTPSL"
@@ -1634,7 +1471,6 @@
     "name": "Verify Reset data on delete row or switch tab",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "splitTPSL"
@@ -1644,7 +1480,6 @@
     "name": "Verify setting PTPSL when the trading login is available",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tpslSendReasonableSize"
@@ -1654,7 +1489,6 @@
     "name": "Long position: TP trigger price must be greater than mark price",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
@@ -1664,7 +1498,6 @@
     "name": "Long position: in-profit SL trigger price must be between entry and mark prices",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
@@ -1674,7 +1507,6 @@
     "name": "Short position: TP trigger price must be less than mark price",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
@@ -1684,7 +1516,6 @@
     "name": "Short position: in-profit SL trigger price must be between mark and entry prices",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
@@ -1694,7 +1525,6 @@
     "name": "Split TP for Long position: trigger price must be greater than mark price",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
@@ -1704,7 +1534,6 @@
     "name": "Split SL for Long position: in-profit trigger price must be between entry and mark prices",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
@@ -1714,7 +1543,6 @@
     "name": "Split TP for Short position: trigger price must be less than mark price",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
@@ -1724,7 +1552,6 @@
     "name": "Split SL for Short position: in-profit trigger price must be between mark and entry prices",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
@@ -1734,7 +1561,6 @@
     "name": "Verify the values of Max position, Min Notional Value, Tick size, Min size and margin rates are displayed correctly",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
@@ -1744,7 +1570,6 @@
     "name": "Verify if Price Alerts dialog opens via chart toolbar",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "priceAlert"
@@ -1754,7 +1579,6 @@
     "name": "Verify if Price Alert creation form opens via Add Alert button",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "priceAlert"
@@ -1764,7 +1588,6 @@
     "name": "Verify if Price Reaches alert can be created with Once Only frequency",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "priceAlert"
@@ -1774,7 +1597,6 @@
     "name": "Verify if Price Moves Above alert can be created with Once Only frequency",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "priceAlert"
@@ -1784,7 +1606,6 @@
     "name": "Verify if Price Moves Below alert can be created with Once Only frequency",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "priceAlert"
@@ -1794,7 +1615,6 @@
     "name": "Verify if negative Trigger Price is rejected",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "priceAlert"
@@ -1804,7 +1624,6 @@
     "name": "Verify if form does not submit when required Trigger Price is empty",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "priceAlert"
@@ -1814,7 +1633,6 @@
     "name": "Verify if a single alert can be deleted from the list",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "priceAlert"
@@ -1824,7 +1642,6 @@
     "name": "Verify if alert can be edited by changing Trigger Price",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "priceAlert"
@@ -1834,7 +1651,6 @@
     "name": "Verify if max 5 alerts per pair is enforced and 6th on same pair is blocked",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "priceAlert"
@@ -1844,7 +1660,6 @@
     "name": "Verify if market buy order can be placed successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "spotTrading"
@@ -1854,7 +1669,6 @@
     "name": "Verify if market sell order can be placed successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "spotTrading"
@@ -1864,7 +1678,6 @@
     "name": "Verify if limit buy order can be placed successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "spotTrading"
@@ -1874,7 +1687,6 @@
     "name": "Verify if limit sell order can be placed successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "spotTrading"
@@ -1884,7 +1696,6 @@
     "name": "Verify if open limit order can be cancelled successfully",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "spotTrading"
@@ -1894,7 +1705,6 @@
     "name": "Verify user withdraw following with Withdrawal Allowancea",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "cev"
@@ -1904,7 +1714,6 @@
     "name": "Verify user can invest in a CEV with an amount that is less than or equal to the 'You can invest' limit",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "cev"
@@ -1914,7 +1723,6 @@
     "name": "Verify error messages when user tries to invest beyond allocation",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "cev"
@@ -1924,7 +1732,6 @@
     "name": "Verify investment is placed in a pending queue when the vault is locked",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "cev"
@@ -1934,7 +1741,6 @@
     "name": "Verify user should be able to redemp vault",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "cev"
@@ -1944,7 +1750,6 @@
     "name": "Verify transferring funds from the Funding Account to a CEV must be allowed",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "cev"
@@ -1954,7 +1759,6 @@
     "name": "Verify the investment will be moved from the pending queue to completed after the vault is unlocked",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "cev"
@@ -1964,7 +1768,6 @@
     "name": "Verify user can redeem my vault not more than available limit",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "vaultStrategy"
@@ -1974,7 +1777,6 @@
     "name": "Verify user can invest my vault and invest another vault",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "vaultStrategy"
@@ -1984,7 +1786,6 @@
     "name": "Verify user as vault investor can invest in multiple vaults",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "vaultStrategy"
@@ -1994,7 +1795,6 @@
     "name": "Verify user as vault investor can redeem a vault",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "vaultStrategy"
@@ -2004,7 +1804,6 @@
     "name": "Verify user can auto redeem a vault when the auto redeemable balance is sufficient",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "vaultStrategy"
@@ -2014,7 +1813,6 @@
     "name": "Verify user cannot auto redeem a vault when the auto redeemable balance is insufficient",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "vaultStrategy"
@@ -2024,7 +1822,6 @@
     "name": "Verify user can burn vault not more than available shares",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "vaultStrategy"
@@ -2034,7 +1831,6 @@
     "name": "Verify user can invest the full funding balance in an Ungated CEV with no 10% cap restriction",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "cevUngated"
@@ -2044,7 +1840,6 @@
     "name": "Verify user can fully redeem all shares from an Ungated CEV without min-balance restriction",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "cevUngated"
@@ -2054,7 +1849,6 @@
     "name": "Verify user should be able to cancel a pending full-redemption on an Ungated CEV with no 10% cap error",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "cevUngated"
@@ -2064,7 +1858,6 @@
     "name": "Verify gated GLP vault should still apply the 10% cap restriction after the Ungated fix",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "cevUngated"
@@ -2074,7 +1867,6 @@
     "name": "Verify user can initiate an external transfer from an Ungated CEV",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "cevUngated"
@@ -2084,7 +1876,6 @@
     "name": "Verify user can initiate a withdrawal from an Ungated CEV",
     "module": "WEB",
     "status": "Done",
-    "updated": "2026-07-02",
     "result": "",
     "tags": ["regression"],
     "feature": "cevUngated"
@@ -2096,7 +1887,6 @@
     "module": "MOBILE",
     "status": "Todo",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2106,7 +1896,6 @@
     "module": "MOBILE",
     "status": "Todo",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2116,7 +1905,6 @@
     "module": "MOBILE",
     "status": "Todo",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2126,7 +1914,6 @@
     "module": "MOBILE",
     "status": "Todo",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2136,7 +1923,6 @@
     "module": "MOBILE",
     "status": "Todo",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2146,7 +1932,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2156,7 +1941,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2166,7 +1950,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2176,7 +1959,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2186,7 +1968,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2196,7 +1977,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2206,7 +1986,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2216,7 +1995,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2226,7 +2004,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2236,7 +2013,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2246,7 +2022,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2256,7 +2031,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2266,7 +2040,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2276,7 +2049,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2286,7 +2058,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2296,7 +2067,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2306,7 +2076,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2316,7 +2085,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2326,7 +2094,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2336,7 +2103,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2346,7 +2112,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2356,7 +2121,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2366,7 +2130,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2376,7 +2139,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2386,7 +2148,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2396,7 +2157,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2406,7 +2166,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2416,7 +2175,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2426,7 +2184,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2436,7 +2193,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2446,7 +2202,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2456,7 +2211,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2466,7 +2220,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2476,7 +2229,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2486,7 +2238,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2496,7 +2247,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2506,7 +2256,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2516,7 +2265,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2526,7 +2274,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2536,7 +2283,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2546,7 +2292,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2556,7 +2301,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression", "smoke"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2566,7 +2310,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2576,7 +2319,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2586,7 +2328,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2596,7 +2337,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2606,7 +2346,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2616,7 +2355,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2626,7 +2364,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2636,7 +2373,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2646,7 +2382,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2656,7 +2391,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2666,7 +2400,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2676,7 +2409,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2686,7 +2418,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2696,7 +2427,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2706,7 +2436,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2716,7 +2445,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2726,7 +2454,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2736,7 +2463,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2746,7 +2472,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2756,7 +2481,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2766,7 +2490,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2776,7 +2499,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2786,7 +2508,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2796,7 +2517,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2806,7 +2526,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2816,7 +2535,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2826,7 +2544,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2836,7 +2553,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   },
   {
@@ -2846,7 +2562,6 @@
     "module": "MOBILE",
     "status": "Done",
     "tags": ["regression"],
-    "updated": "2026-07-03",
     "result": ""
   }
 ]

@@ -77,7 +77,6 @@ const moduleInput = document.getElementById("module");
 const statusInput = document.getElementById("status");
 const tagsInput = document.getElementById("tags");
 const featureInput = document.getElementById("feature");
-const updatedInput = document.getElementById("updated");
 const resultInput = document.getElementById("result");
 
 const syncStatusEl = document.getElementById("syncStatus");
@@ -127,7 +126,7 @@ function bindEvents() {
     moduleFilter.value = "all";
     featureFilter.value = "all";
     statusFilter.value = "all";
-    sortFilter.value = "updated-desc";
+    sortFilter.value = "name-asc";
     populateFeatureFilter();
     render();
   });
@@ -527,11 +526,10 @@ async function handleSubmit(event) {
     module: moduleInput.value.trim(),
     status: statusInput.value,
     tags: parseTags(tagsInput.value),
-    updated: updatedInput.value,
     result: resultInput.value.trim(),
   };
 
-  if (!payload.name || !payload.module || !payload.updated) return;
+  if (!payload.name || !payload.module) return;
 
   const wasEditing = !!editingId;
   if (editingId) {
@@ -574,7 +572,6 @@ function resetForm() {
   featureInput.value = "";
   formTitle.textContent = "Create test case";
   statusInput.value = "Todo";
-  updatedInput.value = new Date().toISOString().slice(0, 10);
 }
 
 function editCase(id) {
@@ -587,7 +584,6 @@ function editCase(id) {
   moduleInput.value = item.module;
   statusInput.value = item.status;
   tagsInput.value = item.tags ? item.tags.join(", ") : "";
-  updatedInput.value = item.updated;
   resultInput.value = item.result;
   formTitle.textContent = "Edit test case";
   openCaseModal();
@@ -648,15 +644,11 @@ function render() {
     })
     .sort((a, b) => {
       switch (sortFilter.value) {
-        case "updated-asc":
-          return (a.updated || "").localeCompare(b.updated || "");
         case "name-asc":
           return (a.name || "").localeCompare(b.name || "");
         case "name-desc":
-          return (b.name || "").localeCompare(a.name || "");
-        case "updated-desc":
         default:
-          return (b.updated || "").localeCompare(a.updated || "");
+          return (b.name || "").localeCompare(a.name || "");
       }
     });
 
