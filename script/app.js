@@ -77,6 +77,7 @@ const moduleInput = document.getElementById("module");
 const statusInput = document.getElementById("status");
 const tagsInput = document.getElementById("tags");
 const featureInput = document.getElementById("feature");
+const updatedInput = document.getElementById("updated");
 const resultInput = document.getElementById("result");
 
 const syncStatusEl = document.getElementById("syncStatus");
@@ -114,20 +115,15 @@ function bindEvents() {
   tagsFilter.addEventListener("input", render);
   featureFilter.addEventListener("change", render);
   statusFilter.addEventListener("change", render);
-  moduleFilter.addEventListener("change", () => {
-    featureFilter.value = "all";
-    populateFeatureFilter();
-    render();
-  });
+  moduleFilter.addEventListener("change", render);
   sortFilter.addEventListener("change", render);
   clearFiltersBtn.addEventListener("click", () => {
     searchInput.value = "";
     tagsFilter.value = "";
-    moduleFilter.value = "all";
     featureFilter.value = "all";
     statusFilter.value = "all";
-    sortFilter.value = "name-asc";
-    populateFeatureFilter();
+    moduleFilter.value = "all";
+    sortFilter.value = "updated-desc";
     render();
   });
   resetBtn.addEventListener("click", async () => {
@@ -490,13 +486,8 @@ function populateModuleFilter() {
 }
 
 function populateFeatureFilter() {
-  const selectedModule = moduleFilter.value;
-  const moduleCases =
-    selectedModule === "all"
-      ? cases
-      : cases.filter((item) => item.module === selectedModule);
   const features = [
-    ...new Set(moduleCases.map((item) => item.feature).filter(Boolean)),
+    ...new Set(cases.map((item) => item.feature).filter(Boolean)),
   ].sort();
   featureFilter.innerHTML = [
     `<option value="all">All features</option>`,
@@ -526,10 +517,11 @@ async function handleSubmit(event) {
     module: moduleInput.value.trim(),
     status: statusInput.value,
     tags: parseTags(tagsInput.value),
+    updated: updatedInput.value,
     result: resultInput.value.trim(),
   };
 
-  if (!payload.name || !payload.module) return;
+  if (!payload.name || !payload.module || !payload.updated) return;
 
   const wasEditing = !!editingId;
   if (editingId) {
@@ -572,6 +564,7 @@ function resetForm() {
   featureInput.value = "";
   formTitle.textContent = "Create test case";
   statusInput.value = "Todo";
+  updatedInput.value = new Date().toISOString().slice(0, 10);
 }
 
 function editCase(id) {
@@ -584,6 +577,7 @@ function editCase(id) {
   moduleInput.value = item.module;
   statusInput.value = item.status;
   tagsInput.value = item.tags ? item.tags.join(", ") : "";
+  updatedInput.value = item.updated;
   resultInput.value = item.result;
   formTitle.textContent = "Edit test case";
   openCaseModal();
@@ -644,11 +638,15 @@ function render() {
     })
     .sort((a, b) => {
       switch (sortFilter.value) {
+        case "updated-asc":
+          return (a.updated || "").localeCompare(b.updated || "");
         case "name-asc":
           return (a.name || "").localeCompare(b.name || "");
         case "name-desc":
-        default:
           return (b.name || "").localeCompare(a.name || "");
+        case "updated-desc":
+        default:
+          return (b.updated || "").localeCompare(a.updated || "");
       }
     });
 
@@ -752,7 +750,7 @@ function renderStats() {
 function renderRows(items) {
   if (!items.length) {
     rowsEl.innerHTML =
-      '<tr><td colspan="7" class="empty">No matching test cases.</td></tr>';
+      '<tr><td colspan="6" class="empty">No matching test cases.</td></tr>';
     return;
   }
 

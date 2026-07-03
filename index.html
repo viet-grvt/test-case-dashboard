@@ -136,6 +136,8 @@
               <option value="Done">Done</option>
             </select>
             <select id="sortFilter">
+              <option value="updated-desc">Newest first</option>
+              <option value="updated-asc">Oldest first</option>
               <option value="name-asc">Name A-Z</option>
               <option value="name-desc">Name Z-A</option>
             </select>
@@ -154,6 +156,7 @@
                     <th>Feature</th>
                     <th>Status</th>
                     <th>Tags</th>
+                    <th>Updated</th>
                     <th>Result</th>
                     <th></th>
                   </tr>
@@ -188,6 +191,7 @@
             </div>
             <div class="form-row">
               <input id="tags" placeholder="Tags (comma-separated)" />
+              <input id="updated" type="date" required />
             </div>
             <textarea
               id="result"
