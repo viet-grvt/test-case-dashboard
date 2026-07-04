@@ -122,12 +122,14 @@
               type="text"
               placeholder="Search by name, module, feature, or tags"
             />
-            <input id="tagsFilter" type="text" placeholder="Filter by tag" />
             <select id="moduleFilter">
               <option value="all">All modules</option>
             </select>
             <select id="featureFilter">
               <option value="all">All features</option>
+            </select>
+            <select id="tagsFilter">
+              <option value="all">All tags</option>
             </select>
             <select id="statusFilter">
               <option value="all">All statuses</option>
@@ -137,8 +139,6 @@
               <option value="Done">Done</option>
             </select>
             <select id="sortFilter">
-              <option value="updated-desc">Newest first</option>
-              <option value="updated-asc">Oldest first</option>
               <option value="name-asc">Name A-Z</option>
               <option value="name-desc">Name Z-A</option>
             </select>
@@ -157,7 +157,6 @@
                     <th>Feature</th>
                     <th>Status</th>
                     <th>Tags</th>
-                    <th>Updated</th>
                     <th>Result</th>
                     <th></th>
                   </tr>
@@ -233,10 +232,7 @@
                 <option value="Done">Done</option>
               </select>
             </div>
-            <div class="form-row">
-              <input id="tags" placeholder="Tags e.g. smoke, regression" />
-              <input id="updated" type="date" required />
-            </div>
+            <input id="tags" placeholder="Tags e.g. smoke, regression" />
             <p class="muted form-hint">
               Tags power the dashboard filters. Add <strong>smoke</strong> for
               smoke tests, <strong>regression</strong> for regression — must

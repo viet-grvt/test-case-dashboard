@@ -132,7 +132,6 @@ const moduleInput = document.getElementById("module");
 const statusInput = document.getElementById("status");
 const tagsInput = document.getElementById("tags");
 const featureInput = document.getElementById("feature");
-const updatedInput = document.getElementById("updated");
 const resultInput = document.getElementById("result");
 
 const syncStatusEl = document.getElementById("syncStatus");
@@ -169,18 +168,27 @@ function bindEvents() {
   });
 
   searchInput.addEventListener("input", render);
-  tagsFilter.addEventListener("input", render);
-  featureFilter.addEventListener("change", render);
+  tagsFilter.addEventListener("change", render);
+  featureFilter.addEventListener("change", () => {
+    populateTagFilter();
+    render();
+  });
   statusFilter.addEventListener("change", render);
-  moduleFilter.addEventListener("change", render);
+  moduleFilter.addEventListener("change", () => {
+    populateFeatureFilter();
+    populateTagFilter();
+    render();
+  });
   sortFilter.addEventListener("change", render);
   clearFiltersBtn.addEventListener("click", () => {
     searchInput.value = "";
-    tagsFilter.value = "";
+    tagsFilter.value = "all";
     featureFilter.value = "all";
     statusFilter.value = "all";
     moduleFilter.value = "all";
-    sortFilter.value = "updated-desc";
+    sortFilter.value = "name-asc";
+    populateFeatureFilter();
+    populateTagFilter();
     render();
   });
   resetBtn.addEventListener("click", async () => {
@@ -508,6 +516,7 @@ async function loadData(forceRefresh = false) {
   }
   populateModuleFilter();
   populateFeatureFilter();
+  populateTagFilter();
   snapshotBaseline();
 }
 
@@ -584,9 +593,14 @@ function populateModuleFilter() {
 }
 
 function populateFeatureFilter() {
+  // Scope the feature options to the selected module (e.g. MOBILE → only
+  // mobile features), so picking a module narrows the feature dropdown.
+  const mod = moduleFilter.value;
+  const scoped = cases.filter((c) => mod === "all" || c.module === mod);
   const features = [
-    ...new Set(cases.map((item) => item.feature).filter(Boolean)),
+    ...new Set(scoped.map((item) => item.feature).filter(Boolean)),
   ].sort();
+  const current = featureFilter.value;
   featureFilter.innerHTML = [
     `<option value="all">All features</option>`,
     ...features.map(
@@ -594,9 +608,27 @@ function populateFeatureFilter() {
         `<option value="${escapeHtml(feature)}">${escapeHtml(feature)}</option>`,
     ),
   ].join("");
-  if (!features.includes(featureFilter.value)) {
-    featureFilter.value = "all";
-  }
+  featureFilter.value = features.includes(current) ? current : "all";
+}
+
+function populateTagFilter() {
+  // Tag options cascade from the selected module + feature.
+  const mod = moduleFilter.value;
+  const feat = featureFilter.value;
+  const scoped = cases.filter(
+    (c) =>
+      (mod === "all" || c.module === mod) &&
+      (feat === "all" || c.feature === feat),
+  );
+  const tags = [
+    ...new Set(scoped.flatMap((c) => c.tags || []).map(String).filter(Boolean)),
+  ].sort();
+  const current = tagsFilter.value;
+  tagsFilter.innerHTML = [
+    `<option value="all">All tags</option>`,
+    ...tags.map((t) => `<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`),
+  ].join("");
+  tagsFilter.value = tags.includes(current) ? current : "all";
 }
 
 function parseTags(value) {
@@ -615,11 +647,10 @@ async function handleSubmit(event) {
     module: moduleInput.value.trim(),
     status: statusInput.value,
     tags: parseTags(tagsInput.value),
-    updated: updatedInput.value,
     result: resultInput.value.trim(),
   };
 
-  if (!payload.name || !payload.module || !payload.updated) return;
+  if (!payload.name || !payload.module) return;
 
   const wasEditing = !!editingId;
   if (editingId) {
@@ -662,7 +693,6 @@ function resetForm() {
   featureInput.value = "";
   formTitle.textContent = "Create test case";
   statusInput.value = "Todo";
-  updatedInput.value = new Date().toISOString().slice(0, 10);
 }
 
 function editCase(id) {
@@ -675,7 +705,6 @@ function editCase(id) {
   moduleInput.value = item.module;
   statusInput.value = item.status;
   tagsInput.value = item.tags ? item.tags.join(", ") : "";
-  updatedInput.value = item.updated;
   resultInput.value = item.result;
   formTitle.textContent = "Edit test case";
   openCaseModal();
@@ -723,8 +752,12 @@ function render() {
           .toLowerCase()
           .includes(query),
       );
-      const tagQuery = tagsFilter.value.trim().toLowerCase();
-      const matchesTag = !tagQuery || tagsText.toLowerCase().includes(tagQuery);
+      const selectedTag = tagsFilter.value;
+      const matchesTag =
+        selectedTag === "all" ||
+        (item.tags || []).some(
+          (t) => String(t).toLowerCase() === selectedTag.toLowerCase(),
+        );
       const matchesStatus =
         selectedStatus === "all" || item.status === selectedStatus;
       const matchesModule =
@@ -741,15 +774,11 @@ function render() {
     })
     .sort((a, b) => {
       switch (sortFilter.value) {
-        case "updated-asc":
-          return (a.updated || "").localeCompare(b.updated || "");
-        case "name-asc":
-          return (a.name || "").localeCompare(b.name || "");
         case "name-desc":
           return (b.name || "").localeCompare(a.name || "");
-        case "updated-desc":
+        case "name-asc":
         default:
-          return (b.updated || "").localeCompare(a.updated || "");
+          return (a.name || "").localeCompare(b.name || "");
       }
     });
 
@@ -902,7 +931,6 @@ function renderRows(items) {
           <td>${escapeHtml(item.feature || "—")}</td>
           <td><span class="pill ${statusClass}">${escapeHtml(item.status)}</span></td>
           <td><div class="tags">${tagsHtml}</div></td>
-          <td>${escapeHtml(item.updated)}</td>
           <td>${resultCell(item)}</td>
           <td>
             <div class="action-group">
