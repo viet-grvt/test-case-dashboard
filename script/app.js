@@ -54,6 +54,9 @@ let cases = [];
 // results.json (written by CI) and kept SEPARATE from `cases` so manual
 // edits + syncs to data.json never overwrite run results.
 let runResults = {};
+// Append-only run history (runs.json, written by CI). Powers the Runs page
+// and the per-test-case trend chart.
+let runs = [];
 let editingId = null;
 let currentSha = null;
 let currentSyncMode = DEFAULT_CONFIG.syncMode;
@@ -62,6 +65,13 @@ const sectionButtons = document.querySelectorAll(".menu-item");
 const sections = document.querySelectorAll(".section");
 const statsEl = document.getElementById("stats");
 const rowsEl = document.getElementById("rows");
+const runsListEl = document.getElementById("runsList");
+const runsSummaryEl = document.getElementById("runsSummary");
+const runsMetaEl = document.getElementById("runsMeta");
+const detailModal = document.getElementById("detailModal");
+const detailBody = document.getElementById("detailBody");
+const detailTitle = document.getElementById("detailTitle");
+const detailCloseBtn = document.getElementById("detailCloseBtn");
 const searchInput = document.getElementById("searchInput");
 const tagsFilter = document.getElementById("tagsFilter");
 const statusFilter = document.getElementById("statusFilter");
@@ -106,6 +116,7 @@ async function init() {
   hydrateSettingsForm();
   await loadData();
   await loadRunResults();
+  await loadRuns();
   render();
 }
 
@@ -134,6 +145,7 @@ function bindEvents() {
   resetBtn.addEventListener("click", async () => {
     await loadData(true);
     await loadRunResults();
+    await loadRuns();
     render();
     resetForm();
   });
@@ -156,6 +168,10 @@ function bindEvents() {
   settingsForm.addEventListener("submit", saveSettings);
   clearTokenBtn.addEventListener("click", clearToken);
   redeployBtn.addEventListener("click", redeploySite);
+  detailCloseBtn.addEventListener("click", closeDetailModal);
+  detailModal.addEventListener("click", (event) => {
+    if (event.target === detailModal) closeDetailModal();
+  });
 }
 
 async function manualSync() {
@@ -681,6 +697,7 @@ function render() {
 
   renderStats();
   renderRows(filtered);
+  renderRuns();
 }
 
 function renderStats() {
@@ -831,6 +848,7 @@ function renderRows(items) {
           <td>${resultCell(item)}</td>
           <td>
             <div class="action-group">
+              <button class="link-btn" type="button" onclick="openCaseTrend('${item.id}')">Trend</button>
               <button class="link-btn" type="button" onclick="editCase('${item.id}')">Edit</button>
               <button class="link-btn" type="button" onclick="deleteCase('${item.id}')">Delete</button>
             </div>
@@ -850,5 +868,266 @@ function escapeHtml(value) {
     .replace(/'/g, "&#39;");
 }
 
+/* ------------------------------------------------------------------ *
+ * Runs page + charts (inline SVG, no external libraries)
+ * ------------------------------------------------------------------ */
+
+const RESULT_COLORS = {
+  passed: "#16a34a",
+  failed: "#dc2626",
+  flaky: "#ca8a04",
+  skipped: "#9ca3af",
+};
+
+async function loadRuns() {
+  // runs.json is the append-only history written by CI (see README).
+  const candidates = ["./runs.json", "./ds/runs.json"];
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url + "?t=" + Date.now(), { cache: "no-store" });
+      if (!res.ok) continue;
+      const data = await res.json();
+      runs = Array.isArray(data && data.runs) ? data.runs : [];
+      return;
+    } catch (e) {
+      // try next candidate
+    }
+  }
+  runs = [];
+}
+
+function caseName(id) {
+  const c = cases.find((x) => x.id === id);
+  return c ? c.name : id;
+}
+
+function runTotals(run) {
+  return run.totals || { passed: 0, failed: 0, flaky: 0, skipped: 0 };
+}
+
+function passRate(totals) {
+  const denom =
+    (totals.passed || 0) + (totals.failed || 0) + (totals.flaky || 0);
+  if (!denom) return null;
+  return Math.round(((totals.passed || 0) / denom) * 100);
+}
+
+// Horizontal stacked bar of a run's status breakdown.
+function svgStackedBar(totals, width, height) {
+  const w = width || 220;
+  const h = height || 12;
+  const order = ["passed", "failed", "flaky", "skipped"];
+  const total = order.reduce((s, k) => s + (totals[k] || 0), 0);
+  if (!total) {
+    return `<svg width="${w}" height="${h}" class="stacked-bar"><rect width="${w}" height="${h}" rx="6" fill="#e5e7eb"/></svg>`;
+  }
+  let x = 0;
+  const segs = order
+    .map((k) => {
+      const val = totals[k] || 0;
+      if (!val) return "";
+      const segW = (val / total) * w;
+      const rect = `<rect x="${x.toFixed(2)}" y="0" width="${segW.toFixed(
+        2,
+      )}" height="${h}" fill="${RESULT_COLORS[k]}"><title>${k}: ${val}</title></rect>`;
+      x += segW;
+      return rect;
+    })
+    .join("");
+  return `<svg width="${w}" height="${h}" class="stacked-bar" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">${segs}</svg>`;
+}
+
+// Pass-rate line across runs (oldest -> newest).
+function svgPassRateLine(runList, width, height) {
+  const w = width || 640;
+  const h = height || 120;
+  const pad = 26;
+  const chrono = [...runList].reverse(); // oldest first
+  const pts = chrono
+    .map((r, i) => ({ i, rate: passRate(runTotals(r)), run: r }))
+    .filter((p) => p.rate !== null);
+  if (!pts.length) return `<div class="muted">No pass-rate data yet.</div>`;
+  const n = pts.length;
+  const xFor = (i) => (n === 1 ? w / 2 : pad + (i / (n - 1)) * (w - 2 * pad));
+  const yFor = (rate) => pad + (1 - rate / 100) * (h - 2 * pad);
+  const line = pts
+    .map(
+      (p, idx) =>
+        `${idx === 0 ? "M" : "L"}${xFor(p.i).toFixed(1)},${yFor(p.rate).toFixed(1)}`,
+    )
+    .join(" ");
+  const dots = pts
+    .map(
+      (p) =>
+        `<circle cx="${xFor(p.i).toFixed(1)}" cy="${yFor(p.rate).toFixed(
+          1,
+        )}" r="3.5" fill="#2563eb"><title>${escapeHtml(
+          p.run.date || String(p.run.id),
+        )}: ${p.rate}%</title></circle>`,
+    )
+    .join("");
+  const grid = [0, 50, 100]
+    .map(
+      (v) =>
+        `<line x1="${pad}" y1="${yFor(v).toFixed(1)}" x2="${w - pad}" y2="${yFor(
+          v,
+        ).toFixed(1)}" stroke="#e5e7eb"/><text x="2" y="${(yFor(v) + 3).toFixed(
+          1,
+        )}" font-size="10" fill="#94a3b8">${v}%</text>`,
+    )
+    .join("");
+  return `<svg viewBox="0 0 ${w} ${h}" class="line-chart" preserveAspectRatio="xMidYMid meet">${grid}<path d="${line}" fill="none" stroke="#2563eb" stroke-width="2"/>${dots}</svg>`;
+}
+
+// Timeline of one test case's status across runs (oldest -> newest).
+function svgTrendCells(series) {
+  if (!series.length) {
+    return `<div class="muted">No run history for this test case.</div>`;
+  }
+  const cells = series
+    .map(
+      (s) =>
+        `<span class="trend-cell" style="background:${
+          RESULT_COLORS[s.status] || "#e5e7eb"
+        }" title="${escapeHtml(String(s.date || s.id))} — ${escapeHtml(
+          s.status,
+        )}"></span>`,
+    )
+    .join("");
+  return `<div class="trend-cells">${cells}</div>`;
+}
+
+function renderRuns() {
+  if (!runsListEl) return;
+  if (runsMetaEl) runsMetaEl.textContent = runs.length ? `${runs.length} run(s)` : "";
+  if (!runs.length) {
+    runsSummaryEl.innerHTML = "";
+    runsListEl.innerHTML = `<div class="empty">No runs published yet.</div>`;
+    return;
+  }
+
+  runsSummaryEl.innerHTML = `
+    <div class="panel card">
+      <div class="label">Pass rate trend</div>
+      ${svgPassRateLine(runs)}
+    </div>`;
+
+  runsListEl.innerHTML = runs
+    .map((run) => {
+      const t = runTotals(run);
+      const rate = passRate(t);
+      const meta = [run.date, run.env, run.browser]
+        .filter(Boolean)
+        .map(escapeHtml)
+        .join(" · ");
+      return `
+        <div class="run-row">
+          <div class="run-main">
+            <div class="run-title">
+              <strong>Run ${escapeHtml(String(run.id))}</strong>
+              <span class="muted">${meta}</span>
+            </div>
+            ${svgStackedBar(t, 240, 12)}
+          </div>
+          <div class="run-counts">
+            <span class="count pass" title="passed">${t.passed || 0}</span>
+            <span class="count fail" title="failed">${t.failed || 0}</span>
+            <span class="count flaky" title="flaky">${t.flaky || 0}</span>
+            <span class="count skipped" title="skipped">${t.skipped || 0}</span>
+            <span class="run-rate">${rate === null ? "—" : rate + "%"}</span>
+          </div>
+          <button class="link-btn" type="button" onclick="openRunDetail('${escapeHtml(
+            String(run.id),
+          )}')">Details</button>
+        </div>`;
+    })
+    .join("");
+}
+
+function openRunDetail(id) {
+  const run = runs.find((r) => String(r.id) === String(id));
+  if (!run) return;
+  const t = runTotals(run);
+  const results = run.results || {};
+  const legend = ["passed", "failed", "flaky", "skipped"]
+    .map(
+      (k) =>
+        `<span class="legend-item"><span class="dot" style="background:${RESULT_COLORS[k]}"></span>${k} <strong>${t[k] || 0}</strong></span>`,
+    )
+    .join("");
+  const meta = [run.date, run.env, run.browser]
+    .filter(Boolean)
+    .map(escapeHtml)
+    .join(" · ");
+  const link = run.runUrl
+    ? `<a class="result-link" href="${escapeHtml(run.runUrl)}" target="_blank" rel="noopener">Open CI run ↗</a>`
+    : "";
+  const listFor = (want) =>
+    Object.keys(results)
+      .filter((tc) => results[tc] === want)
+      .map(
+        (tc) =>
+          `<li><span class="tc-id">${escapeHtml(tc)}</span> ${escapeHtml(caseName(tc))}</li>`,
+      )
+      .join("");
+  const failedList = listFor("failed");
+  const flakyList = listFor("flaky");
+  detailTitle.textContent = `Run ${run.id}`;
+  detailBody.innerHTML = `
+    <p class="muted" style="margin-top:0">${meta}${link ? " · " + link : ""}</p>
+    ${svgStackedBar(t, 560, 16)}
+    <div class="legend">${legend}</div>
+    ${failedList ? `<h4>Failed (${t.failed || 0})</h4><ul class="tc-list">${failedList}</ul>` : ""}
+    ${flakyList ? `<h4>Flaky (${t.flaky || 0})</h4><ul class="tc-list">${flakyList}</ul>` : ""}
+    ${!failedList && !flakyList ? `<p class="muted">All tracked tests passed 🎉</p>` : ""}
+  `;
+  openDetailModal();
+}
+
+function openCaseTrend(id) {
+  const name = caseName(id);
+  const series = [...runs]
+    .reverse() // oldest -> newest
+    .filter((r) => r.results && r.results[id])
+    .map((r) => ({ date: r.date, status: r.results[id], id: r.id }));
+  const n = series.length;
+  const passes = series.filter((s) => s.status === "passed").length;
+  const fails = series.filter((s) => s.status === "failed").length;
+  const flakes = series.filter((s) => s.status === "flaky").length;
+  const rate = n ? Math.round((passes / n) * 100) : null;
+  detailTitle.textContent = `${id} · trend`;
+  detailBody.innerHTML = `
+    <p style="margin-top:0"><strong>${escapeHtml(name)}</strong></p>
+    ${
+      n
+        ? `<div class="trend-summary">
+             <span>Runs: <strong>${n}</strong></span>
+             <span class="count pass">${passes} passed</span>
+             <span class="count fail">${fails} failed</span>
+             <span class="count flaky">${flakes} flaky</span>
+             <span class="run-rate">${rate}% pass</span>
+           </div>
+           <div class="muted" style="margin:10px 0 4px">Oldest → newest</div>
+           ${svgTrendCells(series)}`
+        : `<p class="muted">No run history for this test case yet. Tag its automated test with <code>@${escapeHtml(
+            id,
+          )}</code> to start collecting results.</p>`
+    }
+  `;
+  openDetailModal();
+}
+
+function openDetailModal() {
+  detailModal.hidden = false;
+  detailModal.classList.add("show");
+}
+
+function closeDetailModal() {
+  detailModal.classList.remove("show");
+  detailModal.hidden = true;
+}
+
 window.editCase = editCase;
 window.deleteCase = deleteCase;
+window.openRunDetail = openRunDetail;
+window.openCaseTrend = openCaseTrend;

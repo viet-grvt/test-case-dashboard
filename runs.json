@@ -1,0 +1,100 @@
+{
+  "updatedAt": "2026-07-04T05:30:18.743Z",
+  "runs": [
+    {
+      "id": "1005",
+      "date": "2026-07-04",
+      "at": "2026-07-04T05:30:18.743Z",
+      "env": "staging",
+      "browser": "chrome",
+      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1005",
+      "totals": {
+        "passed": 2,
+        "failed": 1,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "results": {
+        "TC-108": "passed",
+        "TC-109": "failed",
+        "TC-110": "passed"
+      }
+    },
+    {
+      "id": "1004",
+      "date": "2026-07-03",
+      "at": "2026-07-04T05:30:18.703Z",
+      "env": "staging",
+      "browser": "chrome",
+      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1004",
+      "totals": {
+        "passed": 2,
+        "failed": 1,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "results": {
+        "TC-108": "failed",
+        "TC-109": "passed",
+        "TC-110": "passed"
+      }
+    },
+    {
+      "id": "1003",
+      "date": "2026-07-02",
+      "at": "2026-07-04T05:30:18.663Z",
+      "env": "staging",
+      "browser": "chrome",
+      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1003",
+      "totals": {
+        "passed": 1,
+        "failed": 1,
+        "flaky": 1,
+        "skipped": 0
+      },
+      "results": {
+        "TC-108": "passed",
+        "TC-109": "failed",
+        "TC-110": "flaky"
+      }
+    },
+    {
+      "id": "1002",
+      "date": "2026-07-01",
+      "at": "2026-07-04T05:30:18.621Z",
+      "env": "staging",
+      "browser": "chrome",
+      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1002",
+      "totals": {
+        "passed": 2,
+        "failed": 1,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "results": {
+        "TC-108": "passed",
+        "TC-109": "failed",
+        "TC-110": "passed"
+      }
+    },
+    {
+      "id": "1001",
+      "date": "2026-06-30",
+      "at": "2026-07-04T05:30:18.577Z",
+      "env": "staging",
+      "browser": "chrome",
+      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1001",
+      "totals": {
+        "passed": 3,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "results": {
+        "TC-108": "passed",
+        "TC-109": "passed",
+        "TC-110": "passed"
+      }
+    }
+  ]
+}

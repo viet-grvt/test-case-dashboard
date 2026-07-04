@@ -604,3 +604,153 @@ form {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------------- Runs page + charts ---------------- */
+.runs-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.runs-summary {
+  margin-bottom: 16px;
+}
+.runs-summary .card {
+  padding: 16px;
+}
+.line-chart {
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  margin-top: 8px;
+}
+.stacked-bar {
+  border-radius: 6px;
+  overflow: hidden;
+  display: block;
+  max-width: 100%;
+}
+.runs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.run-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--panel);
+}
+.run-main {
+  flex: 1;
+  min-width: 0;
+}
+.run-title {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+.run-counts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.count.pass {
+  color: var(--success);
+}
+.count.fail {
+  color: var(--danger);
+}
+.count.flaky {
+  color: var(--warning);
+}
+.count.skipped {
+  color: var(--muted);
+}
+.run-rate {
+  min-width: 44px;
+  text-align: right;
+  color: var(--text);
+}
+
+/* wide detail modal */
+.modal-wide {
+  max-width: 720px;
+  width: 92%;
+}
+.modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 12px 0 4px;
+  font-size: 0.86rem;
+}
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.legend .dot,
+.trend-summary .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.tc-list {
+  margin: 6px 0 14px;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.tc-list li {
+  font-size: 0.9rem;
+}
+.tc-id {
+  font-weight: 700;
+  color: var(--accent);
+  margin-right: 4px;
+}
+.trend-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.trend-cells {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+.trend-cell {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+@media (max-width: 720px) {
+  .run-row {
+    flex-wrap: wrap;
+  }
+  .run-counts {
+    order: 3;
+  }
+}

@@ -91,6 +91,27 @@ extracts each `@TC-<id>` tag, maps its status, and merges into this repo's
 Requires a `DASHBOARD_REPO_TOKEN` secret (fine-grained PAT, Contents: read/write
 on this repo) in the `qa-automation` repo.
 
+### Run history & the Runs page
+
+The same CI step also **appends** each run to `runs.json` (last 100 runs):
+
+```json
+{
+  "updatedAt": "…",
+  "runs": [
+    { "id": "123", "date": "2026-07-04", "env": "staging", "browser": "chrome",
+      "runUrl": "…", "totals": { "passed": 2, "failed": 1, "flaky": 0, "skipped": 0 },
+      "results": { "TC-108": "passed", "TC-109": "failed" } }
+  ]
+}
+```
+
+The **Runs** tab reads `runs.json` and shows a pass-rate trend line plus a row per
+run (stacked pass/fail bar + counts). **Details** opens a run breakdown with the
+list of failed/flaky test cases. On the Test cases tab, **Trend** on any row shows
+that test case's pass/fail timeline across runs (flakiness at a glance). All
+charts are inline SVG — no external libraries.
+
 ## Deploy to GitHub Pages
 
 1. Commit this folder to the repository.

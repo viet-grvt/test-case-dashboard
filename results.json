@@ -1,19 +1,26 @@
 {
-  "updatedAt": "2026-07-04T00:00:00Z",
+  "updatedAt": "2026-07-04T05:30:18.740Z",
   "results": {
     "TC-108": {
       "status": "passed",
       "date": "2026-07-04",
       "env": "staging",
       "browser": "chrome",
-      "runUrl": "https://github.com/grvt/qa-automation/actions"
+      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1005"
     },
     "TC-109": {
       "status": "failed",
       "date": "2026-07-04",
       "env": "staging",
       "browser": "chrome",
-      "runUrl": "https://github.com/grvt/qa-automation/actions"
+      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1005"
+    },
+    "TC-110": {
+      "status": "passed",
+      "date": "2026-07-04",
+      "env": "staging",
+      "browser": "chrome",
+      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1005"
     }
   }
 }

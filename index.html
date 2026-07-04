@@ -38,6 +38,7 @@
           <button class="menu-item" data-section="casesSection">
             Test cases
           </button>
+          <button class="menu-item" data-section="runsSection">Runs</button>
         </div>
       </div>
 
@@ -167,6 +168,34 @@
           </div>
         </div>
       </section>
+
+      <section id="runsSection" class="section">
+        <div class="panel">
+          <div class="runs-header">
+            <h3 style="margin: 0">Test runs</h3>
+            <span class="muted" id="runsMeta"></span>
+          </div>
+          <div id="runsSummary" class="runs-summary"></div>
+          <div id="runsList" class="runs-list"></div>
+        </div>
+      </section>
+
+      <div id="detailModal" class="modal" hidden>
+        <div
+          class="card modal-card modal-wide"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="detailTitle"
+        >
+          <div class="modal-head">
+            <h3 id="detailTitle" style="margin: 0">Details</h3>
+            <button type="button" class="link-btn" id="detailCloseBtn">
+              Close
+            </button>
+          </div>
+          <div id="detailBody"></div>
+        </div>
+      </div>
 
       <div id="caseModal" class="modal" hidden>
         <div
