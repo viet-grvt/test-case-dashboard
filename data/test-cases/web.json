@@ -1,16 +1,5 @@
 [
   {
-    "id": "W-001",
-    "name": "[WEB] Split smoke & regression test (new)",
-    "feature": "E2E",
-    "module": "WEB",
-    "status": "Done",
-    "tags": [
-      "regression"
-    ],
-    "result": ""
-  },
-  {
     "id": "W-002",
     "name": "Verify if GRVT account can be registered with Metamask wallet -> Funding Account created -> Trading Account can be created",
     "feature": "E2E",
