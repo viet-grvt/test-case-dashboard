@@ -50,6 +50,10 @@ const sampleData = [
 ];
 
 let cases = [];
+// Automated run outcomes, keyed by test-case id (TC-###). Loaded from
+// results.json (written by CI) and kept SEPARATE from `cases` so manual
+// edits + syncs to data.json never overwrite run results.
+let runResults = {};
 let editingId = null;
 let currentSha = null;
 let currentSyncMode = DEFAULT_CONFIG.syncMode;
@@ -101,6 +105,7 @@ async function init() {
   bindEvents();
   hydrateSettingsForm();
   await loadData();
+  await loadRunResults();
   render();
 }
 
@@ -128,6 +133,7 @@ function bindEvents() {
   });
   resetBtn.addEventListener("click", async () => {
     await loadData(true);
+    await loadRunResults();
     render();
     resetForm();
   });
@@ -453,6 +459,24 @@ function normalizeCase(item) {
   return normalized;
 }
 
+async function loadRunResults() {
+  // results.json is served publicly by GitHub Pages (no token needed).
+  // Shape: { updatedAt, results: { "TC-105": { status, date, env, browser, runUrl } } }
+  const candidates = ["./results.json", "./ds/results.json"];
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url + "?t=" + Date.now(), { cache: "no-store" });
+      if (!res.ok) continue;
+      const data = await res.json();
+      runResults = (data && data.results) || {};
+      return;
+    } catch (e) {
+      // try next candidate
+    }
+  }
+  runResults = {};
+}
+
 async function fetchDeployedOrSample() {
   try {
     const res = await fetch("./data.json?t=" + Date.now(), {
@@ -609,11 +633,16 @@ function render() {
   const filtered = cases
     .filter((item) => {
       const tagsText = (item.tags || []).join(" ");
+      const run = runResults[item.id];
+      const runText = run
+        ? [run.status, run.env, run.browser].filter(Boolean).join(" ")
+        : "";
       const matchesQuery = [
         item.name,
         item.module,
         item.feature,
         item.result,
+        runText,
         tagsText,
       ].some((value) =>
         String(value || "")
@@ -747,6 +776,33 @@ function renderStats() {
   `;
 }
 
+function resultCell(item) {
+  // Prefer the automated run outcome (results.json) over the manual note.
+  const run = runResults[item.id];
+  if (run && run.status) {
+    const clsMap = {
+      passed: "pass",
+      failed: "fail",
+      flaky: "flaky",
+      skipped: "skipped",
+    };
+    const cls = clsMap[run.status] || "pending";
+    const badge = `<span class="pill ${cls}">${escapeHtml(run.status)}</span>`;
+    const metaParts = [run.date, run.env, run.browser]
+      .filter(Boolean)
+      .map(escapeHtml)
+      .join(" · ");
+    const link = run.runUrl
+      ? `<a class="result-link" href="${escapeHtml(run.runUrl)}" target="_blank" rel="noopener">run ↗</a>`
+      : "";
+    const meta = [metaParts, link].filter(Boolean).join(" ");
+    return `<div class="table-result">${badge}${
+      meta ? `<div class="result-meta">${meta}</div>` : ""
+    }</div>`;
+  }
+  return `<div class="table-result">${escapeHtml(item.result || "—")}</div>`;
+}
+
 function renderRows(items) {
   if (!items.length) {
     rowsEl.innerHTML =
@@ -772,7 +828,7 @@ function renderRows(items) {
           <td><span class="pill ${statusClass}">${escapeHtml(item.status)}</span></td>
           <td><div class="tags">${tagsHtml}</div></td>
           <td>${escapeHtml(item.updated)}</td>
-          <td><div class="table-result">${escapeHtml(item.result || "—")}</div></td>
+          <td>${resultCell(item)}</td>
           <td>
             <div class="action-group">
               <button class="link-btn" type="button" onclick="editCase('${item.id}')">Edit</button>

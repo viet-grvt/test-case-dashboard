@@ -387,6 +387,29 @@ tbody tr:hover {
   color: var(--success);
 }
 
+/* Automated run-result badges (results.json) */
+.pill.flaky {
+  background: #fef3c7;
+  color: var(--warning);
+}
+.pill.skipped {
+  background: #e5e7eb;
+  color: var(--muted);
+}
+.result-meta {
+  margin-top: 4px;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+.result-link {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+.result-link:hover {
+  text-decoration: underline;
+}
+
 form {
   display: grid;
   gap: 16px;

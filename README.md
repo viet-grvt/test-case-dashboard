@@ -51,6 +51,46 @@ The status pill shows `Synced with repo ✓`, `Saving…`, `Local only`, or
 - Single-editor model. Concurrent editors use last-write-wins with one retry on
   a stale-SHA conflict.
 
+## Automated run results (`results.json`)
+
+The **Result** column can be filled automatically from CI test runs, separately
+from the manually-managed `data.json`.
+
+- CI writes `results.json` at the repo root. Shape:
+  ```json
+  {
+    "updatedAt": "2026-07-04T05:00:00Z",
+    "results": {
+      "TC-108": { "status": "passed", "date": "2026-07-04", "env": "staging", "browser": "chrome", "runUrl": "https://github.com/.../actions/runs/123" }
+    }
+  }
+  ```
+  `status` is one of `passed` / `failed` / `flaky` / `skipped`.
+- The dashboard fetches `results.json` publicly via Pages (no token) and shows the
+  outcome as a colored badge in the Result column, matched by test-case **id**.
+- `results.json` is **never** written by the dashboard UI, and run results are
+  **not** merged into `data.json`, so manual edits + syncs never clobber them
+  (and CI never clobbers your test-case edits).
+
+### Linking a CI test to a dashboard test case
+
+Tag the automated test with the dashboard id as `@TC-<id>`. In the
+`qa-automation` Playwright suite:
+
+```ts
+baseTest(
+  "Verify if `Trade-Indicators` data ... are rendered as expected",
+  { tag: util.addTags(tagCom, ["@prod", "@smoke", "@TC-108"]) },
+  async ({ page }) => { /* ... */ },
+);
+```
+
+The workflow (`.github/workflows/ui-e2e-tests.yml`) parses `test-results.json`,
+extracts each `@TC-<id>` tag, maps its status, and merges into this repo's
+`results.json`. Tests without a `@TC-<id>` tag simply don't report a result.
+Requires a `DASHBOARD_REPO_TOKEN` secret (fine-grained PAT, Contents: read/write
+on this repo) in the `qa-automation` repo.
+
 ## Deploy to GitHub Pages
 
 1. Commit this folder to the repository.
