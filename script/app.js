@@ -625,7 +625,7 @@ async function handleSubmit(event) {
   if (editingId) {
     cases = cases.map((item) => (item.id === editingId ? payload : item));
   } else {
-    cases = [payload, ...cases];
+    cases = [...cases, payload]; // append new case at the end of its file
   }
 
   localStorage.setItem(STORAGE_KEY, JSON.stringify(cases));
