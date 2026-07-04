@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-07-04T06:27:07.219Z",
+  "updatedAt": "2026-07-04T06:32:30.301Z",
   "results": {
     "TC-108": {
       "status": "passed",
       "date": "2026-07-04",
-      "env": "staging",
+      "env": "testnet",
       "browser": "chrome",
-      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1005"
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28697318956"
     },
     "TC-109": {
-      "status": "passed",
+      "status": "failed",
       "date": "2026-07-04",
       "env": "testnet",
       "browser": "chrome",
-      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28697672209"
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28697318956"
     },
     "TC-110": {
       "status": "passed",
       "date": "2026-07-04",
-      "env": "staging",
+      "env": "testnet",
       "browser": "chrome",
-      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1005"
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28697318956"
     }
   }
 }

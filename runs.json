@@ -1,48 +1,15 @@
 {
-  "updatedAt": "2026-07-04T06:27:07.224Z",
+  "updatedAt": "2026-07-04T06:32:30.305Z",
   "runs": [
     {
-      "id": "28697672209",
+      "id": "28697318956",
       "name": "UI E2E Smoke Test [Chrome]",
       "date": "2026-07-04",
-      "at": "2026-07-04T06:27:07.224Z",
-      "env": "testnet",
-      "browser": "chrome",
-      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28697672209",
-      "totals": {
-        "passed": 1,
-        "failed": 0,
-        "flaky": 0,
-        "skipped": 0
-      },
-      "results": {
-        "TC-109": "passed"
-      }
-    },
-    {
-      "id": "28697318956",
-      "date": "2026-07-04",
-      "at": "2026-07-04T06:13:26.159Z",
+      "at": "2026-07-04T06:32:30.305Z",
       "env": "testnet",
       "browser": "chrome",
       "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28697318956",
-      "totals": {
-        "passed": 1,
-        "failed": 0,
-        "flaky": 0,
-        "skipped": 0
-      },
-      "results": {
-        "TC-109": "passed"
-      }
-    },
-    {
-      "id": "1005",
-      "date": "2026-07-04",
-      "at": "2026-07-04T05:30:18.743Z",
-      "env": "staging",
-      "browser": "chrome",
-      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1005",
+      "reportUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28697318956/artifacts/12345",
       "totals": {
         "passed": 2,
         "failed": 1,
@@ -56,31 +23,14 @@
       }
     },
     {
-      "id": "1004",
-      "date": "2026-07-03",
-      "at": "2026-07-04T05:30:18.703Z",
-      "env": "staging",
-      "browser": "chrome",
-      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1004",
-      "totals": {
-        "passed": 2,
-        "failed": 1,
-        "flaky": 0,
-        "skipped": 0
-      },
-      "results": {
-        "TC-108": "failed",
-        "TC-109": "passed",
-        "TC-110": "passed"
-      }
-    },
-    {
       "id": "1003",
+      "name": "UI E2E Regression Test [Chrome]",
       "date": "2026-07-02",
-      "at": "2026-07-04T05:30:18.663Z",
-      "env": "staging",
+      "at": "2026-07-04T06:32:30.262Z",
+      "env": "testnet",
       "browser": "chrome",
-      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1003",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/1003",
+      "reportUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/1003/artifacts/12345",
       "totals": {
         "passed": 1,
         "failed": 1,
@@ -95,11 +45,13 @@
     },
     {
       "id": "1002",
+      "name": "UI E2E Smoke Test [Firefox]",
       "date": "2026-07-01",
-      "at": "2026-07-04T05:30:18.621Z",
-      "env": "staging",
-      "browser": "chrome",
-      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1002",
+      "at": "2026-07-04T06:32:30.222Z",
+      "env": "testnet",
+      "browser": "firefox",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/1002",
+      "reportUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/1002/artifacts/12345",
       "totals": {
         "passed": 2,
         "failed": 1,
@@ -109,25 +61,6 @@
       "results": {
         "TC-108": "passed",
         "TC-109": "failed",
-        "TC-110": "passed"
-      }
-    },
-    {
-      "id": "1001",
-      "date": "2026-06-30",
-      "at": "2026-07-04T05:30:18.577Z",
-      "env": "staging",
-      "browser": "chrome",
-      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1001",
-      "totals": {
-        "passed": 3,
-        "failed": 0,
-        "flaky": 0,
-        "skipped": 0
-      },
-      "results": {
-        "TC-108": "passed",
-        "TC-109": "passed",
         "TC-110": "passed"
       }
     }

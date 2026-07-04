@@ -1016,15 +1016,17 @@ function renderRuns() {
     .map((run) => {
       const t = runTotals(run);
       const rate = passRate(t);
-      const meta = [run.date, run.env, run.browser]
-        .filter(Boolean)
-        .map(escapeHtml)
-        .join(" · ");
+      const title = run.name
+        ? escapeHtml(run.name)
+        : `Run ${escapeHtml(String(run.id))}`;
+      const metaParts = run.name ? ["#" + String(run.id)] : [];
+      metaParts.push(run.date, run.env, run.browser);
+      const meta = metaParts.filter(Boolean).map(escapeHtml).join(" · ");
       return `
         <div class="run-row">
           <div class="run-main">
             <div class="run-title">
-              <strong>Run ${escapeHtml(String(run.id))}</strong>
+              <strong>${title}</strong>
               <span class="muted">${meta}</span>
             </div>
             ${svgStackedBar(t, 240, 12)}
@@ -1039,6 +1041,13 @@ function renderRuns() {
           <button class="link-btn" type="button" onclick="openRunDetail('${escapeHtml(
             String(run.id),
           )}')">Details</button>
+          ${
+            run.reportUrl
+              ? `<a class="link-btn" href="${escapeHtml(
+                  run.reportUrl,
+                )}" target="_blank" rel="noopener">Report ↗</a>`
+              : ""
+          }
         </div>`;
     })
     .join("");
@@ -1055,13 +1064,19 @@ function openRunDetail(id) {
         `<span class="legend-item"><span class="dot" style="background:${RESULT_COLORS[k]}"></span>${k} <strong>${t[k] || 0}</strong></span>`,
     )
     .join("");
-  const meta = [run.date, run.env, run.browser]
+  const metaParts = run.name ? ["#" + String(run.id)] : [];
+  metaParts.push(run.date, run.env, run.browser);
+  const meta = metaParts.filter(Boolean).map(escapeHtml).join(" · ");
+  const links = [
+    run.runUrl
+      ? `<a class="result-link" href="${escapeHtml(run.runUrl)}" target="_blank" rel="noopener">Open CI run ↗</a>`
+      : "",
+    run.reportUrl
+      ? `<a class="result-link" href="${escapeHtml(run.reportUrl)}" target="_blank" rel="noopener">Allure report ↗</a>`
+      : "",
+  ]
     .filter(Boolean)
-    .map(escapeHtml)
     .join(" · ");
-  const link = run.runUrl
-    ? `<a class="result-link" href="${escapeHtml(run.runUrl)}" target="_blank" rel="noopener">Open CI run ↗</a>`
-    : "";
   const listFor = (want) =>
     Object.keys(results)
       .filter((tc) => results[tc] === want)
@@ -1072,9 +1087,9 @@ function openRunDetail(id) {
       .join("");
   const failedList = listFor("failed");
   const flakyList = listFor("flaky");
-  detailTitle.textContent = `Run ${run.id}`;
+  detailTitle.textContent = run.name || `Run ${run.id}`;
   detailBody.innerHTML = `
-    <p class="muted" style="margin-top:0">${meta}${link ? " · " + link : ""}</p>
+    <p class="muted" style="margin-top:0">${meta}${links ? " · " + links : ""}</p>
     ${svgStackedBar(t, 560, 16)}
     <div class="legend">${legend}</div>
     ${failedList ? `<h4>Failed (${t.failed || 0})</h4><ul class="tc-list">${failedList}</ul>` : ""}
