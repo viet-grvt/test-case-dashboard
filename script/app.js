@@ -21,6 +21,20 @@ function fileForCase(item) {
     ? "data/test-cases/mobile.json"
     : "data/test-cases/web.json";
 }
+// Serialize a module's cases exactly as they are written to its file.
+function serializeCaseFile(subset) {
+  return JSON.stringify(subset, null, 2) + "\n";
+}
+// Snapshot what each file currently holds, so commitData only PUTs files that
+// actually changed (avoids GitHub "0 files changed" empty commits).
+function snapshotBaseline() {
+  for (const cf of CASE_FILES) {
+    caseBaseline[cf.path] = serializeCaseFile(
+      cases.filter((c) => fileForCase(c) === cf.path),
+    );
+  }
+}
+
 // Next sequential id for a module: W-### for web, M-### for mobile.
 function nextCaseId(moduleVal) {
   const prefix = String(moduleVal || "").toUpperCase() === "MOBILE" ? "M" : "W";
@@ -82,6 +96,7 @@ let runResults = {};
 let runs = [];
 let editingId = null;
 let caseShas = {}; // { "<path>": sha } for each split test-case file
+let caseBaseline = {}; // { "<path>": serialized content } — repo state, to avoid empty commits
 let currentSyncMode = DEFAULT_CONFIG.syncMode;
 
 const sectionButtons = document.querySelectorAll(".menu-item");
@@ -413,10 +428,14 @@ async function commitData(message) {
 
   setSyncStatus("saving");
   try {
-    // Route each case to its module file and commit each file separately.
+    // Route each case to its module file; only PUT files that actually changed
+    // (so unchanged files don't create empty "0 files changed" commits).
+    let changed = 0;
     for (const cf of CASE_FILES) {
       const subset = cases.filter((c) => fileForCase(c) === cf.path);
-      const content = toBase64Utf8(JSON.stringify(subset, null, 2) + "\n");
+      const raw = serializeCaseFile(subset);
+      if (raw === caseBaseline[cf.path]) continue;
+      const content = toBase64Utf8(raw);
       const put = (sha) =>
         githubRequest("PUT", contentsUrl(cf.path), {
           message,
@@ -438,9 +457,11 @@ async function commitData(message) {
       }
       const json = await res.json();
       caseShas[cf.path] = json.content ? json.content.sha : caseShas[cf.path];
+      caseBaseline[cf.path] = raw;
+      changed++;
     }
     setSyncStatus("synced");
-    return { ok: true };
+    return { ok: true, changed };
   } catch (err) {
     setSyncStatus("error", err.message);
     return { ok: false, message: err.message };
@@ -487,6 +508,7 @@ async function loadData(forceRefresh = false) {
   }
   populateModuleFilter();
   populateFeatureFilter();
+  snapshotBaseline();
 }
 
 function normalizeCase(item) {

@@ -421,6 +421,19 @@ form {
   grid-template-columns: 1fr 1fr;
 }
 
+.form-hint {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: -4px 0 0;
+}
+.form-hint code {
+  background: #eef2ff;
+  color: #1d4ed8;
+  padding: 1px 5px;
+  border-radius: 5px;
+  font-size: 0.78rem;
+}
+
 .actions {
   display: flex;
   justify-content: flex-end;

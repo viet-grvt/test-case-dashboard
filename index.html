@@ -221,7 +221,11 @@
             <input id="name" placeholder="Test case name" required />
             <input id="feature" placeholder="Feature" />
             <div class="form-row">
-              <input id="module" placeholder="Module" required />
+              <select id="module" required>
+                <option value="">Module…</option>
+                <option value="WEB">WEB</option>
+                <option value="MOBILE">MOBILE</option>
+              </select>
               <select id="status">
                 <option value="Todo">Todo</option>
                 <option value="In Process">In Process</option>
@@ -230,9 +234,16 @@
               </select>
             </div>
             <div class="form-row">
-              <input id="tags" placeholder="Tags (comma-separated)" />
+              <input id="tags" placeholder="Tags e.g. smoke, regression" />
               <input id="updated" type="date" required />
             </div>
+            <p class="muted form-hint">
+              Tags power the dashboard filters. Add <strong>smoke</strong> for
+              smoke tests, <strong>regression</strong> for regression — must
+              match the automated test's <code>@smoke</code> / <code>@regression</code>
+              tag. Link a test by tagging it <code>@&lt;id&gt;</code> (e.g.
+              <code>@W-003</code> / <code>@M-007</code>).
+            </p>
             <textarea
               id="result"
               rows="4"
