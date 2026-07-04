@@ -787,6 +787,37 @@ function render() {
   renderRuns();
 }
 
+function attrJs(s) {
+  return String(s)
+    .replace(/\\/g, "\\\\")
+    .replace(/'/g, "\\'")
+    .replace(/"/g, "&quot;");
+}
+
+// Clickable feature rows on the dashboard → jump to Test cases pre-filtered.
+function featureListHtml(featureList, moduleName) {
+  return featureList
+    .map(
+      (f) =>
+        `<div class="feature-item clickable" role="button" tabindex="0" onclick="openFeature('${moduleName}','${attrJs(
+          f[0],
+        )}')"><span>${escapeHtml(f[0])}</span><strong>${f[1]}</strong></div>`,
+    )
+    .join("");
+}
+
+function openFeature(moduleName, feature) {
+  moduleFilter.value = moduleName;
+  populateFeatureFilter();
+  featureFilter.value = feature;
+  populateTagFilter();
+  tagsFilter.value = "all";
+  statusFilter.value = "all";
+  searchInput.value = "";
+  setActiveSection("casesSection");
+  render();
+}
+
 function renderStats() {
   // overall totals
   const totals = {
@@ -850,12 +881,7 @@ function renderStats() {
         </div>
         <div class="subtext">Top features</div>
         <div class="feature-list">
-          ${web.featureList
-            .map(
-              (f) =>
-                `<div class="feature-item"><span>${escapeHtml(f[0])}</span><strong>${f[1]}</strong></div>`,
-            )
-            .join("")}
+          ${featureListHtml(web.featureList, "WEB")}
         </div>
       </div>
 
@@ -868,12 +894,7 @@ function renderStats() {
         </div>
         <div class="subtext">Top features</div>
         <div class="feature-list">
-          ${mobile.featureList
-            .map(
-              (f) =>
-                `<div class="feature-item"><span>${escapeHtml(f[0])}</span><strong>${f[1]}</strong></div>`,
-            )
-            .join("")}
+          ${featureListHtml(mobile.featureList, "MOBILE")}
         </div>
       </div>
     </div>
@@ -1280,3 +1301,4 @@ window.editCase = editCase;
 window.deleteCase = deleteCase;
 window.openRunDetail = openRunDetail;
 window.openCaseTrend = openCaseTrend;
+window.openFeature = openFeature;
