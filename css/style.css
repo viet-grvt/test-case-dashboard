@@ -574,6 +574,7 @@ form {
   grid-template-columns: 1fr;
   gap: 18px;
   align-items: stretch;
+  grid-column: 1 / -1;
 }
 .three-columns .mini-grid,
 .three-columns .status-list {
@@ -654,6 +655,41 @@ form {
 }
 .runs-summary .card {
   padding: 16px;
+}
+
+/* Latest-run card on the dashboard */
+.latest-run {
+  grid-column: 1 / -1;
+  margin-bottom: 0;
+  padding: 18px;
+}
+.latest-run-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.latest-run-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 2px 0;
+}
+.latest-run-rate {
+  text-align: right;
+  white-space: nowrap;
+}
+.latest-run-rate .value {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+.latest-run-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  font-size: 0.9rem;
 }
 .line-chart {
   width: 100%;

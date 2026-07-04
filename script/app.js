@@ -818,6 +818,64 @@ function openFeature(moduleName, feature) {
   render();
 }
 
+function showRuns() {
+  setActiveSection("runsSection");
+}
+
+// Latest-run summary card shown at the top of the Dashboard.
+function latestRunHtml() {
+  if (!runs.length) return "";
+  const run = runs[0]; // runs.json is newest-first
+  const t = runTotals(run);
+  const rate = passRate(t);
+  const title = run.name
+    ? escapeHtml(run.name)
+    : `Run ${escapeHtml(String(run.id))}`;
+  const meta = [fmtDateTime(run.at, run.date), run.module, run.env, run.browser]
+    .filter(Boolean)
+    .map(escapeHtml)
+    .join(" · ");
+  const legend = ["passed", "failed", "flaky", "skipped"]
+    .map(
+      (k) =>
+        `<span class="legend-item"><span class="dot" style="background:${RESULT_COLORS[k]}"></span>${k} <strong>${t[k] || 0}</strong></span>`,
+    )
+    .join("");
+  const links = [
+    run.runUrl
+      ? `<a class="result-link" href="${escapeHtml(run.runUrl)}" target="_blank" rel="noopener">CI run ↗</a>`
+      : "",
+    run.reportUrl
+      ? `<a class="result-link" href="${escapeHtml(run.reportUrl)}" target="_blank" rel="noopener">Report ↗</a>`
+      : "",
+  ]
+    .filter(Boolean)
+    .join(" · ");
+  return `
+    <div class="panel card latest-run">
+      <div class="latest-run-top">
+        <div>
+          <div class="label">Latest run</div>
+          <div class="latest-run-title">${title}</div>
+          <div class="muted">${meta}</div>
+        </div>
+        <div class="latest-run-rate">
+          <span class="value" style="color:var(--accent);">${rate === null ? "—" : rate + "%"}</span>
+          <div class="subtext">pass rate</div>
+        </div>
+      </div>
+      ${svgStackedBar(t, 640, 16)}
+      <div class="legend">${legend}</div>
+      <div class="latest-run-actions">
+        <button class="link-btn" type="button" onclick="openRunDetail('${escapeHtml(
+          String(run.id),
+        )}')">Details</button>
+        ${links ? links + " · " : ""}
+        <button class="link-btn" type="button" onclick="showRuns()">View all runs →</button>
+      </div>
+    </div>`;
+}
+
 function renderStats() {
   // overall totals
   const totals = {
@@ -859,6 +917,7 @@ function renderStats() {
       .join("");
 
   statsEl.innerHTML = `
+    ${latestRunHtml()}
     <div class="three-columns">
       <div class="panel card">
         <div class="label">Total</div>
@@ -1302,3 +1361,4 @@ window.deleteCase = deleteCase;
 window.openRunDetail = openRunDetail;
 window.openCaseTrend = openCaseTrend;
 window.openFeature = openFeature;
+window.showRuns = showRuns;
