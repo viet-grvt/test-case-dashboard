@@ -1,21 +1,21 @@
 {
   "updatedAt": "2026-07-04T06:36:02.328Z",
   "results": {
-    "TC-108": {
+    "W-003": {
       "status": "passed",
       "date": "2026-07-04",
       "env": "testnet",
       "browser": "chrome",
       "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28697318956"
     },
-    "TC-109": {
+    "W-004": {
       "status": "passed",
       "date": "2026-07-04",
       "env": "testnet",
       "browser": "chrome",
       "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28697898961"
     },
-    "TC-110": {
+    "W-005": {
       "status": "passed",
       "date": "2026-07-04",
       "env": "testnet",

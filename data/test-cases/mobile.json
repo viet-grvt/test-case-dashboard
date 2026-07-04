@@ -1,6 +1,6 @@
 [
   {
-    "id": "TC-315",
+    "id": "M-001",
     "name": "User can invest 25% of funding balance into and fully redeem from an Ungated CEV with no cap restriction",
     "feature": "cev-ungated",
     "module": "MOBILE",
@@ -12,7 +12,7 @@
     "result": ""
   },
   {
-    "id": "TC-316",
+    "id": "M-002",
     "name": "User can cancel a pending redemption on an Ungated CEV with no 10% cap error",
     "feature": "cev-ungated",
     "module": "MOBILE",
@@ -24,7 +24,7 @@
     "result": ""
   },
   {
-    "id": "TC-317",
+    "id": "M-003",
     "name": "GLP gated vault should still apply its cap restriction after the Ungated fix",
     "feature": "cev-ungated",
     "module": "MOBILE",
@@ -36,7 +36,7 @@
     "result": ""
   },
   {
-    "id": "TC-318",
+    "id": "M-004",
     "name": "User can initiate an external transfer after investing in an Ungated CEV",
     "feature": "cev-ungated",
     "module": "MOBILE",
@@ -48,7 +48,7 @@
     "result": ""
   },
   {
-    "id": "TC-319",
+    "id": "M-005",
     "name": "User can initiate a withdrawal after investing in an Ungated CEV",
     "feature": "cev-ungated",
     "module": "MOBILE",
@@ -60,7 +60,7 @@
     "result": ""
   },
   {
-    "id": "TC-320",
+    "id": "M-006",
     "name": "Verify if user can Deposit successfully",
     "feature": "deposit",
     "module": "MOBILE",
@@ -73,7 +73,7 @@
     "result": ""
   },
   {
-    "id": "TC-321",
+    "id": "M-007",
     "name": "Navigate all menus then log out",
     "feature": "e2e-menus",
     "module": "MOBILE",
@@ -85,7 +85,7 @@
     "result": ""
   },
   {
-    "id": "TC-322",
+    "id": "M-008",
     "name": "INTERNAL fund transfer from Funding Account to Trading Account is successful",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -98,7 +98,7 @@
     "result": ""
   },
   {
-    "id": "TC-323",
+    "id": "M-009",
     "name": "EXTERNAL fund transfer from Funding Account to Funding Account is successful",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -111,7 +111,7 @@
     "result": ""
   },
   {
-    "id": "TC-324",
+    "id": "M-010",
     "name": "Verify if user can Withdraw successfully",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -123,7 +123,7 @@
     "result": ""
   },
   {
-    "id": "TC-325",
+    "id": "M-011",
     "name": "Verify if Funding Account balance is updated after free USDT minting",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -135,7 +135,7 @@
     "result": ""
   },
   {
-    "id": "TC-326",
+    "id": "M-012",
     "name": "Verify if Trading chart candle-sticks are rendered as expected",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -148,7 +148,7 @@
     "result": ""
   },
   {
-    "id": "TC-327",
+    "id": "M-013",
     "name": "Verify if Order-Book data is displayed and sorted correctly",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -161,7 +161,7 @@
     "result": ""
   },
   {
-    "id": "TC-328",
+    "id": "M-014",
     "name": "Verify if Order-Book is not-crossed (BEST_BID lesser than BEST_ASK)",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -174,7 +174,7 @@
     "result": ""
   },
   {
-    "id": "TC-329",
+    "id": "M-015",
     "name": "Verify if Trade-Indicators data for perpetual instruments are rendered as expected",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -187,7 +187,7 @@
     "result": ""
   },
   {
-    "id": "TC-330",
+    "id": "M-016",
     "name": "Verify if all records under Last trades tab are populated as expected",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -199,7 +199,7 @@
     "result": ""
   },
   {
-    "id": "TC-331",
+    "id": "M-017",
     "name": "Verify if MARKET BUY/SELL order can be placed successfully",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -212,7 +212,7 @@
     "result": ""
   },
   {
-    "id": "TC-332",
+    "id": "M-018",
     "name": "Verify if all active-positions can be closed by Close all positions button",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -225,7 +225,7 @@
     "result": ""
   },
   {
-    "id": "TC-333",
+    "id": "M-019",
     "name": "Verify if order placement is successful when Quantity expressed in USDT Notional",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -237,7 +237,7 @@
     "result": ""
   },
   {
-    "id": "TC-334",
+    "id": "M-020",
     "name": "Verify if POST_ONLY type orders can be placed successfully",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -250,7 +250,7 @@
     "result": ""
   },
   {
-    "id": "TC-335",
+    "id": "M-021",
     "name": "Verify if FOK type orders can be placed successfully",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -263,7 +263,7 @@
     "result": ""
   },
   {
-    "id": "TC-336",
+    "id": "M-022",
     "name": "Verify if IOC type orders can be placed successfully",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -276,7 +276,7 @@
     "result": ""
   },
   {
-    "id": "TC-337",
+    "id": "M-023",
     "name": "Verify if REDUCE_ONLY type orders can be placed successfully",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -289,19 +289,20 @@
     "result": ""
   },
   {
-    "id": "TC-338",
+    "id": "M-024",
     "name": "Full market order lifecycle - place, close position, verify history",
     "feature": "e2e-tests",
     "module": "MOBILE",
     "status": "Done",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "updated": "2026-07-03",
     "result": ""
   },
   {
-    "id": "TC-339",
+    "id": "M-025",
     "name": "Verify if user can place a limit order using isolated margin mode",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -314,7 +315,7 @@
     "result": ""
   },
   {
-    "id": "TC-340",
+    "id": "M-026",
     "name": "Verify if user can place a market order using isolated margin mode",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -327,7 +328,7 @@
     "result": ""
   },
   {
-    "id": "TC-341",
+    "id": "M-027",
     "name": "Verify if user can add margin to a position",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -340,7 +341,7 @@
     "result": ""
   },
   {
-    "id": "TC-342",
+    "id": "M-028",
     "name": "Verify if user can remove margin from a position",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -353,7 +354,7 @@
     "result": ""
   },
   {
-    "id": "TC-343",
+    "id": "M-029",
     "name": "User should be able to invest my vault and invest another vault",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -365,7 +366,7 @@
     "result": ""
   },
   {
-    "id": "TC-344",
+    "id": "M-030",
     "name": "User should be able to redeem my vault (not more than Available to trade limit)",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -377,7 +378,7 @@
     "result": ""
   },
   {
-    "id": "TC-345",
+    "id": "M-031",
     "name": "A new MetaMask user can create a Funding Account and a Trading Account",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -389,7 +390,7 @@
     "result": ""
   },
   {
-    "id": "TC-346",
+    "id": "M-032",
     "name": "Create a new Sub-Account",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -402,7 +403,7 @@
     "result": ""
   },
   {
-    "id": "TC-347",
+    "id": "M-033",
     "name": "Verify active trading-login session expires after logout",
     "feature": "e2e-tests",
     "module": "MOBILE",
@@ -415,7 +416,7 @@
     "result": ""
   },
   {
-    "id": "TC-348",
+    "id": "M-034",
     "name": "Deposit - Export transaction history as CSV",
     "feature": "export-history",
     "module": "MOBILE",
@@ -427,7 +428,7 @@
     "result": ""
   },
   {
-    "id": "TC-349",
+    "id": "M-035",
     "name": "Deposit - Export transaction history as PDF",
     "feature": "export-history",
     "module": "MOBILE",
@@ -439,7 +440,7 @@
     "result": ""
   },
   {
-    "id": "TC-350",
+    "id": "M-036",
     "name": "Withdrawal - Export transaction history as CSV",
     "feature": "export-history",
     "module": "MOBILE",
@@ -451,7 +452,7 @@
     "result": ""
   },
   {
-    "id": "TC-351",
+    "id": "M-037",
     "name": "Withdrawal - Export transaction history as PDF",
     "feature": "export-history",
     "module": "MOBILE",
@@ -463,7 +464,7 @@
     "result": ""
   },
   {
-    "id": "TC-352",
+    "id": "M-038",
     "name": "Transfer - Export transaction history as CSV",
     "feature": "export-history",
     "module": "MOBILE",
@@ -475,7 +476,7 @@
     "result": ""
   },
   {
-    "id": "TC-353",
+    "id": "M-039",
     "name": "Transfer - Export transaction history as PDF",
     "feature": "export-history",
     "module": "MOBILE",
@@ -487,7 +488,7 @@
     "result": ""
   },
   {
-    "id": "TC-354",
+    "id": "M-040",
     "name": "Order - Export order history as CSV",
     "feature": "export-history",
     "module": "MOBILE",
@@ -499,7 +500,7 @@
     "result": ""
   },
   {
-    "id": "TC-355",
+    "id": "M-041",
     "name": "Order - Export order history as PDF",
     "feature": "export-history",
     "module": "MOBILE",
@@ -511,7 +512,7 @@
     "result": ""
   },
   {
-    "id": "TC-356",
+    "id": "M-042",
     "name": "Trade - Export trade history as CSV",
     "feature": "export-history",
     "module": "MOBILE",
@@ -523,7 +524,7 @@
     "result": ""
   },
   {
-    "id": "TC-357",
+    "id": "M-043",
     "name": "Trade - Export trade history as PDF",
     "feature": "export-history",
     "module": "MOBILE",
@@ -535,7 +536,7 @@
     "result": ""
   },
   {
-    "id": "TC-358",
+    "id": "M-044",
     "name": "Export File - header, data, and time display correctly",
     "feature": "export-history",
     "module": "MOBILE",
@@ -547,7 +548,7 @@
     "result": ""
   },
   {
-    "id": "TC-359",
+    "id": "M-045",
     "name": "Cannot export history beyond the daily quota",
     "feature": "export-history",
     "module": "MOBILE",
@@ -559,7 +560,7 @@
     "result": ""
   },
   {
-    "id": "TC-360",
+    "id": "M-046",
     "name": "User can switch the app language and the Deposit label is translated",
     "feature": "language",
     "module": "MOBILE",
@@ -572,7 +573,7 @@
     "result": ""
   },
   {
-    "id": "TC-361",
+    "id": "M-047",
     "name": "App screens display \"<lang>\" with no untranslated text",
     "feature": "language",
     "module": "MOBILE",
@@ -585,7 +586,7 @@
     "result": ""
   },
   {
-    "id": "TC-362",
+    "id": "M-048",
     "name": "User can log in with MetaMask",
     "feature": "login-metamask",
     "module": "MOBILE",
@@ -597,7 +598,7 @@
     "result": ""
   },
   {
-    "id": "TC-363",
+    "id": "M-049",
     "name": "User can log in with Privy",
     "feature": "login-privy",
     "module": "MOBILE",
@@ -609,7 +610,7 @@
     "result": ""
   },
   {
-    "id": "TC-364",
+    "id": "M-050",
     "name": "User can log out after login",
     "feature": "login-privy",
     "module": "MOBILE",
@@ -621,7 +622,7 @@
     "result": ""
   },
   {
-    "id": "TC-365",
+    "id": "M-051",
     "name": "Trade view stays stable and performant over a 30-minute session",
     "feature": "long-running-trade-view",
     "module": "MOBILE",
@@ -633,7 +634,7 @@
     "result": ""
   },
   {
-    "id": "TC-366",
+    "id": "M-052",
     "name": "Trade view stays stable and performant over a 1-hour session",
     "feature": "long-running-trade-view",
     "module": "MOBILE",
@@ -645,7 +646,7 @@
     "result": ""
   },
   {
-    "id": "TC-367",
+    "id": "M-053",
     "name": "Open Split TP/SL modal from Positions tab",
     "feature": "split-tpsl",
     "module": "MOBILE",
@@ -657,7 +658,7 @@
     "result": ""
   },
   {
-    "id": "TC-368",
+    "id": "M-054",
     "name": "Add first TP target row added",
     "feature": "split-tpsl",
     "module": "MOBILE",
@@ -669,7 +670,7 @@
     "result": ""
   },
   {
-    "id": "TC-369",
+    "id": "M-055",
     "name": "Validation - quantity over the max order size is blocked",
     "feature": "split-tpsl",
     "module": "MOBILE",
@@ -681,7 +682,7 @@
     "result": ""
   },
   {
-    "id": "TC-370",
+    "id": "M-056",
     "name": "Add up to 6 TP targets and confirm",
     "feature": "split-tpsl",
     "module": "MOBILE",
@@ -693,7 +694,7 @@
     "result": ""
   },
   {
-    "id": "TC-371",
+    "id": "M-057",
     "name": "Positions tab shows the TP/SL badge count",
     "feature": "split-tpsl",
     "module": "MOBILE",
@@ -705,7 +706,7 @@
     "result": ""
   },
   {
-    "id": "TC-372",
+    "id": "M-058",
     "name": "Edit an existing TP target trigger price and persist it",
     "feature": "split-tpsl",
     "module": "MOBILE",
@@ -717,7 +718,7 @@
     "result": ""
   },
   {
-    "id": "TC-373",
+    "id": "M-059",
     "name": "Cancel all TP/SL for the symbol removes the badge",
     "feature": "split-tpsl",
     "module": "MOBILE",
@@ -729,7 +730,7 @@
     "result": ""
   },
   {
-    "id": "TC-374",
+    "id": "M-060",
     "name": "Add a TP target by ROI percent and display it correctly",
     "feature": "split-tpsl",
     "module": "MOBILE",
@@ -741,7 +742,7 @@
     "result": ""
   },
   {
-    "id": "TC-375",
+    "id": "M-061",
     "name": "Add first SL target row added",
     "feature": "split-tpsl",
     "module": "MOBILE",
@@ -753,7 +754,7 @@
     "result": ""
   },
   {
-    "id": "TC-376",
+    "id": "M-062",
     "name": "Add first SL target with a Limit execution price",
     "feature": "split-tpsl",
     "module": "MOBILE",
@@ -765,7 +766,7 @@
     "result": ""
   },
   {
-    "id": "TC-377",
+    "id": "M-063",
     "name": "Add a TP and an SL target together shows badge 2",
     "feature": "split-tpsl",
     "module": "MOBILE",
@@ -777,7 +778,7 @@
     "result": ""
   },
   {
-    "id": "TC-378",
+    "id": "M-064",
     "name": "Reset data when deleting a row or switching tab",
     "feature": "split-tpsl",
     "module": "MOBILE",
@@ -789,7 +790,7 @@
     "result": ""
   },
   {
-    "id": "TC-379",
+    "id": "M-065",
     "name": "Whole - Long: TP trigger price must be greater than mark price",
     "feature": "tpsl-trigger-validation",
     "module": "MOBILE",
@@ -801,7 +802,7 @@
     "result": ""
   },
   {
-    "id": "TC-380",
+    "id": "M-066",
     "name": "Whole - Long: in-profit SL trigger must be between entry and mark prices",
     "feature": "tpsl-trigger-validation",
     "module": "MOBILE",
@@ -813,7 +814,7 @@
     "result": ""
   },
   {
-    "id": "TC-381",
+    "id": "M-067",
     "name": "Whole - Short: TP trigger price must be less than mark price",
     "feature": "tpsl-trigger-validation",
     "module": "MOBILE",
@@ -825,7 +826,7 @@
     "result": ""
   },
   {
-    "id": "TC-382",
+    "id": "M-068",
     "name": "Whole - Short: in-profit SL trigger must be between mark and entry prices",
     "feature": "tpsl-trigger-validation",
     "module": "MOBILE",
@@ -837,7 +838,7 @@
     "result": ""
   },
   {
-    "id": "TC-383",
+    "id": "M-069",
     "name": "Split - Long: TP trigger price must be greater than mark price",
     "feature": "tpsl-trigger-validation",
     "module": "MOBILE",
@@ -849,7 +850,7 @@
     "result": ""
   },
   {
-    "id": "TC-384",
+    "id": "M-070",
     "name": "Split - Long: in-profit SL trigger must be between entry and mark prices",
     "feature": "tpsl-trigger-validation",
     "module": "MOBILE",
@@ -861,7 +862,7 @@
     "result": ""
   },
   {
-    "id": "TC-385",
+    "id": "M-071",
     "name": "Split - Short: TP trigger price must be less than mark price",
     "feature": "tpsl-trigger-validation",
     "module": "MOBILE",
@@ -873,7 +874,7 @@
     "result": ""
   },
   {
-    "id": "TC-386",
+    "id": "M-072",
     "name": "Split - Short: in-profit SL trigger must be between mark and entry prices",
     "feature": "tpsl-trigger-validation",
     "module": "MOBILE",
@@ -885,7 +886,7 @@
     "result": ""
   },
   {
-    "id": "TC-387",
+    "id": "M-073",
     "name": "Deposit token support matrix per network (via Exchange)",
     "feature": "token-support-matrix",
     "module": "MOBILE",
@@ -897,7 +898,7 @@
     "result": ""
   },
   {
-    "id": "TC-388",
+    "id": "M-074",
     "name": "Deposit token support matrix per network (via Wallet)",
     "feature": "token-support-matrix",
     "module": "MOBILE",
@@ -909,7 +910,7 @@
     "result": ""
   },
   {
-    "id": "TC-389",
+    "id": "M-075",
     "name": "Withdrawal token support matrix per network (via Send)",
     "feature": "token-support-matrix",
     "module": "MOBILE",
@@ -921,7 +922,7 @@
     "result": ""
   },
   {
-    "id": "TC-390",
+    "id": "M-076",
     "name": "Send as USDC keeps USDT source and converts the received currency",
     "feature": "token-support-matrix",
     "module": "MOBILE",

@@ -6,9 +6,32 @@ const DEFAULT_CONFIG = {
   owner: "viet-grvt",
   repo: "test-case-dashboard",
   branch: "main",
-  path: "data.json",
+  path: "data/test-cases.json",
   syncMode: "auto",
 };
+
+// Test cases are split by module into two files under data/test-cases/.
+// The WEB file holds everything that isn't MOBILE, so no case is ever dropped.
+const CASE_FILES = [
+  { module: "MOBILE", path: "data/test-cases/mobile.json" },
+  { module: "WEB", path: "data/test-cases/web.json" },
+];
+function fileForCase(item) {
+  return String(item.module || "").toUpperCase() === "MOBILE"
+    ? "data/test-cases/mobile.json"
+    : "data/test-cases/web.json";
+}
+// Next sequential id for a module: W-### for web, M-### for mobile.
+function nextCaseId(moduleVal) {
+  const prefix = String(moduleVal || "").toUpperCase() === "MOBILE" ? "M" : "W";
+  const re = new RegExp("^" + prefix + "-(\\d+)$", "i");
+  let max = 0;
+  cases.forEach((c) => {
+    const m = re.exec(String(c.id || ""));
+    if (m) max = Math.max(max, parseInt(m[1], 10));
+  });
+  return `${prefix}-${String(max + 1).padStart(3, "0")}`;
+}
 
 const sampleData = [
   {
@@ -58,7 +81,7 @@ let runResults = {};
 // and the per-test-case trend chart.
 let runs = [];
 let editingId = null;
-let currentSha = null;
+let caseShas = {}; // { "<path>": sha } for each split test-case file
 let currentSyncMode = DEFAULT_CONFIG.syncMode;
 
 const sectionButtons = document.querySelectorAll(".menu-item");
@@ -68,6 +91,9 @@ const rowsEl = document.getElementById("rows");
 const runsListEl = document.getElementById("runsList");
 const runsSummaryEl = document.getElementById("runsSummary");
 const runsMetaEl = document.getElementById("runsMeta");
+const runModuleFilter = document.getElementById("runModuleFilter");
+const runEnvFilter = document.getElementById("runEnvFilter");
+const runBrowserFilter = document.getElementById("runBrowserFilter");
 const detailModal = document.getElementById("detailModal");
 const detailBody = document.getElementById("detailBody");
 const detailTitle = document.getElementById("detailTitle");
@@ -172,6 +198,9 @@ function bindEvents() {
   detailModal.addEventListener("click", (event) => {
     if (event.target === detailModal) closeDetailModal();
   });
+  [runModuleFilter, runEnvFilter, runBrowserFilter].forEach((el) => {
+    if (el) el.addEventListener("change", renderRuns);
+  });
 }
 
 async function manualSync() {
@@ -266,7 +295,7 @@ async function saveSettings(event) {
     owner: ownerCfgInput.value.trim(),
     repo: repoCfgInput.value.trim(),
     branch: branchCfgInput.value.trim() || "main",
-    path: pathCfgInput.value.trim() || "data.json",
+    path: pathCfgInput.value.trim() || "data/test-cases.json",
     syncMode: selectedMode,
   };
   localStorage.setItem(CONFIG_KEY, JSON.stringify(cfg));
@@ -277,7 +306,7 @@ async function saveSettings(event) {
   else localStorage.removeItem(TOKEN_KEY);
 
   settingsHint.textContent = "Reconnecting to repo...";
-  currentSha = null;
+  caseShas = {};
   await loadData();
   render();
   settingsHint.textContent = getToken()
@@ -349,19 +378,14 @@ async function fetchFromRepo() {
     return null;
   }
 
-  const normalizedPath = String(cfg.path || "data.json").replace(/^\/+/, "");
-  const fallbackPaths = [normalizedPath];
-  if (normalizedPath.startsWith("ds/")) {
-    fallbackPaths.push(normalizedPath.replace(/^ds\//, ""));
-  } else {
-    fallbackPaths.push(`ds/${normalizedPath}`);
-  }
-
-  for (const path of fallbackPaths) {
-    if (!path) continue;
-    const url = `${contentsUrl(path)}?ref=${encodeURIComponent(cfg.branch)}`;
+  const merged = [];
+  let anyFound = false;
+  caseShas = {};
+  for (const cf of CASE_FILES) {
+    const url = `${contentsUrl(cf.path)}?ref=${encodeURIComponent(cfg.branch)}`;
     const res = await githubRequest("GET", url);
     if (res.status === 404) {
+      caseShas[cf.path] = null;
       continue;
     }
     if (!res.ok) {
@@ -369,16 +393,15 @@ async function fetchFromRepo() {
       throw new Error(detail.message || `GitHub API ${res.status}`);
     }
     const json = await res.json();
-    currentSha = json.sha;
-    if (path !== normalizedPath) {
-      const updatedConfig = { ...cfg, path };
-      localStorage.setItem(CONFIG_KEY, JSON.stringify(updatedConfig));
-    }
-    return JSON.parse(fromBase64Utf8(json.content));
+    caseShas[cf.path] = json.sha;
+    anyFound = true;
+    const arr = JSON.parse(fromBase64Utf8(json.content));
+    (Array.isArray(arr) ? arr : []).forEach((c) =>
+      merged.push({ ...c, module: c.module || cf.module }),
+    );
   }
 
-  currentSha = null;
-  return null;
+  return anyFound ? merged : null;
 }
 
 async function commitData(message) {
@@ -387,31 +410,35 @@ async function commitData(message) {
     setSyncStatus("local");
     return { skipped: true };
   }
-  const content = toBase64Utf8(JSON.stringify(cases, null, 2) + "\n");
-
-  const put = (sha) =>
-    githubRequest("PUT", contentsUrl(), {
-      message,
-      content,
-      branch: getConfig().branch,
-      sha: sha || undefined,
-    });
 
   setSyncStatus("saving");
   try {
-    let res = await put(currentSha);
-    if (res.status === 409 || res.status === 422) {
-      await fetchFromRepo();
-      res = await put(currentSha);
+    // Route each case to its module file and commit each file separately.
+    for (const cf of CASE_FILES) {
+      const subset = cases.filter((c) => fileForCase(c) === cf.path);
+      const content = toBase64Utf8(JSON.stringify(subset, null, 2) + "\n");
+      const put = (sha) =>
+        githubRequest("PUT", contentsUrl(cf.path), {
+          message,
+          content,
+          branch: getConfig().branch,
+          sha: sha || undefined,
+        });
+
+      let res = await put(caseShas[cf.path]);
+      if (res.status === 409 || res.status === 422) {
+        await fetchFromRepo();
+        res = await put(caseShas[cf.path]);
+      }
+      if (!res.ok) {
+        const detail = await res.json().catch(() => ({}));
+        const msg = detail.message || `HTTP ${res.status}`;
+        setSyncStatus("error", msg);
+        return { ok: false, message: msg };
+      }
+      const json = await res.json();
+      caseShas[cf.path] = json.content ? json.content.sha : caseShas[cf.path];
     }
-    if (!res.ok) {
-      const detail = await res.json().catch(() => ({}));
-      const msg = detail.message || `HTTP ${res.status}`;
-      setSyncStatus("error", msg);
-      return { ok: false, message: msg };
-    }
-    const json = await res.json();
-    currentSha = json.content ? json.content.sha : currentSha;
     setSyncStatus("synced");
     return { ok: true };
   } catch (err) {
@@ -432,7 +459,7 @@ async function loadData(forceRefresh = false) {
         cases = await fetchDeployedOrSample();
         setSyncStatus(
           "local",
-          "data.json is not in the repo yet — save to create it",
+          "test-case files are not in the repo yet — save to create them",
         );
       }
     } else {
@@ -478,7 +505,7 @@ function normalizeCase(item) {
 async function loadRunResults() {
   // results.json is served publicly by GitHub Pages (no token needed).
   // Shape: { updatedAt, results: { "TC-105": { status, date, env, browser, runUrl } } }
-  const candidates = ["./results.json", "./ds/results.json"];
+  const candidates = ["./data/results.json", "./results.json"];
   for (const url of candidates) {
     try {
       const res = await fetch(url + "?t=" + Date.now(), { cache: "no-store" });
@@ -495,12 +522,21 @@ async function loadRunResults() {
 
 async function fetchDeployedOrSample() {
   try {
-    const res = await fetch("./data.json?t=" + Date.now(), {
-      cache: "no-store",
-    });
-    if (!res.ok) throw new Error("Unable to load data.json");
-    const data = await res.json();
-    return data.map(normalizeCase);
+    const arrays = await Promise.all(
+      CASE_FILES.map(async (cf) => {
+        const res = await fetch(`./${cf.path}?t=` + Date.now(), {
+          cache: "no-store",
+        });
+        if (!res.ok) return [];
+        const data = await res.json();
+        return (Array.isArray(data) ? data : []).map((c) =>
+          normalizeCase({ ...c, module: c.module || cf.module }),
+        );
+      }),
+    );
+    const merged = arrays.flat();
+    if (!merged.length) throw new Error("no test-case files found");
+    return merged;
   } catch (e) {
     const saved = localStorage.getItem(STORAGE_KEY);
     return saved
@@ -551,7 +587,7 @@ function parseTags(value) {
 async function handleSubmit(event) {
   event.preventDefault();
   const payload = {
-    id: caseIdInput.value || `TC-${Date.now().toString().slice(-4)}`,
+    id: caseIdInput.value || nextCaseId(moduleInput.value),
     name: nameInput.value.trim(),
     feature: featureInput.value.trim(),
     module: moduleInput.value.trim(),
@@ -881,7 +917,7 @@ const RESULT_COLORS = {
 
 async function loadRuns() {
   // runs.json is the append-only history written by CI (see README).
-  const candidates = ["./runs.json", "./ds/runs.json"];
+  const candidates = ["./data/runs.json", "./runs.json"];
   for (const url of candidates) {
     try {
       const res = await fetch(url + "?t=" + Date.now(), { cache: "no-store" });
@@ -899,6 +935,18 @@ async function loadRuns() {
 function caseName(id) {
   const c = cases.find((x) => x.id === id);
   return c ? c.name : id;
+}
+
+// Full local date-time (YYYY-MM-DD HH:MM:SS) from a run's ISO `at` timestamp,
+// so multiple runs on the same day are distinguishable. Falls back to `date`.
+function fmtDateTime(iso, fallback) {
+  if (!iso) return fallback || "";
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return fallback || String(iso);
+  const p = (n) => String(n).padStart(2, "0");
+  return `${d.getFullYear()}-${p(d.getMonth() + 1)}-${p(d.getDate())} ${p(
+    d.getHours(),
+  )}:${p(d.getMinutes())}:${p(d.getSeconds())}`;
 }
 
 function runTotals(run) {
@@ -989,7 +1037,7 @@ function svgTrendCells(series) {
       (s) =>
         `<span class="trend-cell" style="background:${
           RESULT_COLORS[s.status] || "#e5e7eb"
-        }" title="${escapeHtml(String(s.date || s.id))} — ${escapeHtml(
+        }" title="${escapeHtml(fmtDateTime(s.at, s.date) || String(s.id))} — ${escapeHtml(
           s.status,
         )}"></span>`,
     )
@@ -997,22 +1045,58 @@ function svgTrendCells(series) {
   return `<div class="trend-cells">${cells}</div>`;
 }
 
+function populateRunFilters() {
+  const fill = (el, values, allLabel) => {
+    if (!el) return;
+    const current = el.value;
+    const opts = [...new Set(values.filter(Boolean))].sort();
+    el.innerHTML =
+      `<option value="all">${allLabel}</option>` +
+      opts
+        .map(
+          (v) => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`,
+        )
+        .join("");
+    el.value = opts.includes(current) ? current : "all";
+  };
+  fill(runModuleFilter, runs.map((r) => r.module), "All modules");
+  fill(runEnvFilter, runs.map((r) => r.env), "All environments");
+  fill(runBrowserFilter, runs.map((r) => r.browser), "All browsers");
+}
+
 function renderRuns() {
   if (!runsListEl) return;
-  if (runsMetaEl) runsMetaEl.textContent = runs.length ? `${runs.length} run(s)` : "";
+  populateRunFilters();
+  const mod = runModuleFilter ? runModuleFilter.value : "all";
+  const envF = runEnvFilter ? runEnvFilter.value : "all";
+  const brF = runBrowserFilter ? runBrowserFilter.value : "all";
+  const filtered = runs.filter(
+    (r) =>
+      (mod === "all" || r.module === mod) &&
+      (envF === "all" || r.env === envF) &&
+      (brF === "all" || r.browser === brF),
+  );
+  if (runsMetaEl) {
+    runsMetaEl.textContent = filtered.length ? `${filtered.length} run(s)` : "";
+  }
   if (!runs.length) {
     runsSummaryEl.innerHTML = "";
     runsListEl.innerHTML = `<div class="empty">No runs published yet.</div>`;
+    return;
+  }
+  if (!filtered.length) {
+    runsSummaryEl.innerHTML = "";
+    runsListEl.innerHTML = `<div class="empty">No runs match the current filters.</div>`;
     return;
   }
 
   runsSummaryEl.innerHTML = `
     <div class="panel card">
       <div class="label">Pass rate trend</div>
-      ${svgPassRateLine(runs)}
+      ${svgPassRateLine(filtered)}
     </div>`;
 
-  runsListEl.innerHTML = runs
+  runsListEl.innerHTML = filtered
     .map((run) => {
       const t = runTotals(run);
       const rate = passRate(t);
@@ -1020,7 +1104,7 @@ function renderRuns() {
         ? escapeHtml(run.name)
         : `Run ${escapeHtml(String(run.id))}`;
       const metaParts = run.name ? ["#" + String(run.id)] : [];
-      metaParts.push(run.date, run.env, run.browser);
+      metaParts.push(fmtDateTime(run.at, run.date), run.module, run.env, run.browser);
       const meta = metaParts.filter(Boolean).map(escapeHtml).join(" · ");
       return `
         <div class="run-row">
@@ -1065,7 +1149,7 @@ function openRunDetail(id) {
     )
     .join("");
   const metaParts = run.name ? ["#" + String(run.id)] : [];
-  metaParts.push(run.date, run.env, run.browser);
+  metaParts.push(fmtDateTime(run.at, run.date), run.module, run.env, run.browser);
   const meta = metaParts.filter(Boolean).map(escapeHtml).join(" · ");
   const links = [
     run.runUrl
@@ -1104,7 +1188,7 @@ function openCaseTrend(id) {
   const series = [...runs]
     .reverse() // oldest -> newest
     .filter((r) => r.results && r.results[id])
-    .map((r) => ({ date: r.date, status: r.results[id], id: r.id }));
+    .map((r) => ({ date: r.date, at: r.at, status: r.results[id], id: r.id }));
   const n = series.length;
   const passes = series.filter((s) => s.status === "passed").length;
   const fails = series.filter((s) => s.status === "failed").length;

@@ -1,6 +1,6 @@
 [
   {
-    "id": "TC-105",
+    "id": "W-001",
     "name": "[WEB] Split smoke & regression test (new)",
     "feature": "E2E",
     "module": "WEB",
@@ -12,7 +12,7 @@
     "result": ""
   },
   {
-    "id": "TC-107",
+    "id": "W-002",
     "name": "Verify if GRVT account can be registered with Metamask wallet -> Funding Account created -> Trading Account can be created",
     "feature": "E2E",
     "module": "WEB",
@@ -25,7 +25,7 @@
     "result": ""
   },
   {
-    "id": "TC-108",
+    "id": "W-003",
     "name": "Verify if Trade-Indicators data for all instruments are rendered as expected",
     "module": "WEB",
     "status": "Done",
@@ -38,19 +38,20 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-109",
+    "id": "W-004",
     "name": "Verify if Trading chart => candle-sticks are rendered as expected",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "E2E"
   },
   {
-    "id": "TC-110",
+    "id": "W-005",
     "name": "Verify if Order-Book is not-crossed (BEST_BID lesser than BEST_ASK)",
     "module": "WEB",
     "status": "Done",
@@ -63,55 +64,59 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-111",
+    "id": "W-006",
     "name": "Verify if Order-Book data is displayed as expected",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "E2E"
   },
   {
-    "id": "TC-112",
+    "id": "W-007",
     "name": "Verify if all records under Recent Trades tab are populated as expected",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "E2E"
   },
   {
-    "id": "TC-113",
+    "id": "W-008",
     "name": "Verify if Funding Account balance is updated after free USDT minting",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "E2E"
   },
   {
-    "id": "TC-114",
+    "id": "W-009",
     "name": "Verify if a new Sub-Account can be created",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "E2E"
   },
   {
-    "id": "TC-115",
+    "id": "W-010",
     "name": "Verify if MARKET BUY/SELL order can be placed successfully",
     "module": "WEB",
     "status": "Done",
@@ -124,19 +129,20 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-116",
+    "id": "W-011",
     "name": "Verify if order placement is successfull when Quantity expressed in USDT Notional",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "E2E"
   },
   {
-    "id": "TC-117",
+    "id": "W-012",
     "name": "Verify if REDUCE_ONLY type orders can be placed successfully",
     "module": "WEB",
     "status": "Done",
@@ -149,7 +155,7 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-118",
+    "id": "W-013",
     "name": "Verify if IOC type orders can be placed successfully",
     "module": "WEB",
     "status": "Done",
@@ -162,7 +168,7 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-119",
+    "id": "W-014",
     "name": "Verify if FOK type orders can be placed successfully",
     "module": "WEB",
     "status": "Done",
@@ -175,7 +181,7 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-120",
+    "id": "W-015",
     "name": "Verify if POST_ONLY type orders can be placed successfully",
     "module": "WEB",
     "status": "Done",
@@ -188,19 +194,20 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-121",
+    "id": "W-016",
     "name": "Verify if active Trading-Login session is expired after user logged-out",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "E2E"
   },
   {
-    "id": "TC-122",
+    "id": "W-017",
     "name": "Verify if all active-positions can be closed by Close all positions button",
     "module": "WEB",
     "status": "Done",
@@ -213,7 +220,7 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-123",
+    "id": "W-018",
     "name": "Verify if INTERNAL fund transfer from FUNDING_ACCOUNT -> TRADING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
@@ -225,7 +232,7 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-124",
+    "id": "W-019",
     "name": "Verify if EXTERNAL fund transfer from FUNDING_ACCOUNT -> FUNDING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
@@ -237,19 +244,20 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-125",
+    "id": "W-020",
     "name": "Verify if INTERNAL USDC fund transfer from FUNDING_ACCOUNT -> TRADING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "E2E"
   },
   {
-    "id": "TC-126",
+    "id": "W-021",
     "name": "Verify if EXTERNAL USDC fund transfer from FUNDING_ACCOUNT -> FUNDING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
@@ -261,19 +269,20 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-127",
+    "id": "W-022",
     "name": "Verify if INTERNAL ETH fund transfer from FUNDING_ACCOUNT -> TRADING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "E2E"
   },
   {
-    "id": "TC-128",
+    "id": "W-023",
     "name": "Verify if EXTERNAL ETH fund transfer from FUNDING_ACCOUNT -> FUNDING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
@@ -285,19 +294,20 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-129",
+    "id": "W-024",
     "name": "Verify if INTERNAL GRVT fund transfer from FUNDING_ACCOUNT -> TRADING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "E2E"
   },
   {
-    "id": "TC-130",
+    "id": "W-025",
     "name": "Verify if EXTERNAL GRVT fund transfer from FUNDING_ACCOUNT -> FUNDING_ACCOUNT is successful",
     "module": "WEB",
     "status": "Done",
@@ -309,7 +319,7 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-131",
+    "id": "W-026",
     "name": "Verify if INTERNAL transfer is rejected when amount exceeds available balance",
     "module": "WEB",
     "status": "Done",
@@ -321,7 +331,7 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-132",
+    "id": "W-027",
     "name": "Verify if INTERNAL transfer is rejected for zero / empty / non-numeric amounts",
     "module": "WEB",
     "status": "Done",
@@ -333,7 +343,7 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-133",
+    "id": "W-028",
     "name": "Verify if INTERNAL transfer is blocked when source and destination are the same",
     "module": "WEB",
     "status": "Done",
@@ -345,7 +355,7 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-134",
+    "id": "W-029",
     "name": "Verify if EXTERNAL transfer is rejected when amount exceeds available balance",
     "module": "WEB",
     "status": "Done",
@@ -357,7 +367,7 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-135",
+    "id": "W-030",
     "name": "Business account completes internal transfer without KYC verification prompt",
     "module": "WEB",
     "status": "Done",
@@ -369,7 +379,7 @@
     "feature": "businessNoKyc"
   },
   {
-    "id": "TC-136",
+    "id": "W-031",
     "name": "Business account completes withdrawal without KYC verification prompt",
     "module": "WEB",
     "status": "Done",
@@ -381,7 +391,7 @@
     "feature": "businessNoKyc"
   },
   {
-    "id": "TC-137",
+    "id": "W-032",
     "name": "Business account places a trade without KYC verification prompt",
     "module": "WEB",
     "status": "Done",
@@ -393,7 +403,7 @@
     "feature": "businessNoKyc"
   },
   {
-    "id": "TC-138",
+    "id": "W-033",
     "name": "Verify each download card points to the correct external URL",
     "module": "WEB",
     "status": "Done",
@@ -405,7 +415,7 @@
     "feature": "downloadApp"
   },
   {
-    "id": "TC-139",
+    "id": "W-034",
     "name": "Sector & Tab Navigation",
     "module": "WEB",
     "status": "Done",
@@ -417,7 +427,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-140",
+    "id": "W-035",
     "name": "Sub-sector Behavior & Filtering",
     "module": "WEB",
     "status": "Done",
@@ -429,7 +439,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-141",
+    "id": "W-036",
     "name": "Rightmost Sub-tags & New Listing",
     "module": "WEB",
     "status": "Done",
@@ -441,7 +451,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-142",
+    "id": "W-037",
     "name": "Search Core",
     "module": "WEB",
     "status": "Done",
@@ -453,7 +463,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-143",
+    "id": "W-038",
     "name": "Search Filter & Empty",
     "module": "WEB",
     "status": "Done",
@@ -465,7 +475,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-144",
+    "id": "W-039",
     "name": "Search Security Inputs",
     "module": "WEB",
     "status": "Done",
@@ -477,7 +487,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-145",
+    "id": "W-040",
     "name": "Favorites Core",
     "module": "WEB",
     "status": "Done",
@@ -489,7 +499,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-146",
+    "id": "W-041",
     "name": "Favorites Advanced",
     "module": "WEB",
     "status": "Done",
@@ -501,7 +511,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-147",
+    "id": "W-042",
     "name": "Sorting",
     "module": "WEB",
     "status": "Done",
@@ -513,7 +523,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-148",
+    "id": "W-043",
     "name": "Data Display & Formatting",
     "module": "WEB",
     "status": "Done",
@@ -525,7 +535,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-149",
+    "id": "W-044",
     "name": "Data Update",
     "module": "WEB",
     "status": "Done",
@@ -537,7 +547,7 @@
     "feature": "E2E"
   },
   {
-    "id": "TC-150",
+    "id": "W-045",
     "name": "Stress & Performance",
     "module": "WEB",
     "status": "Done",
@@ -549,7 +559,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-151",
+    "id": "W-046",
     "name": "Accessibility & Scroll",
     "module": "WEB",
     "status": "Done",
@@ -561,7 +571,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-152",
+    "id": "W-047",
     "name": "Sub-sector Stability & Rapid Switching",
     "module": "WEB",
     "status": "Done",
@@ -573,7 +583,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-153",
+    "id": "W-048",
     "name": "State Preserved After Navigation",
     "module": "WEB",
     "status": "Done",
@@ -585,7 +595,7 @@
     "feature": "instrumentSectors"
   },
   {
-    "id": "TC-154",
+    "id": "W-049",
     "name": "Verification can change languages",
     "module": "WEB",
     "status": "Done",
@@ -597,7 +607,7 @@
     "feature": "language"
   },
   {
-    "id": "TC-155",
+    "id": "W-050",
     "name": "Verify language will display correctly on all pages when changing language",
     "module": "WEB",
     "status": "Done",
@@ -609,19 +619,20 @@
     "feature": "language"
   },
   {
-    "id": "TC-156",
+    "id": "W-051",
     "name": "Switch app language to each supported locale",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "languageUiLayout"
   },
   {
-    "id": "TC-157",
+    "id": "W-052",
     "name": "Language preference persists after refresh and navigation",
     "module": "WEB",
     "status": "Done",
@@ -633,31 +644,33 @@
     "feature": "languageUiLayout"
   },
   {
-    "id": "TC-158",
+    "id": "W-053",
     "name": "Button layout: overflow, overlap, truncation and height stability across all locales",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "languageUiLayout"
   },
   {
-    "id": "TC-159",
+    "id": "W-054",
     "name": "Navigation layout: overflow, overlap and height stability across all locales",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "languageUiLayout"
   },
   {
-    "id": "TC-160",
+    "id": "W-055",
     "name": "Form and dropdown layout: labels, validation, alignment and options across all locales",
     "module": "WEB",
     "status": "Done",
@@ -669,7 +682,7 @@
     "feature": "languageUiLayout"
   },
   {
-    "id": "TC-161",
+    "id": "W-056",
     "name": "Modal layout: content, action buttons and close button across all locales",
     "module": "WEB",
     "status": "Done",
@@ -681,7 +694,7 @@
     "feature": "languageUiLayout"
   },
   {
-    "id": "TC-162",
+    "id": "W-057",
     "name": "Toast layout: message overflow and dismiss button across all locales",
     "module": "WEB",
     "status": "Done",
@@ -693,7 +706,7 @@
     "feature": "languageUiLayout"
   },
   {
-    "id": "TC-163",
+    "id": "W-058",
     "name": "Table column headers stay on a single line across all locales",
     "module": "WEB",
     "status": "Done",
@@ -705,7 +718,7 @@
     "feature": "languageUiLayout"
   },
   {
-    "id": "TC-164",
+    "id": "W-059",
     "name": "No text overflow across target viewports in Russian",
     "module": "WEB",
     "status": "Done",
@@ -717,19 +730,20 @@
     "feature": "languageUiLayout"
   },
   {
-    "id": "TC-165",
+    "id": "W-060",
     "name": "Encoding, translations, number format and horizontal scroll across all locales",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "languageUiLayout"
   },
   {
-    "id": "TC-166",
+    "id": "W-061",
     "name": "Overflow detection utility correctly identifies violations",
     "module": "WEB",
     "status": "Done",
@@ -741,7 +755,7 @@
     "feature": "languageUiLayout"
   },
   {
-    "id": "TC-167",
+    "id": "W-062",
     "name": "Russian layout regression: button overflow and navigation label overflow",
     "module": "WEB",
     "status": "Done",
@@ -753,7 +767,7 @@
     "feature": "languageUiLayout"
   },
   {
-    "id": "TC-168",
+    "id": "W-063",
     "name": "Login page labels and buttons do not overflow across all locales",
     "module": "WEB",
     "status": "Done",
@@ -765,7 +779,7 @@
     "feature": "languageUiLayout"
   },
   {
-    "id": "TC-169",
+    "id": "W-064",
     "name": "Toggle UI Theme dark↔light without page reload",
     "module": "WEB",
     "status": "Done",
@@ -777,7 +791,7 @@
     "feature": "themeUiLayout"
   },
   {
-    "id": "TC-170",
+    "id": "W-065",
     "name": "Icons visible + no horizontal scroll on all pages in both theme",
     "module": "WEB",
     "status": "Done",
@@ -789,7 +803,7 @@
     "feature": "themeUiLayout"
   },
   {
-    "id": "TC-171",
+    "id": "W-066",
     "name": "Icons remain visible inside instrument selector dropdown",
     "module": "WEB",
     "status": "Done",
@@ -801,7 +815,7 @@
     "feature": "themeUiLayout"
   },
   {
-    "id": "TC-172",
+    "id": "W-067",
     "name": "All UI checks on representative pages in both theme",
     "module": "WEB",
     "status": "Done",
@@ -813,7 +827,7 @@
     "feature": "themeUiLayout"
   },
   {
-    "id": "TC-173",
+    "id": "W-068",
     "name": "Theme toggle + icons + visual rendering across all public pages in both theme",
     "module": "WEB",
     "status": "Done",
@@ -825,7 +839,7 @@
     "feature": "themeUiLayout"
   },
   {
-    "id": "TC-174",
+    "id": "W-069",
     "name": "Verify that users can create trading login sessions and terminate all trading login tokens",
     "module": "WEB",
     "status": "Done",
@@ -837,7 +851,7 @@
     "feature": "tradingLoginSession"
   },
   {
-    "id": "TC-175",
+    "id": "W-070",
     "name": "Wallet names are displayed correctly on the login and sign up page",
     "module": "WEB",
     "status": "Done",
@@ -849,7 +863,7 @@
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
-    "id": "TC-176",
+    "id": "W-071",
     "name": "User cannot sign up with a wallet currently used as secondary SecureKey on another account",
     "module": "WEB",
     "status": "Done",
@@ -861,7 +875,7 @@
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
-    "id": "TC-177",
+    "id": "W-072",
     "name": "User cannot sign up with a wallet previously removed as secondary on another account",
     "module": "WEB",
     "status": "Done",
@@ -873,7 +887,7 @@
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
-    "id": "TC-178",
+    "id": "W-073",
     "name": "User cannot add a secondary SecureKey using the primary wallet of the current account",
     "module": "WEB",
     "status": "Done",
@@ -885,7 +899,7 @@
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
-    "id": "TC-179",
+    "id": "W-074",
     "name": "User cannot add a wallet that is already a secondary SecureKey on the same account",
     "module": "WEB",
     "status": "Done",
@@ -897,7 +911,7 @@
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
-    "id": "TC-180",
+    "id": "W-075",
     "name": "User cannot add a wallet that is already a secondary SecureKey on another account",
     "module": "WEB",
     "status": "Done",
@@ -909,7 +923,7 @@
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
-    "id": "TC-181",
+    "id": "W-076",
     "name": "User cannot add a wallet that was previously added and then removed as a secondary SecureKey",
     "module": "WEB",
     "status": "Done",
@@ -921,7 +935,7 @@
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
-    "id": "TC-182",
+    "id": "W-077",
     "name": "MetaMask login from the Trade page is redirected to the Trading page",
     "module": "WEB",
     "status": "Done",
@@ -933,7 +947,7 @@
     "feature": "redirectionAfterAuth"
   },
   {
-    "id": "TC-183",
+    "id": "W-078",
     "name": "MetaMask login from a non-trade page is redirected to the Web Overview page",
     "module": "WEB",
     "status": "Done",
@@ -945,7 +959,7 @@
     "feature": "redirectionAfterAuth"
   },
   {
-    "id": "TC-184",
+    "id": "W-079",
     "name": "Privy login from the Trade page is redirected to the Trading page",
     "module": "WEB",
     "status": "Done",
@@ -957,7 +971,7 @@
     "feature": "redirectionAfterAuth"
   },
   {
-    "id": "TC-185",
+    "id": "W-080",
     "name": "Privy login from a non-trade page is redirected to the Web Overview page",
     "module": "WEB",
     "status": "Done",
@@ -969,7 +983,7 @@
     "feature": "redirectionAfterAuth"
   },
   {
-    "id": "TC-186",
+    "id": "W-081",
     "name": "Privy sign-up from the Trade page is redirected to the Trading page",
     "module": "WEB",
     "status": "Done",
@@ -981,7 +995,7 @@
     "feature": "redirectionAfterAuth"
   },
   {
-    "id": "TC-187",
+    "id": "W-082",
     "name": "Privy sign-up from a non-trade page is redirected to the Web Overview page",
     "module": "WEB",
     "status": "Done",
@@ -993,7 +1007,7 @@
     "feature": "redirectionAfterAuth"
   },
   {
-    "id": "TC-188",
+    "id": "W-083",
     "name": "Deposit successful with supported wallets",
     "module": "WEB",
     "status": "Done",
@@ -1005,7 +1019,7 @@
     "feature": "deposit"
   },
   {
-    "id": "TC-189",
+    "id": "W-084",
     "name": "Deposit progress is rejected when user cancels wallet connection",
     "module": "WEB",
     "status": "Done",
@@ -1017,7 +1031,7 @@
     "feature": "deposit"
   },
   {
-    "id": "TC-190",
+    "id": "W-085",
     "name": "Verify wallet connection and validate warning messages",
     "module": "WEB",
     "status": "Done",
@@ -1029,7 +1043,7 @@
     "feature": "deposit"
   },
   {
-    "id": "TC-191",
+    "id": "W-086",
     "name": "Transfer maximum balance",
     "module": "WEB",
     "status": "Done",
@@ -1041,7 +1055,7 @@
     "feature": "transfer"
   },
   {
-    "id": "TC-192",
+    "id": "W-087",
     "name": "Wallet shows correct balance USDT after successful withdrawal",
     "module": "WEB",
     "status": "Done",
@@ -1053,7 +1067,7 @@
     "feature": "withdrawal"
   },
   {
-    "id": "TC-193",
+    "id": "W-088",
     "name": "Deposit history — headers, data, and most-recent-first sort order display correctly",
     "module": "WEB",
     "status": "Done",
@@ -1065,7 +1079,7 @@
     "feature": "historyDisplay"
   },
   {
-    "id": "TC-194",
+    "id": "W-089",
     "name": "Withdrawal history — headers, data, and most-recent-first sort order display correctly",
     "module": "WEB",
     "status": "Done",
@@ -1077,7 +1091,7 @@
     "feature": "historyDisplay"
   },
   {
-    "id": "TC-195",
+    "id": "W-090",
     "name": "Transfer history — headers, data, and most-recent-first sort order display correctly",
     "module": "WEB",
     "status": "Done",
@@ -1089,7 +1103,7 @@
     "feature": "historyDisplay"
   },
   {
-    "id": "TC-196",
+    "id": "W-091",
     "name": "Verify if USDT can be minted successfully",
     "module": "WEB",
     "status": "Done",
@@ -1101,7 +1115,7 @@
     "feature": "mint"
   },
   {
-    "id": "TC-197",
+    "id": "W-092",
     "name": "Verify if USDC can be minted successfully",
     "module": "WEB",
     "status": "Done",
@@ -1113,7 +1127,7 @@
     "feature": "mint"
   },
   {
-    "id": "TC-198",
+    "id": "W-093",
     "name": "Verify if ETH can be minted successfully",
     "module": "WEB",
     "status": "Done",
@@ -1125,7 +1139,7 @@
     "feature": "mint"
   },
   {
-    "id": "TC-199",
+    "id": "W-094",
     "name": "Verify if GRVT can be minted successfully",
     "module": "WEB",
     "status": "Done",
@@ -1137,7 +1151,7 @@
     "feature": "mint"
   },
   {
-    "id": "TC-200",
+    "id": "W-095",
     "name": "Verify if all tokens can be minted multiple times successfully",
     "module": "WEB",
     "status": "Done",
@@ -1149,7 +1163,7 @@
     "feature": "mint"
   },
   {
-    "id": "TC-201",
+    "id": "W-096",
     "name": "Verify if minting fails after cookies are deleted",
     "module": "WEB",
     "status": "Done",
@@ -1161,7 +1175,7 @@
     "feature": "mint"
   },
   {
-    "id": "TC-202",
+    "id": "W-097",
     "name": "Verify if when do invalid mint amount a message will show",
     "module": "WEB",
     "status": "Done",
@@ -1173,7 +1187,7 @@
     "feature": "mint"
   },
   {
-    "id": "TC-203",
+    "id": "W-098",
     "name": "User should be able to place a SCALE order and verify open orders",
     "module": "WEB",
     "status": "Done",
@@ -1185,7 +1199,7 @@
     "feature": "testUIForScaleOrders"
   },
   {
-    "id": "TC-204",
+    "id": "W-099",
     "name": "Deposit - Export transaction history as CSV",
     "module": "WEB",
     "status": "Done",
@@ -1197,7 +1211,7 @@
     "feature": "exportHistory"
   },
   {
-    "id": "TC-205",
+    "id": "W-100",
     "name": "Deposit - Export transaction history as PDF",
     "module": "WEB",
     "status": "Done",
@@ -1209,7 +1223,7 @@
     "feature": "exportHistory"
   },
   {
-    "id": "TC-206",
+    "id": "W-101",
     "name": "Withdrawal - Export transaction history in CSV format",
     "module": "WEB",
     "status": "Done",
@@ -1221,7 +1235,7 @@
     "feature": "exportHistory"
   },
   {
-    "id": "TC-207",
+    "id": "W-102",
     "name": "Withdrawal - Export transaction history as PDF",
     "module": "WEB",
     "status": "Done",
@@ -1233,7 +1247,7 @@
     "feature": "exportHistory"
   },
   {
-    "id": "TC-208",
+    "id": "W-103",
     "name": "Transfer - Export transaction history as CSV",
     "module": "WEB",
     "status": "Done",
@@ -1245,7 +1259,7 @@
     "feature": "exportHistory"
   },
   {
-    "id": "TC-209",
+    "id": "W-104",
     "name": "Transfer - Export transaction history as PDF",
     "module": "WEB",
     "status": "Done",
@@ -1257,7 +1271,7 @@
     "feature": "exportHistory"
   },
   {
-    "id": "TC-210",
+    "id": "W-105",
     "name": "Order - Export transaction history as CSV",
     "module": "WEB",
     "status": "Done",
@@ -1269,7 +1283,7 @@
     "feature": "exportHistory"
   },
   {
-    "id": "TC-211",
+    "id": "W-106",
     "name": "Order - Export transaction history as PDF",
     "module": "WEB",
     "status": "Done",
@@ -1281,7 +1295,7 @@
     "feature": "exportHistory"
   },
   {
-    "id": "TC-212",
+    "id": "W-107",
     "name": "Trade - Export transaction history as CSV",
     "module": "WEB",
     "status": "Done",
@@ -1293,7 +1307,7 @@
     "feature": "exportHistory"
   },
   {
-    "id": "TC-213",
+    "id": "W-108",
     "name": "Trade - Export transaction history as PDF",
     "module": "WEB",
     "status": "Done",
@@ -1305,7 +1319,7 @@
     "feature": "exportHistory"
   },
   {
-    "id": "TC-214",
+    "id": "W-109",
     "name": "Export File - header column, data, and sort time display correctly",
     "module": "WEB",
     "status": "Done",
@@ -1317,7 +1331,7 @@
     "feature": "exportHistory"
   },
   {
-    "id": "TC-215",
+    "id": "W-110",
     "name": "Cannot export history on the 11th attempt",
     "module": "WEB",
     "status": "Done",
@@ -1329,7 +1343,7 @@
     "feature": "exportHistory"
   },
   {
-    "id": "TC-216",
+    "id": "W-111",
     "name": "The Points multiplier should be displayed correctly for each Ambassador Level",
     "module": "WEB",
     "status": "Done",
@@ -1341,7 +1355,7 @@
     "feature": "referral"
   },
   {
-    "id": "TC-217",
+    "id": "W-112",
     "name": "A Regular user should receive the corresponding point multiplier if they are referred by an Ambassador",
     "module": "WEB",
     "status": "Done",
@@ -1353,7 +1367,7 @@
     "feature": "referral"
   },
   {
-    "id": "TC-218",
+    "id": "W-113",
     "name": "TP/SL Price accurate & ROI should reflect Leverage and ROI input (Market order)",
     "module": "WEB",
     "status": "Done",
@@ -1365,7 +1379,7 @@
     "feature": "roi"
   },
   {
-    "id": "TC-219",
+    "id": "W-114",
     "name": "TP/SL Price accurate & ROI should reflect Leverage and ROI input (Limit order)",
     "module": "WEB",
     "status": "Done",
@@ -1377,7 +1391,7 @@
     "feature": "roi"
   },
   {
-    "id": "TC-220",
+    "id": "W-115",
     "name": "ROI 0% input should set TP/SL prices equal to Entry price and ROI = 0.00%",
     "module": "WEB",
     "status": "Done",
@@ -1389,7 +1403,7 @@
     "feature": "roi"
   },
   {
-    "id": "TC-221",
+    "id": "W-116",
     "name": "TP/SL Price accurate & ROI should reflect Leverage and PnL Input (Market Order)",
     "module": "WEB",
     "status": "Done",
@@ -1401,7 +1415,7 @@
     "feature": "roi"
   },
   {
-    "id": "TC-222",
+    "id": "W-117",
     "name": "TP/SL Price accurate & ROI should reflect Leverage and PnL Input (Limit Order)",
     "module": "WEB",
     "status": "Done",
@@ -1413,7 +1427,7 @@
     "feature": "roi"
   },
   {
-    "id": "TC-223",
+    "id": "W-118",
     "name": "Changing Leverage should only recalculate ROI — TP/SL prices and PnL should unchanged",
     "module": "WEB",
     "status": "Done",
@@ -1425,7 +1439,7 @@
     "feature": "roi"
   },
   {
-    "id": "TC-224",
+    "id": "W-119",
     "name": "TP/SL Price accurate & ROI should reflect Leverage and ROI input in Postition",
     "module": "WEB",
     "status": "Done",
@@ -1437,7 +1451,7 @@
     "feature": "roi"
   },
   {
-    "id": "TC-225",
+    "id": "W-120",
     "name": "Unlock 3.50% interest after placing 5 trades",
     "module": "WEB",
     "status": "Done",
@@ -1449,7 +1463,7 @@
     "feature": "tdy"
   },
   {
-    "id": "TC-226",
+    "id": "W-121",
     "name": "Verify the new user should earning 4.5% after deposit 1,000 USDT and make 5 trades",
     "module": "WEB",
     "status": "Done",
@@ -1461,7 +1475,7 @@
     "feature": "tdy"
   },
   {
-    "id": "TC-227",
+    "id": "W-122",
     "name": "Unlock 1.00% interest after inviting 1 new friend who deposits 1000 USDT and makes 5 trades",
     "module": "WEB",
     "status": "Done",
@@ -1473,7 +1487,7 @@
     "feature": "tdy"
   },
   {
-    "id": "TC-228",
+    "id": "W-123",
     "name": "Verify the Tier unlock correctly with the trading volume",
     "module": "WEB",
     "status": "Done",
@@ -1485,7 +1499,7 @@
     "feature": "tdy"
   },
   {
-    "id": "TC-229",
+    "id": "W-124",
     "name": "Verify Max APY displayed is 11% (3.5% base + 6.5% volume + 1% referral)",
     "module": "WEB",
     "status": "Done",
@@ -1497,7 +1511,7 @@
     "feature": "tdy"
   },
   {
-    "id": "TC-230",
+    "id": "W-125",
     "name": "User should be able to place a LIMIT order with TP/SL enabled, and a randomly selected trigger type",
     "module": "WEB",
     "status": "Done",
@@ -1509,7 +1523,7 @@
     "feature": "placeOrdersLimitUsingTPSL"
   },
   {
-    "id": "TC-231",
+    "id": "W-126",
     "name": "User should be able to place a LIMIT order with TP enabled, and a randomly selected trigger type",
     "module": "WEB",
     "status": "Done",
@@ -1521,7 +1535,7 @@
     "feature": "placeOrdersLimitUsingTPSL"
   },
   {
-    "id": "TC-232",
+    "id": "W-127",
     "name": "User should be able to place a LIMIT order with SL enabled, and a randomly selected trigger type",
     "module": "WEB",
     "status": "Done",
@@ -1533,7 +1547,7 @@
     "feature": "placeOrdersLimitUsingTPSL"
   },
   {
-    "id": "TC-233",
+    "id": "W-128",
     "name": "User should be able to place a MARKET order with TP/SL enabled, and a randomly selected trigger type",
     "module": "WEB",
     "status": "Done",
@@ -1545,7 +1559,7 @@
     "feature": "placeOrdersMarketUsingTPSL"
   },
   {
-    "id": "TC-234",
+    "id": "W-129",
     "name": "User should be able to place a MARKET order with TP enabled, and a randomly selected trigger type",
     "module": "WEB",
     "status": "Done",
@@ -1557,7 +1571,7 @@
     "feature": "placeOrdersMarketUsingTPSL"
   },
   {
-    "id": "TC-235",
+    "id": "W-130",
     "name": "User should be able to place a MARKET order with SL enabled, and a randomly selected trigger type",
     "module": "WEB",
     "status": "Done",
@@ -1569,7 +1583,7 @@
     "feature": "placeOrdersMarketUsingTPSL"
   },
   {
-    "id": "TC-236",
+    "id": "W-131",
     "name": "User should be able to place TP/SL order with random trigger type",
     "module": "WEB",
     "status": "Done",
@@ -1581,7 +1595,7 @@
     "feature": "placeOrdersWithTPSL"
   },
   {
-    "id": "TC-237",
+    "id": "W-132",
     "name": "User should be able to place TP order with random trigger type",
     "module": "WEB",
     "status": "Done",
@@ -1593,7 +1607,7 @@
     "feature": "placeOrdersWithTPSL"
   },
   {
-    "id": "TC-238",
+    "id": "W-133",
     "name": "User should be able to place SL order with random trigger type",
     "module": "WEB",
     "status": "Done",
@@ -1605,7 +1619,7 @@
     "feature": "placeOrdersWithTPSL"
   },
   {
-    "id": "TC-239",
+    "id": "W-134",
     "name": "Validate Order History for 7D/30D/60D",
     "module": "WEB",
     "status": "Done",
@@ -1617,7 +1631,7 @@
     "feature": "validateOrderHistoryAndTradeHistory"
   },
   {
-    "id": "TC-240",
+    "id": "W-135",
     "name": "Validate Trade history for 7D/30D/60D",
     "module": "WEB",
     "status": "Done",
@@ -1629,7 +1643,7 @@
     "feature": "validateOrderHistoryAndTradeHistory"
   },
   {
-    "id": "TC-241",
+    "id": "W-136",
     "name": "Verify user can qty adjustment via slider",
     "module": "WEB",
     "status": "Done",
@@ -1641,7 +1655,7 @@
     "feature": "closePositionAndCancelOpenOrders"
   },
   {
-    "id": "TC-242",
+    "id": "W-137",
     "name": "Verify user can open position, close position and reverse position",
     "module": "WEB",
     "status": "Done",
@@ -1653,7 +1667,7 @@
     "feature": "closePositionAndCancelOpenOrders"
   },
   {
-    "id": "TC-243",
+    "id": "W-138",
     "name": "Verify user can edit order and cancel open orders",
     "module": "WEB",
     "status": "Done",
@@ -1665,55 +1679,59 @@
     "feature": "isolatedMarginMode"
   },
   {
-    "id": "TC-244",
+    "id": "W-139",
     "name": "Place a market order using isolated margin mode",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "isolatedMarginMode"
   },
   {
-    "id": "TC-245",
+    "id": "W-140",
     "name": "Place a limit order using isolated margin mode",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "isolatedMarginMode"
   },
   {
-    "id": "TC-246",
+    "id": "W-141",
     "name": "Add margin to a position",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "isolatedMarginMode"
   },
   {
-    "id": "TC-247",
+    "id": "W-142",
     "name": "Remove margin to a position",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "isolatedMarginMode"
   },
   {
-    "id": "TC-248",
+    "id": "W-143",
     "name": "Switch margin mode with an active position record",
     "module": "WEB",
     "status": "Done",
@@ -1725,7 +1743,7 @@
     "feature": "isolatedMarginMode"
   },
   {
-    "id": "TC-249",
+    "id": "W-144",
     "name": "Switch margin mode with an active position record (different instrument)",
     "module": "WEB",
     "status": "Done",
@@ -1737,7 +1755,7 @@
     "feature": "isolatedMarginMode"
   },
   {
-    "id": "TC-250",
+    "id": "W-145",
     "name": "Close partial or full position on isolated margin",
     "module": "WEB",
     "status": "Done",
@@ -1749,7 +1767,7 @@
     "feature": "isolatedMarginMode"
   },
   {
-    "id": "TC-251",
+    "id": "W-146",
     "name": "Users can increase leverage when holding an active position in Isolated Margin mode.",
     "module": "WEB",
     "status": "Done",
@@ -1761,7 +1779,7 @@
     "feature": "isolatedMarginMode"
   },
   {
-    "id": "TC-252",
+    "id": "W-147",
     "name": "Verify that leverage reduction is blocked when an active position exists in isolated margin mode",
     "module": "WEB",
     "status": "Done",
@@ -1773,7 +1791,7 @@
     "feature": "isolatedMarginMode"
   },
   {
-    "id": "TC-253",
+    "id": "W-148",
     "name": "Allow user multi-select asset filter and it will applies to all tabs",
     "module": "WEB",
     "status": "Done",
@@ -1785,7 +1803,7 @@
     "feature": "multiSelectAssetFilter"
   },
   {
-    "id": "TC-254",
+    "id": "W-149",
     "name": "Amend Price and Size of a Limit Post-Only Order",
     "module": "WEB",
     "status": "Done",
@@ -1797,7 +1815,7 @@
     "feature": "orderAmendments"
   },
   {
-    "id": "TC-255",
+    "id": "W-150",
     "name": "Amend Price of a Position-Linked TP/SL Order",
     "module": "WEB",
     "status": "Done",
@@ -1809,7 +1827,7 @@
     "feature": "orderAmendments"
   },
   {
-    "id": "TC-256",
+    "id": "W-151",
     "name": "Amend Price of a Standalone TP/SL Order",
     "module": "WEB",
     "status": "Done",
@@ -1821,7 +1839,7 @@
     "feature": "orderAmendments"
   },
   {
-    "id": "TC-257",
+    "id": "W-152",
     "name": "Amend Price of an OCO Order",
     "module": "WEB",
     "status": "Done",
@@ -1833,7 +1851,7 @@
     "feature": "orderAmendments"
   },
   {
-    "id": "TC-258",
+    "id": "W-153",
     "name": "Verify Open Split TPSL modal from Positions tab",
     "module": "WEB",
     "status": "Done",
@@ -1845,7 +1863,7 @@
     "feature": "splitTPSL"
   },
   {
-    "id": "TC-259",
+    "id": "W-154",
     "name": "Verify Add first TP target row filled and percent auto calculated",
     "module": "WEB",
     "status": "Done",
@@ -1857,7 +1875,7 @@
     "feature": "splitTPSL"
   },
   {
-    "id": "TC-260",
+    "id": "W-155",
     "name": "Verify qty field clamps to current max and TP stays within 100",
     "module": "WEB",
     "status": "Done",
@@ -1869,7 +1887,7 @@
     "feature": "splitTPSL"
   },
   {
-    "id": "TC-261",
+    "id": "W-156",
     "name": "Verify Add up to 6 TP targets and Confirm succeeds",
     "module": "WEB",
     "status": "Done",
@@ -1881,7 +1899,7 @@
     "feature": "splitTPSL"
   },
   {
-    "id": "TC-262",
+    "id": "W-157",
     "name": "Verify Positions tab shows TPSL badge N",
     "module": "WEB",
     "status": "Done",
@@ -1893,7 +1911,7 @@
     "feature": "splitTPSL"
   },
   {
-    "id": "TC-263",
+    "id": "W-158",
     "name": "Verify Edit an existing TP target change trigger and Confirm persists",
     "module": "WEB",
     "status": "Done",
@@ -1905,7 +1923,7 @@
     "feature": "splitTPSL"
   },
   {
-    "id": "TC-264",
+    "id": "W-159",
     "name": "Verify Cancel All TPSL and badge disappears from Positions",
     "module": "WEB",
     "status": "Done",
@@ -1917,7 +1935,7 @@
     "feature": "splitTPSL"
   },
   {
-    "id": "TC-265",
+    "id": "W-160",
     "name": "Verify Add a TP target by ROI value is displayed correctly",
     "module": "WEB",
     "status": "Done",
@@ -1929,7 +1947,7 @@
     "feature": "splitTPSL"
   },
   {
-    "id": "TC-266",
+    "id": "W-161",
     "name": "Verify Add first SL target row added and percent auto calculated",
     "module": "WEB",
     "status": "Done",
@@ -1941,7 +1959,7 @@
     "feature": "splitTPSL"
   },
   {
-    "id": "TC-267",
+    "id": "W-162",
     "name": "Verify Add first TP or SL target with Limit price",
     "module": "WEB",
     "status": "Done",
@@ -1953,7 +1971,7 @@
     "feature": "splitTPSL"
   },
   {
-    "id": "TC-268",
+    "id": "W-163",
     "name": "Verify Add TP and SL together Positions badge shows 2",
     "module": "WEB",
     "status": "Done",
@@ -1965,7 +1983,7 @@
     "feature": "splitTPSL"
   },
   {
-    "id": "TC-269",
+    "id": "W-164",
     "name": "Verify Reset data on delete row or switch tab",
     "module": "WEB",
     "status": "Done",
@@ -1977,7 +1995,7 @@
     "feature": "splitTPSL"
   },
   {
-    "id": "TC-270",
+    "id": "W-165",
     "name": "Verify setting PTPSL when the trading login is available",
     "module": "WEB",
     "status": "Done",
@@ -1989,7 +2007,7 @@
     "feature": "tpslSendReasonableSize"
   },
   {
-    "id": "TC-271",
+    "id": "W-166",
     "name": "Long position: TP trigger price must be greater than mark price",
     "module": "WEB",
     "status": "Done",
@@ -2001,7 +2019,7 @@
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
-    "id": "TC-272",
+    "id": "W-167",
     "name": "Long position: in-profit SL trigger price must be between entry and mark prices",
     "module": "WEB",
     "status": "Done",
@@ -2013,7 +2031,7 @@
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
-    "id": "TC-273",
+    "id": "W-168",
     "name": "Short position: TP trigger price must be less than mark price",
     "module": "WEB",
     "status": "Done",
@@ -2025,7 +2043,7 @@
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
-    "id": "TC-274",
+    "id": "W-169",
     "name": "Short position: in-profit SL trigger price must be between mark and entry prices",
     "module": "WEB",
     "status": "Done",
@@ -2037,7 +2055,7 @@
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
-    "id": "TC-275",
+    "id": "W-170",
     "name": "Split TP for Long position: trigger price must be greater than mark price",
     "module": "WEB",
     "status": "Done",
@@ -2049,7 +2067,7 @@
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
-    "id": "TC-276",
+    "id": "W-171",
     "name": "Split SL for Long position: in-profit trigger price must be between entry and mark prices",
     "module": "WEB",
     "status": "Done",
@@ -2061,7 +2079,7 @@
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
-    "id": "TC-277",
+    "id": "W-172",
     "name": "Split TP for Short position: trigger price must be less than mark price",
     "module": "WEB",
     "status": "Done",
@@ -2073,7 +2091,7 @@
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
-    "id": "TC-278",
+    "id": "W-173",
     "name": "Split SL for Short position: in-profit trigger price must be between mark and entry prices",
     "module": "WEB",
     "status": "Done",
@@ -2085,7 +2103,7 @@
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
-    "id": "TC-279",
+    "id": "W-174",
     "name": "Verify the values of Max position, Min Notional Value, Tick size, Min size and margin rates are displayed correctly",
     "module": "WEB",
     "status": "Done",
@@ -2097,7 +2115,7 @@
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
-    "id": "TC-280",
+    "id": "W-175",
     "name": "Verify if Price Alerts dialog opens via chart toolbar",
     "module": "WEB",
     "status": "Done",
@@ -2109,7 +2127,7 @@
     "feature": "priceAlert"
   },
   {
-    "id": "TC-281",
+    "id": "W-176",
     "name": "Verify if Price Alert creation form opens via Add Alert button",
     "module": "WEB",
     "status": "Done",
@@ -2121,7 +2139,7 @@
     "feature": "priceAlert"
   },
   {
-    "id": "TC-282",
+    "id": "W-177",
     "name": "Verify if Price Reaches alert can be created with Once Only frequency",
     "module": "WEB",
     "status": "Done",
@@ -2133,7 +2151,7 @@
     "feature": "priceAlert"
   },
   {
-    "id": "TC-283",
+    "id": "W-178",
     "name": "Verify if Price Moves Above alert can be created with Once Only frequency",
     "module": "WEB",
     "status": "Done",
@@ -2145,7 +2163,7 @@
     "feature": "priceAlert"
   },
   {
-    "id": "TC-284",
+    "id": "W-179",
     "name": "Verify if Price Moves Below alert can be created with Once Only frequency",
     "module": "WEB",
     "status": "Done",
@@ -2157,7 +2175,7 @@
     "feature": "priceAlert"
   },
   {
-    "id": "TC-285",
+    "id": "W-180",
     "name": "Verify if negative Trigger Price is rejected",
     "module": "WEB",
     "status": "Done",
@@ -2169,7 +2187,7 @@
     "feature": "priceAlert"
   },
   {
-    "id": "TC-286",
+    "id": "W-181",
     "name": "Verify if form does not submit when required Trigger Price is empty",
     "module": "WEB",
     "status": "Done",
@@ -2181,7 +2199,7 @@
     "feature": "priceAlert"
   },
   {
-    "id": "TC-287",
+    "id": "W-182",
     "name": "Verify if a single alert can be deleted from the list",
     "module": "WEB",
     "status": "Done",
@@ -2193,7 +2211,7 @@
     "feature": "priceAlert"
   },
   {
-    "id": "TC-288",
+    "id": "W-183",
     "name": "Verify if alert can be edited by changing Trigger Price",
     "module": "WEB",
     "status": "Done",
@@ -2205,7 +2223,7 @@
     "feature": "priceAlert"
   },
   {
-    "id": "TC-289",
+    "id": "W-184",
     "name": "Verify if max 5 alerts per pair is enforced and 6th on same pair is blocked",
     "module": "WEB",
     "status": "Done",
@@ -2217,7 +2235,7 @@
     "feature": "priceAlert"
   },
   {
-    "id": "TC-290",
+    "id": "W-185",
     "name": "Verify if market buy order can be placed successfully",
     "module": "WEB",
     "status": "Done",
@@ -2229,7 +2247,7 @@
     "feature": "spotTrading"
   },
   {
-    "id": "TC-291",
+    "id": "W-186",
     "name": "Verify if market sell order can be placed successfully",
     "module": "WEB",
     "status": "Done",
@@ -2241,7 +2259,7 @@
     "feature": "spotTrading"
   },
   {
-    "id": "TC-292",
+    "id": "W-187",
     "name": "Verify if limit buy order can be placed successfully",
     "module": "WEB",
     "status": "Done",
@@ -2253,7 +2271,7 @@
     "feature": "spotTrading"
   },
   {
-    "id": "TC-293",
+    "id": "W-188",
     "name": "Verify if limit sell order can be placed successfully",
     "module": "WEB",
     "status": "Done",
@@ -2265,7 +2283,7 @@
     "feature": "spotTrading"
   },
   {
-    "id": "TC-294",
+    "id": "W-189",
     "name": "Verify if open limit order can be cancelled successfully",
     "module": "WEB",
     "status": "Done",
@@ -2277,7 +2295,7 @@
     "feature": "spotTrading"
   },
   {
-    "id": "TC-295",
+    "id": "W-190",
     "name": "Verify user withdraw following with Withdrawal Allowancea",
     "module": "WEB",
     "status": "Done",
@@ -2289,7 +2307,7 @@
     "feature": "cev"
   },
   {
-    "id": "TC-296",
+    "id": "W-191",
     "name": "Verify user can invest in a CEV with an amount that is less than or equal to the 'You can invest' limit",
     "module": "WEB",
     "status": "Done",
@@ -2301,7 +2319,7 @@
     "feature": "cev"
   },
   {
-    "id": "TC-297",
+    "id": "W-192",
     "name": "Verify error messages when user tries to invest beyond allocation",
     "module": "WEB",
     "status": "Done",
@@ -2313,7 +2331,7 @@
     "feature": "cev"
   },
   {
-    "id": "TC-298",
+    "id": "W-193",
     "name": "Verify investment is placed in a pending queue when the vault is locked",
     "module": "WEB",
     "status": "Done",
@@ -2325,7 +2343,7 @@
     "feature": "cev"
   },
   {
-    "id": "TC-299",
+    "id": "W-194",
     "name": "Verify user should be able to redemp vault",
     "module": "WEB",
     "status": "Done",
@@ -2337,7 +2355,7 @@
     "feature": "cev"
   },
   {
-    "id": "TC-300",
+    "id": "W-195",
     "name": "Verify transferring funds from the Funding Account to a CEV must be allowed",
     "module": "WEB",
     "status": "Done",
@@ -2349,7 +2367,7 @@
     "feature": "cev"
   },
   {
-    "id": "TC-301",
+    "id": "W-196",
     "name": "Verify the investment will be moved from the pending queue to completed after the vault is unlocked",
     "module": "WEB",
     "status": "Done",
@@ -2361,31 +2379,33 @@
     "feature": "cev"
   },
   {
-    "id": "TC-302",
+    "id": "W-197",
     "name": "Verify user can redeem my vault not more than available limit",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "vaultStrategy"
   },
   {
-    "id": "TC-303",
+    "id": "W-198",
     "name": "Verify user can invest my vault and invest another vault",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "vaultStrategy"
   },
   {
-    "id": "TC-304",
+    "id": "W-199",
     "name": "Verify user as vault investor can invest in multiple vaults",
     "module": "WEB",
     "status": "Done",
@@ -2397,7 +2417,7 @@
     "feature": "vaultStrategy"
   },
   {
-    "id": "TC-305",
+    "id": "W-200",
     "name": "Verify user as vault investor can redeem a vault",
     "module": "WEB",
     "status": "Done",
@@ -2409,7 +2429,7 @@
     "feature": "vaultStrategy"
   },
   {
-    "id": "TC-306",
+    "id": "W-201",
     "name": "Verify user can auto redeem a vault when the auto redeemable balance is sufficient",
     "module": "WEB",
     "status": "Done",
@@ -2421,7 +2441,7 @@
     "feature": "vaultStrategy"
   },
   {
-    "id": "TC-307",
+    "id": "W-202",
     "name": "Verify user cannot auto redeem a vault when the auto redeemable balance is insufficient",
     "module": "WEB",
     "status": "Done",
@@ -2433,19 +2453,20 @@
     "feature": "vaultStrategy"
   },
   {
-    "id": "TC-308",
+    "id": "W-203",
     "name": "Verify user can burn vault not more than available shares",
     "module": "WEB",
     "status": "Done",
     "updated": "2026-07-02",
     "result": "",
     "tags": [
-      "regression"
+      "regression",
+      "smoke"
     ],
     "feature": "vaultStrategy"
   },
   {
-    "id": "TC-309",
+    "id": "W-204",
     "name": "Verify user can invest the full funding balance in an Ungated CEV with no 10% cap restriction",
     "module": "WEB",
     "status": "Done",
@@ -2457,7 +2478,7 @@
     "feature": "cevUngated"
   },
   {
-    "id": "TC-310",
+    "id": "W-205",
     "name": "Verify user can fully redeem all shares from an Ungated CEV without min-balance restriction",
     "module": "WEB",
     "status": "Done",
@@ -2469,7 +2490,7 @@
     "feature": "cevUngated"
   },
   {
-    "id": "TC-311",
+    "id": "W-206",
     "name": "Verify user should be able to cancel a pending full-redemption on an Ungated CEV with no 10% cap error",
     "module": "WEB",
     "status": "Done",
@@ -2481,7 +2502,7 @@
     "feature": "cevUngated"
   },
   {
-    "id": "TC-312",
+    "id": "W-207",
     "name": "Verify gated GLP vault should still apply the 10% cap restriction after the Ungated fix",
     "module": "WEB",
     "status": "Done",
@@ -2493,7 +2514,7 @@
     "feature": "cevUngated"
   },
   {
-    "id": "TC-313",
+    "id": "W-208",
     "name": "Verify user can initiate an external transfer from an Ungated CEV",
     "module": "WEB",
     "status": "Done",
@@ -2505,7 +2526,7 @@
     "feature": "cevUngated"
   },
   {
-    "id": "TC-314",
+    "id": "W-209",
     "name": "Verify user can initiate a withdrawal from an Ungated CEV",
     "module": "WEB",
     "status": "Done",
@@ -2515,5 +2536,65 @@
       "regression"
     ],
     "feature": "cevUngated"
+  },
+  {
+    "id": "W-210",
+    "name": "Authed /download-app hides UI Theme toggle in settings panel",
+    "feature": "Theme",
+    "module": "WEB",
+    "status": "Done",
+    "tags": [
+      "regression"
+    ],
+    "updated": "2026-07-04",
+    "result": ""
+  },
+  {
+    "id": "W-211",
+    "name": "Deposit token support matrix per network — Via exchange",
+    "feature": "Token Support",
+    "module": "WEB",
+    "status": "Done",
+    "tags": [
+      "regression"
+    ],
+    "updated": "2026-07-04",
+    "result": ""
+  },
+  {
+    "id": "W-212",
+    "name": "Deposit token support matrix per network — Via connected wallet",
+    "feature": "Token Support",
+    "module": "WEB",
+    "status": "Done",
+    "tags": [
+      "regression"
+    ],
+    "updated": "2026-07-04",
+    "result": ""
+  },
+  {
+    "id": "W-213",
+    "name": "Withdrawal token support matrix is enforced per network (incl. switching)",
+    "feature": "Token Support",
+    "module": "WEB",
+    "status": "Done",
+    "tags": [
+      "regression"
+    ],
+    "updated": "2026-07-04",
+    "result": ""
+  },
+  {
+    "id": "W-214",
+    "name": "Send as USDC keeps USDT source and converts the received currency",
+    "feature": "Token Support",
+    "module": "WEB",
+    "status": "Done",
+    "tags": [
+      "regression"
+    ],
+    "updated": "2026-07-04",
+    "result": ""
   }
 ]

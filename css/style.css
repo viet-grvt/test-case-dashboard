@@ -612,6 +612,20 @@ form {
   gap: 12px;
   margin-bottom: 14px;
 }
+.runs-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.runs-toolbar select {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel);
+  color: var(--text);
+  font-size: 0.9rem;
+}
 .runs-summary {
   margin-bottom: 16px;
 }
