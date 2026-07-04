@@ -494,13 +494,13 @@
   {
     "id": "W-044",
     "name": "Data Update",
+    "feature": "instrumentSectors",
     "module": "WEB",
     "status": "Done",
-    "result": "",
     "tags": [
       "regression"
     ],
-    "feature": "E2E"
+    "result": ""
   },
   {
     "id": "W-045",
