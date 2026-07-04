@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-07-04T06:36:02.333Z",
+  "updatedAt": "2026-07-04T09:05:19.565Z",
   "runs": [
+    {
+      "id": "28701299252",
+      "name": "UI E2E Smoke Test [Chrome]",
+      "module": "WEB",
+      "date": "2026-07-04",
+      "at": "2026-07-04T09:05:19.565Z",
+      "env": "prod",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701299252",
+      "reportUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701299252/artifacts/8080294471",
+      "totals": {
+        "passed": 4,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "results": {
+        "W-051": "passed",
+        "W-053": "passed",
+        "W-054": "passed",
+        "W-060": "passed"
+      }
+    },
     {
       "id": "28697898961",
       "name": "UI E2E Smoke Test [Chrome]",
