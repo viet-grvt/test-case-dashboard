@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T05:30:18.740Z",
+  "updatedAt": "2026-07-04T06:13:26.154Z",
   "results": {
     "TC-108": {
       "status": "passed",
@@ -9,11 +9,11 @@
       "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1005"
     },
     "TC-109": {
-      "status": "failed",
+      "status": "passed",
       "date": "2026-07-04",
-      "env": "staging",
+      "env": "testnet",
       "browser": "chrome",
-      "runUrl": "https://github.com/grvt/qa-automation/actions/runs/1005"
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28697318956"
     },
     "TC-110": {
       "status": "passed",
