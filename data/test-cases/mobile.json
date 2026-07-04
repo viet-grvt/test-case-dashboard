@@ -1,5 +1,17 @@
 [
   {
+    "id": "M-077",
+    "name": "test",
+    "feature": "E2E",
+    "module": "MOBILE",
+    "status": "Todo",
+    "tags": [
+      "regression"
+    ],
+    "updated": "2026-07-04",
+    "result": ""
+  },
+  {
     "id": "M-001",
     "name": "User can invest 25% of funding balance into and fully redeem from an Ungated CEV with no cap restriction",
     "feature": "cev-ungated",
