@@ -1,5 +1,17 @@
 [
   {
+    "id": "W-215",
+    "name": "test",
+    "feature": "E2E",
+    "module": "WEB",
+    "status": "Todo",
+    "tags": [
+      "regression"
+    ],
+    "updated": "2026-07-04",
+    "result": ""
+  },
+  {
     "id": "W-001",
     "name": "[WEB] Split smoke & regression test (new)",
     "feature": "E2E",
