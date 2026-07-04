@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T09:05:19.560Z",
+  "updatedAt": "2026-07-04T09:23:27.918Z",
   "results": {
     "W-003": {
       "status": "passed",
@@ -25,30 +25,93 @@
     "W-051": {
       "status": "passed",
       "date": "2026-07-04",
-      "env": "prod",
+      "env": "testnet",
       "browser": "chrome",
-      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701299252"
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312"
     },
     "W-053": {
       "status": "passed",
       "date": "2026-07-04",
-      "env": "prod",
+      "env": "testnet",
       "browser": "chrome",
-      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701299252"
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312"
     },
     "W-054": {
       "status": "passed",
       "date": "2026-07-04",
-      "env": "prod",
+      "env": "testnet",
       "browser": "chrome",
-      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701299252"
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312"
     },
     "W-060": {
       "status": "passed",
       "date": "2026-07-04",
-      "env": "prod",
+      "env": "testnet",
       "browser": "chrome",
-      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701299252"
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312"
+    },
+    "W-052": {
+      "status": "failed",
+      "date": "2026-07-04",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312"
+    },
+    "W-055": {
+      "status": "passed",
+      "date": "2026-07-04",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312"
+    },
+    "W-056": {
+      "status": "passed",
+      "date": "2026-07-04",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312"
+    },
+    "W-057": {
+      "status": "passed",
+      "date": "2026-07-04",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312"
+    },
+    "W-058": {
+      "status": "passed",
+      "date": "2026-07-04",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312"
+    },
+    "W-059": {
+      "status": "passed",
+      "date": "2026-07-04",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312"
+    },
+    "W-061": {
+      "status": "passed",
+      "date": "2026-07-04",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312"
+    },
+    "W-062": {
+      "status": "passed",
+      "date": "2026-07-04",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312"
+    },
+    "W-063": {
+      "status": "passed",
+      "date": "2026-07-04",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312"
     }
   }
 }

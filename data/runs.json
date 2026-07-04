@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-07-04T09:05:19.565Z",
+  "updatedAt": "2026-07-04T09:23:27.924Z",
   "runs": [
+    {
+      "id": "28701345312",
+      "name": "UI E2E Regression Test [Chrome]",
+      "module": "WEB",
+      "date": "2026-07-04",
+      "at": "2026-07-04T09:23:27.924Z",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312",
+      "reportUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28701345312/artifacts/8080422505",
+      "totals": {
+        "passed": 12,
+        "failed": 1,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "results": {
+        "W-051": "passed",
+        "W-052": "failed",
+        "W-053": "passed",
+        "W-054": "passed",
+        "W-055": "passed",
+        "W-056": "passed",
+        "W-057": "passed",
+        "W-058": "passed",
+        "W-059": "passed",
+        "W-060": "passed",
+        "W-061": "passed",
+        "W-062": "passed",
+        "W-063": "passed"
+      }
+    },
     {
       "id": "28701299252",
       "name": "UI E2E Smoke Test [Chrome]",
