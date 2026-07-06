@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-04T10:17:29.858Z",
+  "updatedAt": "2026-07-06T02:30:45.239Z",
   "results": {
     "W-003": {
       "status": "passed",
@@ -115,17 +115,150 @@
     },
     "M-047": {
       "status": "failed",
-      "date": "2026-07-04",
+      "date": "2026-07-06",
       "env": "testnet",
       "browser": "android",
-      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28702471897"
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
     },
     "M-046": {
       "status": "passed",
-      "date": "2026-07-04",
+      "date": "2026-07-06",
       "env": "testnet",
       "browser": "android",
-      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28702471897"
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-021": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-018": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-006": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-020": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-025": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-013": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-015": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-026": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-012": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-009": {
+      "status": "failed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-027": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-032": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-024": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-033": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-023": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-014": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-022": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-008": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
+    },
+    "M-028": {
+      "status": "passed",
+      "date": "2026-07-06",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/28761590773"
     }
   }
 }
