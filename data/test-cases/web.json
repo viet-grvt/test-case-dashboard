@@ -5,10 +5,7 @@
     "feature": "E2E",
     "module": "WEB",
     "status": "Done",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "result": ""
   },
   {
@@ -17,10 +14,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -29,10 +23,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -41,10 +32,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -53,10 +41,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -65,10 +50,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -77,10 +59,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -89,10 +68,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -101,10 +77,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -113,10 +86,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -125,10 +95,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -137,10 +104,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -149,10 +113,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -161,10 +122,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -173,10 +131,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -185,10 +140,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -197,9 +149,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "E2E"
   },
   {
@@ -208,9 +158,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "E2E"
   },
   {
@@ -219,10 +167,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -231,9 +176,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "E2E"
   },
   {
@@ -242,10 +185,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -254,9 +194,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "E2E"
   },
   {
@@ -265,10 +203,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "E2E"
   },
   {
@@ -277,9 +212,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "E2E"
   },
   {
@@ -288,9 +221,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "E2E"
   },
   {
@@ -299,9 +230,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "E2E"
   },
   {
@@ -310,9 +239,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "E2E"
   },
   {
@@ -321,9 +248,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "E2E"
   },
   {
@@ -332,9 +257,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "businessNoKyc"
   },
   {
@@ -343,9 +266,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "businessNoKyc"
   },
   {
@@ -354,9 +275,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "businessNoKyc"
   },
   {
@@ -365,9 +284,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "downloadApp"
   },
   {
@@ -376,9 +293,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -387,9 +302,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -398,9 +311,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -409,9 +320,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -420,9 +329,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -431,9 +338,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -442,9 +347,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -453,9 +356,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -464,9 +365,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -475,9 +374,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -486,9 +383,7 @@
     "feature": "instrumentSectors",
     "module": "WEB",
     "status": "Done",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "result": ""
   },
   {
@@ -497,9 +392,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -508,9 +401,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -519,9 +410,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -530,9 +419,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "instrumentSectors"
   },
   {
@@ -541,9 +428,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "language"
   },
   {
@@ -552,9 +437,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "language"
   },
   {
@@ -563,10 +446,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "languageUiLayout"
   },
   {
@@ -575,9 +455,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "languageUiLayout"
   },
   {
@@ -586,10 +464,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "languageUiLayout"
   },
   {
@@ -598,10 +473,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "languageUiLayout"
   },
   {
@@ -610,9 +482,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "languageUiLayout"
   },
   {
@@ -621,9 +491,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "languageUiLayout"
   },
   {
@@ -632,9 +500,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "languageUiLayout"
   },
   {
@@ -643,9 +509,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "languageUiLayout"
   },
   {
@@ -654,9 +518,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "languageUiLayout"
   },
   {
@@ -665,10 +527,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "languageUiLayout"
   },
   {
@@ -677,9 +536,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "languageUiLayout"
   },
   {
@@ -688,9 +545,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "languageUiLayout"
   },
   {
@@ -699,9 +554,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "languageUiLayout"
   },
   {
@@ -710,9 +563,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "themeUiLayout"
   },
   {
@@ -721,9 +572,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "themeUiLayout"
   },
   {
@@ -732,9 +581,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "themeUiLayout"
   },
   {
@@ -743,9 +590,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "themeUiLayout"
   },
   {
@@ -754,9 +599,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "themeUiLayout"
   },
   {
@@ -765,9 +608,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tradingLoginSession"
   },
   {
@@ -776,9 +617,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
@@ -787,9 +626,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
@@ -798,9 +635,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
@@ -809,9 +644,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
@@ -820,9 +653,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
@@ -831,9 +662,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
@@ -842,9 +671,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
@@ -853,9 +680,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "redirectionAfterAuth"
   },
   {
@@ -864,9 +689,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "redirectionAfterAuth"
   },
   {
@@ -875,9 +698,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "redirectionAfterAuth"
   },
   {
@@ -886,9 +707,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "redirectionAfterAuth"
   },
   {
@@ -897,9 +716,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "redirectionAfterAuth"
   },
   {
@@ -908,9 +725,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "redirectionAfterAuth"
   },
   {
@@ -919,9 +734,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "deposit"
   },
   {
@@ -930,9 +743,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "deposit"
   },
   {
@@ -941,9 +752,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "deposit"
   },
   {
@@ -952,9 +761,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "transfer"
   },
   {
@@ -963,9 +770,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "withdrawal"
   },
   {
@@ -974,9 +779,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "historyDisplay"
   },
   {
@@ -985,9 +788,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "historyDisplay"
   },
   {
@@ -996,9 +797,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "historyDisplay"
   },
   {
@@ -1007,9 +806,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "mint"
   },
   {
@@ -1018,9 +815,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "mint"
   },
   {
@@ -1029,9 +824,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "mint"
   },
   {
@@ -1040,9 +833,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "mint"
   },
   {
@@ -1051,9 +842,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "mint"
   },
   {
@@ -1062,9 +851,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "mint"
   },
   {
@@ -1073,9 +860,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "mint"
   },
   {
@@ -1084,9 +869,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "testUIForScaleOrders"
   },
   {
@@ -1095,9 +878,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "exportHistory"
   },
   {
@@ -1106,9 +887,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "exportHistory"
   },
   {
@@ -1117,9 +896,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "exportHistory"
   },
   {
@@ -1128,9 +905,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "exportHistory"
   },
   {
@@ -1139,9 +914,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "exportHistory"
   },
   {
@@ -1150,9 +923,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "exportHistory"
   },
   {
@@ -1161,9 +932,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "exportHistory"
   },
   {
@@ -1172,9 +941,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "exportHistory"
   },
   {
@@ -1183,9 +950,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "exportHistory"
   },
   {
@@ -1194,9 +959,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "exportHistory"
   },
   {
@@ -1205,9 +968,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "exportHistory"
   },
   {
@@ -1216,9 +977,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "exportHistory"
   },
   {
@@ -1227,9 +986,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "referral"
   },
   {
@@ -1238,9 +995,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "referral"
   },
   {
@@ -1249,9 +1004,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "roi"
   },
   {
@@ -1260,9 +1013,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "roi"
   },
   {
@@ -1271,9 +1022,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "roi"
   },
   {
@@ -1282,9 +1031,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "roi"
   },
   {
@@ -1293,9 +1040,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "roi"
   },
   {
@@ -1304,9 +1049,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "roi"
   },
   {
@@ -1315,9 +1058,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "roi"
   },
   {
@@ -1326,9 +1067,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tdy"
   },
   {
@@ -1337,9 +1076,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tdy"
   },
   {
@@ -1348,9 +1085,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tdy"
   },
   {
@@ -1359,9 +1094,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tdy"
   },
   {
@@ -1370,9 +1103,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tdy"
   },
   {
@@ -1381,9 +1112,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "placeOrdersLimitUsingTPSL"
   },
   {
@@ -1392,9 +1121,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "placeOrdersLimitUsingTPSL"
   },
   {
@@ -1403,9 +1130,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "placeOrdersLimitUsingTPSL"
   },
   {
@@ -1414,9 +1139,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "placeOrdersMarketUsingTPSL"
   },
   {
@@ -1425,9 +1148,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "placeOrdersMarketUsingTPSL"
   },
   {
@@ -1436,9 +1157,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "placeOrdersMarketUsingTPSL"
   },
   {
@@ -1447,9 +1166,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "placeOrdersWithTPSL"
   },
   {
@@ -1458,9 +1175,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "placeOrdersWithTPSL"
   },
   {
@@ -1469,9 +1184,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "placeOrdersWithTPSL"
   },
   {
@@ -1480,9 +1193,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "validateOrderHistoryAndTradeHistory"
   },
   {
@@ -1491,9 +1202,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "validateOrderHistoryAndTradeHistory"
   },
   {
@@ -1502,9 +1211,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "closePositionAndCancelOpenOrders"
   },
   {
@@ -1513,9 +1220,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "closePositionAndCancelOpenOrders"
   },
   {
@@ -1524,9 +1229,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "isolatedMarginMode"
   },
   {
@@ -1535,10 +1238,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "isolatedMarginMode"
   },
   {
@@ -1547,10 +1247,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "isolatedMarginMode"
   },
   {
@@ -1559,10 +1256,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "isolatedMarginMode"
   },
   {
@@ -1571,10 +1265,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "isolatedMarginMode"
   },
   {
@@ -1583,9 +1274,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "isolatedMarginMode"
   },
   {
@@ -1594,9 +1283,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "isolatedMarginMode"
   },
   {
@@ -1605,9 +1292,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "isolatedMarginMode"
   },
   {
@@ -1616,9 +1301,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "isolatedMarginMode"
   },
   {
@@ -1627,9 +1310,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "isolatedMarginMode"
   },
   {
@@ -1638,9 +1319,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "multiSelectAssetFilter"
   },
   {
@@ -1649,9 +1328,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "orderAmendments"
   },
   {
@@ -1660,9 +1337,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "orderAmendments"
   },
   {
@@ -1671,9 +1346,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "orderAmendments"
   },
   {
@@ -1682,9 +1355,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "orderAmendments"
   },
   {
@@ -1693,9 +1364,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "splitTPSL"
   },
   {
@@ -1704,9 +1373,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "splitTPSL"
   },
   {
@@ -1715,9 +1382,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "splitTPSL"
   },
   {
@@ -1726,9 +1391,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "splitTPSL"
   },
   {
@@ -1737,9 +1400,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "splitTPSL"
   },
   {
@@ -1748,9 +1409,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "splitTPSL"
   },
   {
@@ -1759,9 +1418,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "splitTPSL"
   },
   {
@@ -1770,9 +1427,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "splitTPSL"
   },
   {
@@ -1781,9 +1436,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "splitTPSL"
   },
   {
@@ -1792,9 +1445,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "splitTPSL"
   },
   {
@@ -1803,9 +1454,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "splitTPSL"
   },
   {
@@ -1814,9 +1463,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "splitTPSL"
   },
   {
@@ -1825,9 +1472,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tpslSendReasonableSize"
   },
   {
@@ -1836,9 +1481,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
@@ -1847,9 +1490,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
@@ -1858,9 +1499,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
@@ -1869,9 +1508,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
@@ -1880,9 +1517,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
@@ -1891,9 +1526,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
@@ -1902,9 +1535,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
@@ -1913,9 +1544,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
@@ -1924,9 +1553,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "tpslTriggerPriceRangeValidation"
   },
   {
@@ -1935,9 +1562,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "priceAlert"
   },
   {
@@ -1946,9 +1571,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "priceAlert"
   },
   {
@@ -1957,9 +1580,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "priceAlert"
   },
   {
@@ -1968,9 +1589,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "priceAlert"
   },
   {
@@ -1979,9 +1598,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "priceAlert"
   },
   {
@@ -1990,9 +1607,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "priceAlert"
   },
   {
@@ -2001,9 +1616,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "priceAlert"
   },
   {
@@ -2012,9 +1625,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "priceAlert"
   },
   {
@@ -2023,9 +1634,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "priceAlert"
   },
   {
@@ -2034,9 +1643,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "priceAlert"
   },
   {
@@ -2045,9 +1652,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "spotTrading"
   },
   {
@@ -2056,9 +1661,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "spotTrading"
   },
   {
@@ -2067,9 +1670,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "spotTrading"
   },
   {
@@ -2078,9 +1679,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "spotTrading"
   },
   {
@@ -2089,9 +1688,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "spotTrading"
   },
   {
@@ -2100,9 +1697,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "cev"
   },
   {
@@ -2111,9 +1706,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "cev"
   },
   {
@@ -2122,9 +1715,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "cev"
   },
   {
@@ -2133,9 +1724,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "cev"
   },
   {
@@ -2144,9 +1733,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "cev"
   },
   {
@@ -2155,9 +1742,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "cev"
   },
   {
@@ -2166,9 +1751,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "cev"
   },
   {
@@ -2177,10 +1760,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "vaultStrategy"
   },
   {
@@ -2189,10 +1769,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "vaultStrategy"
   },
   {
@@ -2201,9 +1778,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "vaultStrategy"
   },
   {
@@ -2212,9 +1787,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "vaultStrategy"
   },
   {
@@ -2223,9 +1796,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "vaultStrategy"
   },
   {
@@ -2234,9 +1805,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "vaultStrategy"
   },
   {
@@ -2245,10 +1814,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression",
-      "smoke"
-    ],
+    "tags": ["regression", "smoke"],
     "feature": "vaultStrategy"
   },
   {
@@ -2257,9 +1823,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "cevUngated"
   },
   {
@@ -2268,9 +1832,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "cevUngated"
   },
   {
@@ -2279,9 +1841,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "cevUngated"
   },
   {
@@ -2290,9 +1850,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "cevUngated"
   },
   {
@@ -2301,9 +1859,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "cevUngated"
   },
   {
@@ -2312,9 +1868,7 @@
     "module": "WEB",
     "status": "Done",
     "result": "",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "feature": "cevUngated"
   },
   {
@@ -2323,9 +1877,7 @@
     "feature": "Theme",
     "module": "WEB",
     "status": "Done",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "result": ""
   },
   {
@@ -2334,9 +1886,7 @@
     "feature": "Token Support",
     "module": "WEB",
     "status": "Done",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "result": ""
   },
   {
@@ -2345,9 +1895,7 @@
     "feature": "Token Support",
     "module": "WEB",
     "status": "Done",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "result": ""
   },
   {
@@ -2356,9 +1904,7 @@
     "feature": "Token Support",
     "module": "WEB",
     "status": "Done",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
     "result": ""
   },
   {
@@ -2367,9 +1913,97 @@
     "feature": "Token Support",
     "module": "WEB",
     "status": "Done",
-    "tags": [
-      "regression"
-    ],
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "W-215",
+    "name": "Add address book entry for EVM wallets",
+    "feature": "addressBook",
+    "module": "WEB",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "W-216",
+    "name": "Add address book entry for Tron",
+    "feature": "addressBook",
+    "module": "WEB",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "W-217",
+    "name": "Add address book entry for Solana",
+    "feature": "addressBook",
+    "module": "WEB",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "W-218",
+    "name": "Add GRVT recipient by Account Name / Account ID",
+    "feature": "addressBook",
+    "module": "WEB",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "W-219",
+    "name": "Duplicate addresses/accounts handled",
+    "feature": "addressBook",
+    "module": "WEB",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "W-220",
+    "name": "Search & selection of saved recipients",
+    "feature": "addressBook",
+    "module": "WEB",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "W-221",
+    "name": "Edit saved wallet recipient",
+    "feature": "addressBook",
+    "module": "WEB",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "W-222",
+    "name": "Delete saved wallet recipient",
+    "feature": "addressBook",
+    "module": "WEB",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "W-223",
+    "name": "Edit saved GRVT recipient",
+    "feature": "addressBook",
+    "module": "WEB",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "W-224",
+    "name": "Delete saved GRVT recipient",
+    "feature": "addressBook",
+    "module": "WEB",
+    "status": "Done",
+    "tags": ["regression"],
     "result": ""
   }
 ]
