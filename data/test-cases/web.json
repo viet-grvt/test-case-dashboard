@@ -1972,7 +1972,7 @@
   },
   {
     "id": "W-221",
-    "name": "Edit saved wallet recipient",
+    "name": "Edit saved recipient (wallet & GRVT)",
     "feature": "addressBook",
     "module": "WEB",
     "status": "Done",
@@ -1981,25 +1981,7 @@
   },
   {
     "id": "W-222",
-    "name": "Delete saved wallet recipient",
-    "feature": "addressBook",
-    "module": "WEB",
-    "status": "Done",
-    "tags": ["regression"],
-    "result": ""
-  },
-  {
-    "id": "W-223",
-    "name": "Edit saved GRVT recipient",
-    "feature": "addressBook",
-    "module": "WEB",
-    "status": "Done",
-    "tags": ["regression"],
-    "result": ""
-  },
-  {
-    "id": "W-224",
-    "name": "Delete saved GRVT recipient",
+    "name": "Delete saved recipient (wallet & GRVT)",
     "feature": "addressBook",
     "module": "WEB",
     "status": "Done",
