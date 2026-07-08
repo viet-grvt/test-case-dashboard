@@ -1936,7 +1936,7 @@
   },
   {
     "id": "W-223",
-    "name": "Login from Trade stays on the Trade page",
+    "name": "Login from Trade → stays on Tradee",
     "module": "WEB",
     "status": "Done",
     "result": "",
@@ -1945,7 +1945,7 @@
   },
   {
     "id": "W-224",
-    "name": "Login from Invest returns to the Invest page",
+    "name": "Login from Invest → returns to Invest",
     "module": "WEB",
     "status": "Done",
     "result": "",
@@ -1954,16 +1954,7 @@
   },
   {
     "id": "W-225",
-    "name": "Login from Competitions returns to the Competitions page",
-    "module": "WEB",
-    "status": "Done",
-    "result": "",
-    "tags": ["regression"],
-    "feature": "redirectionAfterAuth"
-  },
-  {
-    "id": "W-226",
-    "name": "Login from another page (Portfolio) lands on the account overview",
+    "name": "Login from Competitions → returns to Competitions",
     "module": "WEB",
     "status": "Done",
     "result": "",
@@ -1972,7 +1963,7 @@
   },
   {
     "id": "W-227",
-    "name": "Login from another page (Funding) lands on the account overview",
+    "name": "Login from other page (Funding) → account overview",
     "module": "WEB",
     "status": "Done",
     "result": "",
@@ -1981,7 +1972,7 @@
   },
   {
     "id": "W-228",
-    "name": "Sign up from Trade stays on the Trade page",
+    "name": "Sign Up from Trade → stays on Trade",
     "module": "WEB",
     "status": "Done",
     "result": "",
@@ -1990,7 +1981,7 @@
   },
   {
     "id": "W-229",
-    "name": "Sign up from Invest returns to the Invest page",
+    "name": "Sign Up from Invest → returns to Invest",
     "module": "WEB",
     "status": "Done",
     "result": "",
@@ -1999,7 +1990,7 @@
   },
   {
     "id": "W-230",
-    "name": "Sign up from Competitions returns to the Competitions page",
+    "name": "Sign Up from Competitions → returns to Competitions",
     "module": "WEB",
     "status": "Done",
     "result": "",
@@ -2008,7 +1999,7 @@
   },
   {
     "id": "W-231",
-    "name": "Sign up from another page (FUNDING) goes via invite-code to the overview",
+    "name": "Sign Up from other page (Funding) → invite-code → overview",
     "module": "WEB",
     "status": "Done",
     "result": "",
