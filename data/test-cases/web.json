@@ -675,60 +675,6 @@
     "feature": "occupiedWalletSignupAndSecondaryKey"
   },
   {
-    "id": "W-077",
-    "name": "MetaMask login from the Trade page is redirected to the Trading page",
-    "module": "WEB",
-    "status": "Done",
-    "result": "",
-    "tags": ["regression"],
-    "feature": "redirectionAfterAuth"
-  },
-  {
-    "id": "W-078",
-    "name": "MetaMask login from a non-trade page is redirected to the Web Overview page",
-    "module": "WEB",
-    "status": "Done",
-    "result": "",
-    "tags": ["regression"],
-    "feature": "redirectionAfterAuth"
-  },
-  {
-    "id": "W-079",
-    "name": "Privy login from the Trade page is redirected to the Trading page",
-    "module": "WEB",
-    "status": "Done",
-    "result": "",
-    "tags": ["regression"],
-    "feature": "redirectionAfterAuth"
-  },
-  {
-    "id": "W-080",
-    "name": "Privy login from a non-trade page is redirected to the Web Overview page",
-    "module": "WEB",
-    "status": "Done",
-    "result": "",
-    "tags": ["regression"],
-    "feature": "redirectionAfterAuth"
-  },
-  {
-    "id": "W-081",
-    "name": "Privy sign-up from the Trade page is redirected to the Trading page",
-    "module": "WEB",
-    "status": "Done",
-    "result": "",
-    "tags": ["regression"],
-    "feature": "redirectionAfterAuth"
-  },
-  {
-    "id": "W-082",
-    "name": "Privy sign-up from a non-trade page is redirected to the Web Overview page",
-    "module": "WEB",
-    "status": "Done",
-    "result": "",
-    "tags": ["regression"],
-    "feature": "redirectionAfterAuth"
-  },
-  {
     "id": "W-083",
     "name": "Deposit successful with supported wallets",
     "module": "WEB",
@@ -1987,5 +1933,86 @@
     "status": "Done",
     "tags": ["regression"],
     "result": ""
+  },
+  {
+    "id": "W-223",
+    "name": "Login from Trade stays on the Trade page",
+    "module": "WEB",
+    "status": "Done",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "W-224",
+    "name": "Login from Invest returns to the Invest page",
+    "module": "WEB",
+    "status": "Done",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "W-225",
+    "name": "Login from Competitions returns to the Competitions page",
+    "module": "WEB",
+    "status": "Done",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "W-226",
+    "name": "Login from another page (Portfolio) lands on the account overview",
+    "module": "WEB",
+    "status": "Done",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "W-227",
+    "name": "Login from another page (Funding) lands on the account overview",
+    "module": "WEB",
+    "status": "Done",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "W-228",
+    "name": "Sign up from Trade stays on the Trade page",
+    "module": "WEB",
+    "status": "Done",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "W-229",
+    "name": "Sign up from Invest returns to the Invest page",
+    "module": "WEB",
+    "status": "Done",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "W-230",
+    "name": "Sign up from Competitions returns to the Competitions page",
+    "module": "WEB",
+    "status": "Done",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "W-231",
+    "name": "Sign up from another page (FUNDING) goes via invite-code to the overview",
+    "module": "WEB",
+    "status": "Done",
+    "result": "",
+    "tags": ["regression"],
+    "feature": "redirectionAfterAuth"
   }
 ]
