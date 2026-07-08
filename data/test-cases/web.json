@@ -1936,7 +1936,7 @@
   },
   {
     "id": "W-223",
-    "name": "Login from Trade → stays on Tradee",
+    "name": "Login from Trade → stays on Trade",
     "module": "WEB",
     "status": "Done",
     "result": "",
