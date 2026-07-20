@@ -2005,5 +2005,14 @@
     "result": "",
     "tags": ["regression"],
     "feature": "redirectionAfterAuth"
+  },
+  {
+    "id": "W-232",
+    "name": "Verify served APK version matches the mandatory app version",
+    "module": "WEB",
+    "status": "Done",
+    "result": "",
+    "tags": ["regression", "smoke"],
+    "feature": "downloadApp"
   }
 ]
