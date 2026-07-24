@@ -691,5 +691,50 @@
     "status": "Done",
     "tags": ["regression"],
     "result": ""
+  },
+  {
+    "id": "M-078",
+    "name": "Amending a standalone position TP updates the existing leg, not a duplicate",
+    "feature": "tpslAmendment",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "M-079",
+    "name": "Amending a standalone position SL updates the existing leg, not a duplicate",
+    "feature": "tpslAmendment",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "M-080",
+    "name": "Displayed TP leg count matches the source of truth (single order) after amendment",
+    "feature": "tpslAmendment",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "M-081",
+    "name": "Combined TP + SL amendment does not duplicate either leg",
+    "feature": "tpslAmendment",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
+  },
+  {
+    "id": "M-082",
+    "name": "Repeated TP amendments never accumulate duplicate legs",
+    "feature": "tpslAmendment",
+    "module": "MOBILE",
+    "status": "Done",
+    "tags": ["regression"],
+    "result": ""
   }
 ]
