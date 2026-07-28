@@ -1,6 +1,30 @@
 {
-  "updatedAt": "2026-07-28T07:42:43.331Z",
+  "updatedAt": "2026-07-28T10:43:22.377Z",
   "runs": [
+    {
+      "id": "30349586754",
+      "name": "Mobile E2E Manual Test [Ios]",
+      "module": "MOBILE",
+      "date": "2026-07-28",
+      "at": "2026-07-28T10:43:22.377Z",
+      "env": "testnet",
+      "browser": "ios",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30349586754",
+      "reportUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30349586754/artifacts/8685185398",
+      "totals": {
+        "passed": 3,
+        "failed": 2,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "results": {
+        "M-078": "passed",
+        "M-079": "passed",
+        "M-080": "passed",
+        "M-082": "failed",
+        "M-081": "failed"
+      }
+    },
     {
       "id": "30338418594",
       "name": "Mobile E2E Manual Test [Ios]",

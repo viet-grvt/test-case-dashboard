@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T07:42:43.326Z",
+  "updatedAt": "2026-07-28T10:43:22.372Z",
   "results": {
     "W-003": {
       "status": "passed",
@@ -315,6 +315,41 @@
       "env": "testnet",
       "browser": "ios",
       "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30338418594"
+    },
+    "M-078": {
+      "status": "passed",
+      "date": "2026-07-28",
+      "env": "testnet",
+      "browser": "ios",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30349586754"
+    },
+    "M-079": {
+      "status": "passed",
+      "date": "2026-07-28",
+      "env": "testnet",
+      "browser": "ios",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30349586754"
+    },
+    "M-080": {
+      "status": "passed",
+      "date": "2026-07-28",
+      "env": "testnet",
+      "browser": "ios",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30349586754"
+    },
+    "M-082": {
+      "status": "failed",
+      "date": "2026-07-28",
+      "env": "testnet",
+      "browser": "ios",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30349586754"
+    },
+    "M-081": {
+      "status": "failed",
+      "date": "2026-07-28",
+      "env": "testnet",
+      "browser": "ios",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30349586754"
     }
   }
 }
