@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-07-28T07:00:33.006Z",
+  "updatedAt": "2026-07-28T07:42:43.331Z",
   "runs": [
+    {
+      "id": "30338418594",
+      "name": "Mobile E2E Manual Test [Ios]",
+      "module": "MOBILE",
+      "date": "2026-07-28",
+      "at": "2026-07-28T07:42:43.331Z",
+      "env": "testnet",
+      "browser": "ios",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30338418594",
+      "reportUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30338418594/artifacts/8680431288",
+      "totals": {
+        "passed": 3,
+        "failed": 1,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "results": {
+        "M-076": "passed",
+        "M-075": "passed",
+        "M-073": "failed",
+        "M-074": "passed"
+      }
+    },
     {
       "id": "30336324064",
       "name": "UI E2E Regression Test [Chrome]",
