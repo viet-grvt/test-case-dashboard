@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T05:58:25.940Z",
+  "updatedAt": "2026-07-28T07:00:33.001Z",
   "results": {
     "W-003": {
       "status": "passed",
@@ -266,6 +266,27 @@
       "env": "testnet",
       "browser": "chrome",
       "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30332976343"
+    },
+    "W-085": {
+      "status": "passed",
+      "date": "2026-07-28",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30336324064"
+    },
+    "W-135": {
+      "status": "passed",
+      "date": "2026-07-28",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30336324064"
+    },
+    "W-210": {
+      "status": "passed",
+      "date": "2026-07-28",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30336324064"
     }
   }
 }
