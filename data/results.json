@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-28T10:43:22.372Z",
+  "updatedAt": "2026-07-29T01:54:56.884Z",
   "results": {
     "W-003": {
       "status": "passed",
@@ -350,6 +350,13 @@
       "env": "testnet",
       "browser": "ios",
       "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30349586754"
+    },
+    "W-223": {
+      "status": "passed",
+      "date": "2026-07-29",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30415216933"
     }
   }
 }
