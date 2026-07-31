@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-07-31T03:36:56.573Z",
+  "updatedAt": "2026-07-31T04:31:41.152Z",
   "runs": [
+    {
+      "id": "30604121988",
+      "name": "UI E2E Regression Test [Chrome]",
+      "module": "WEB",
+      "date": "2026-07-31",
+      "at": "2026-07-31T04:31:41.152Z",
+      "env": "testnet",
+      "browser": "chrome",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30604121988",
+      "reportUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30604121988/artifacts/8783060457",
+      "totals": {
+        "passed": 2,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "results": {
+        "W-087": "passed",
+        "W-140": "passed"
+      }
+    },
     {
       "id": "30601459964",
       "name": "UI E2E Regression Test [Chrome]",
