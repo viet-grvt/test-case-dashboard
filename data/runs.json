@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-07-31T04:31:41.152Z",
+  "updatedAt": "2026-08-02T14:33:52.524Z",
   "runs": [
+    {
+      "id": "30750874616",
+      "name": "Mobile E2E Manual Test [Android]",
+      "module": "MOBILE",
+      "date": "2026-08-02",
+      "at": "2026-08-02T14:33:52.524Z",
+      "env": "testnet",
+      "browser": "android",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30750874616",
+      "reportUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30750874616/artifacts/8834847957",
+      "totals": {
+        "passed": 23,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "results": {
+        "M-014": "passed",
+        "M-012": "passed",
+        "M-054": "passed",
+        "M-008": "passed",
+        "M-018": "passed",
+        "M-058": "passed",
+        "M-023": "passed",
+        "M-033": "passed",
+        "M-028": "passed",
+        "M-013": "passed",
+        "M-022": "passed",
+        "M-021": "passed",
+        "M-019": "passed",
+        "M-027": "passed",
+        "M-020": "passed",
+        "M-061": "passed",
+        "M-046": "passed",
+        "M-015": "passed",
+        "M-009": "passed",
+        "M-017": "passed",
+        "M-032": "passed",
+        "M-025": "passed",
+        "M-026": "passed"
+      }
+    },
     {
       "id": "30604121988",
       "name": "UI E2E Regression Test [Chrome]",
