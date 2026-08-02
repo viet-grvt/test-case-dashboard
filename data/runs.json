@@ -1,6 +1,48 @@
 {
-  "updatedAt": "2026-08-02T14:33:52.524Z",
+  "updatedAt": "2026-08-02T16:09:08.888Z",
   "runs": [
+    {
+      "id": "30752546728",
+      "name": "Mobile E2E Manual Test [Ios]",
+      "module": "MOBILE",
+      "date": "2026-08-02",
+      "at": "2026-08-02T16:09:08.888Z",
+      "env": "testnet",
+      "browser": "ios",
+      "runUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30752546728",
+      "reportUrl": "https://github.com/gravity-technologies/qa-automation/actions/runs/30752546728/artifacts/8835922712",
+      "totals": {
+        "passed": 23,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 0
+      },
+      "results": {
+        "M-020": "passed",
+        "M-061": "passed",
+        "M-023": "passed",
+        "M-026": "passed",
+        "M-058": "passed",
+        "M-028": "passed",
+        "M-032": "passed",
+        "M-012": "passed",
+        "M-027": "passed",
+        "M-013": "passed",
+        "M-054": "passed",
+        "M-021": "passed",
+        "M-022": "passed",
+        "M-008": "passed",
+        "M-025": "passed",
+        "M-046": "passed",
+        "M-015": "passed",
+        "M-033": "passed",
+        "M-017": "passed",
+        "M-014": "passed",
+        "M-019": "passed",
+        "M-009": "passed",
+        "M-018": "passed"
+      }
+    },
     {
       "id": "30750874616",
       "name": "Mobile E2E Manual Test [Android]",
